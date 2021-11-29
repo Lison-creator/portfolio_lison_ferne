@@ -30,6 +30,7 @@ Section 4: #Developpement Web
 
 <h1>Coucou test</h1>
 
+
 <!-- --------------- PAGE PORTFOLIO ARTISTIQUE --------------- -->
 <section id="portfolioArtistique">
     <!-- ////////////// Bloc noir de contact ////////////// -->
@@ -59,7 +60,7 @@ Section 4: #Developpement Web
 
     <!-- div du milieu FLOAT (top et left à ajuster): Contact, "Lison Ferné" et image Lison + "Formation" -->
     <div>
-        <div>
+        <div> <!-- FLOTTE -->
             <div>
                 <a href="#contact">Contact</a>
             </div>
@@ -67,7 +68,19 @@ Section 4: #Developpement Web
             <!-- Panneau déroulant au clic (js) -->
             <div id="carteContact">
                 <!-- Les icones dans une div flottante -->
-                <div>Les icones</div>
+                <div> <!-- div parente flottante -->
+                    <div> <!-- flotter à gauche -->
+                        Les icones
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-tumblr"></i>
+                        <i class="fab fa-wix"></i>
+                    </div>
+                    <div> <!-- flotter à droite-->
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
                 <div>
                     <a href="">Mail</a> <br>
                     Née le 22 avril 1993
@@ -75,11 +88,14 @@ Section 4: #Developpement Web
                 <div>Image poissons bottom</div>
             </div>
         </div>
-        <div>
-            <a href="#">Lison Ferné</a>
+        <div> <!-- FLOTTE -->
+            <a href="#">
+                <img src="public/images/textes/signatureLison.png" alt="Lison Ferné">
+            </a>
         </div>
-        <div>
-            <a href="#formation">Formation + image</a>
+        <div> <!-- FLOTTE -->
+            <a href="#formation">
+            <img class="portraitLison" src="public/images/aPropos/portraitLison.png" alt="Lison Ferné">Formation + image</a>
         </div>
     </div>
 
@@ -118,7 +134,7 @@ Section 4: #Developpement Web
     <!-- ////////////// Portfolio WebDev ////////////// -->
 
     <div id="portfolioWebDev">
-    <div>
+        <div>
             <!-- Float -->
             <div>Menu des languages de programmation</div>
             <div>Bloc portfolio</div>

@@ -39,7 +39,32 @@
 
 /* ---------------------- */
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 #carteContact {
     background-color: black;
     color: rgb(226, 226, 226);
+    width: 10vh;
+}
+
+.portraitLison {
+    width: 69vh;
+    position: relative;
+    right: -76px;
+    bottom: -58px;
+}
+
+section #aPropos,
+#formation,
+#webdev,
+#portfolioArtistique {
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
 }
