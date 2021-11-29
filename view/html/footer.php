@@ -1,1 +1,3 @@
-<!-- Inclues dans la one-page -->
+<script src="public/js/script.js"></script>
+</body>
+</html>
