@@ -1,0 +1,45 @@
+/* POLICES DE CARACTERES */
+
+@font-face {
+    /* montserrat */
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    /* montserrat bold */
+    font-family: 'montserratBold';
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    /* montserrat italic */
+    font-family: 'montserratItalic';
+    src: url('../fonts/montserrat/Montserrat-Italic.ttf');
+}
+
+@font-face {
+    /* roboto */
+    font-family: 'roboto';
+    src: url('../fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    /* roboto bold */
+    font-family: 'robotoBold';
+    src: url('../fonts/roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    /* roboto italic */
+    font-family: 'robotoItalic';
+    src: url('../fonts/roboto/Roboto-Italic.ttf');
+}
+
+
+/* ---------------------- */
+
+#carteContact {
+    background-color: black;
+    color: rgb(226, 226, 226);
+}
