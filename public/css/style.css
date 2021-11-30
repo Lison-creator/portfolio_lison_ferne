@@ -57,6 +57,17 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    font-family: "montserrat";
+}
+
+body a:link,
+a:visited {
+    color: violet;
+    text-decoration: none;
+}
+
 section #aPropos,
 #formation,
 #competences,
@@ -78,6 +89,22 @@ section #aPropos,
 
 
 /* #################################### A PROPOS #################################### */
+
+
+/* Le float pour faire flotter les blocs "à propos" et "formation" //TODO Mettre dans "Global" */
+
+.float {
+    display: flex;
+}
+
+
+/* Attention: on met en position "absolute" une des deux section ("formation") pour qu'elle disparaisse de l'écran. Je ne sais pas si c'est la bonne méthode... Je crois que ce n'est pas "absolute" la propriété. */
+
+#formation {
+    width: 100vw;
+    position: absolute;
+    right: -100vw;
+}
 
 .portraitLison {
     width: 69vh;
@@ -101,5 +128,5 @@ section #aPropos,
 /* #################################### PORTFOLIO WEBDEV #################################### */
 
 #competences {
-    background-image: url("");
+    background-image: url("/public/images/fond/gardes300.png");
 }

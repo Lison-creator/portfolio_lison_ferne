@@ -50,75 +50,77 @@ Section 4: #Developpement Web
 </section>
 <!-- --------------- FIN PAGE PORTFOLIO ARTISTIQUE --------------- -->
 
-<!-- --------------- PAGE A PROPOS (bloc principal)--------------- -->
+<!-- Pour faire flotter les deux sections "à propos" et "formation" PEUT ETRE PAS NECESSAIRE GRACE A ABSOLUTE-->
+<div>
+    <!-- --------------- PAGE A PROPOS (bloc principal)--------------- -->
 
-<section id="aPropos">
-    <!-- div du haut (top et left à ajuster pour centrer): titre cliquable vers l'ancre "portfolio artistique" -->
-    <div>
-        <a href="#portfolioArtistique">ART</a>
-    </div>
-
-    <!-- div du milieu FLOAT (top et left à ajuster): Contact, "Lison Ferné" et image Lison + "Formation" -->
-    <div>
+    <section id="aPropos">
+        <!-- div du haut (top et left à ajuster pour centrer): titre cliquable vers l'ancre "portfolio artistique" -->
         <div>
-            <!-- FLOTTE -->
+            <a href="#portfolioArtistique">ART</a>
+        </div>
+
+        <!-- div du milieu FLOAT (top et left à ajuster): Contact, "Lison Ferné" et image Lison + "Formation" -->
+        <div>
             <div>
-                <a href="#contact">Contact</a>
-            </div>
-
-            <!-- Panneau déroulant au clic (js) -->
-            <div id="carteContact">
-                <!-- Les icones dans une div flottante -->
+                <!-- FLOTTE -->
                 <div>
-                    <!-- div parente flottante -->
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <!-- Panneau déroulant au clic (js) -->
+                <div id="carteContact">
+                    <!-- Les icones dans une div flottante -->
                     <div>
-                        <!-- flotter à gauche -->
-                        Les icones
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-tumblr"></i>
-                        <i class="fab fa-wix"></i>
+                        <!-- div parente flottante -->
+                        <div>
+                            <!-- flotter à gauche -->
+                            Les icones
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-tumblr"></i>
+                            <i class="fab fa-wix"></i>
+                        </div>
+                        <div>
+                            <!-- flotter à droite-->
+                            <i class="fas fa-envelope"></i>
+                        </div>
                     </div>
                     <div>
-                        <!-- flotter à droite-->
-                        <i class="fas fa-envelope"></i>
+                        <a href="">Mail</a> <br>
+                        Née le 22 avril 1993
                     </div>
+                    <div>Image poissons bottom</div>
                 </div>
-                <div>
-                    <a href="">Mail</a> <br>
-                    Née le 22 avril 1993
-                </div>
-                <div>Image poissons bottom</div>
+            </div>
+            <div>
+                <!-- FLOTTE -->
+                <a href="#">
+                    <img src="public/images/textes/signatureLison.png" alt="Lison Ferné">
+                </a>
+            </div>
+            <div>
+                <!-- FLOTTE -->
+                <a href="#formation">
+                    <img class="portraitLison" src="public/images/aPropos/portraitLison.png" alt="Lison Ferné">Formation + image</a>
             </div>
         </div>
+
+        <!-- div du bas "Développement Web" -->
         <div>
-            <!-- FLOTTE -->
-            <a href="#">
-                <img src="public/images/textes/signatureLison.png" alt="Lison Ferné">
-            </a>
+            <a href="#competences">Développement Web</a>
         </div>
-        <div>
-            <!-- FLOTTE -->
-            <a href="#formation">
-                <img class="portraitLison" src="public/images/aPropos/portraitLison.png" alt="Lison Ferné">Formation + image</a>
-        </div>
-    </div>
-
-    <!-- div du bas "Développement Web" -->
-    <div>
-        <a href="#competences">Développement Web</a>
-    </div>
-</section>
-<!-- --------------- FIN PAGE A PROPOS (bloc principal)--------------- -->
+    </section>
+    <!-- --------------- FIN PAGE A PROPOS (bloc principal)--------------- -->
 
 
-<!-- --------------- PAGE FORMATION (float avec "A propos") --------------- -->
+    <!-- --------------- PAGE FORMATION (float avec "A propos") --------------- -->
 
-<section id="formation"></section>
+    <section id="formation"></section>
 
-<!-- --------------- FIN PAGE FORMATION --------------- -->
-
+    <!-- --------------- FIN PAGE FORMATION --------------- -->
+</div>
 
 <!-- --------------- PAGE WEBDEV --------------- -->
 
