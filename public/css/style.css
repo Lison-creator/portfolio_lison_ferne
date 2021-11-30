@@ -60,6 +60,8 @@ html {
 body {
     margin: 0;
     font-family: "montserrat";
+    /* Désactivation de la barre de scroll */
+    overflow-x: hidden;
 }
 
 body a:link,
