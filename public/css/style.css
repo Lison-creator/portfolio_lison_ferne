@@ -39,6 +39,16 @@
 
 /* ---------------------- */
 
+
+/* TODO créer des variables pour les couleurs ! 
+
+ex --body-font-color:antiquewhite; 
+S'appelle comme ça:
+--focus-color: var(--accent-color); */
+
+
+/* #################################### GLOBAL #################################### */
+
 * {
     box-sizing: border-box;
 }
@@ -47,11 +57,27 @@ html {
     scroll-behavior: smooth;
 }
 
+section #aPropos,
+#formation,
+#competences,
+#portfolioWebDev,
+#portfolioArtistique {
+    height: 100vh;
+    width: 100%;
+    z-index: -10;
+}
+
 #carteContact {
     background-color: black;
     color: rgb(226, 226, 226);
     width: 10vh;
 }
+
+
+/* #################################### PORTFOLIO ARTISTIQUE #################################### */
+
+
+/* #################################### A PROPOS #################################### */
 
 .portraitLison {
     width: 69vh;
@@ -60,11 +86,20 @@ html {
     bottom: -58px;
 }
 
-section #aPropos,
-#formation,
-#webdev,
-#portfolioArtistique {
-    height: 100vh;
-    width: 100vw;
-    z-index: -10;
+
+/* #################################### FORMATION #################################### */
+
+
+/* #################################### COMPETENCES #################################### */
+
+#portfolioWebDev {
+    background-color: black;
+    color: rgb(226, 226, 226);
+}
+
+
+/* #################################### PORTFOLIO WEBDEV #################################### */
+
+#competences {
+    background-image: url("");
 }

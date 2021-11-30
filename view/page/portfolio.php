@@ -60,7 +60,8 @@ Section 4: #Developpement Web
 
     <!-- div du milieu FLOAT (top et left à ajuster): Contact, "Lison Ferné" et image Lison + "Formation" -->
     <div>
-        <div> <!-- FLOTTE -->
+        <div>
+            <!-- FLOTTE -->
             <div>
                 <a href="#contact">Contact</a>
             </div>
@@ -68,8 +69,10 @@ Section 4: #Developpement Web
             <!-- Panneau déroulant au clic (js) -->
             <div id="carteContact">
                 <!-- Les icones dans une div flottante -->
-                <div> <!-- div parente flottante -->
-                    <div> <!-- flotter à gauche -->
+                <div>
+                    <!-- div parente flottante -->
+                    <div>
+                        <!-- flotter à gauche -->
                         Les icones
                         <i class="fab fa-linkedin"></i>
                         <i class="fab fa-instagram"></i>
@@ -77,7 +80,8 @@ Section 4: #Developpement Web
                         <i class="fab fa-tumblr"></i>
                         <i class="fab fa-wix"></i>
                     </div>
-                    <div> <!-- flotter à droite-->
+                    <div>
+                        <!-- flotter à droite-->
                         <i class="fas fa-envelope"></i>
                     </div>
                 </div>
@@ -88,14 +92,16 @@ Section 4: #Developpement Web
                 <div>Image poissons bottom</div>
             </div>
         </div>
-        <div> <!-- FLOTTE -->
+        <div>
+            <!-- FLOTTE -->
             <a href="#">
                 <img src="public/images/textes/signatureLison.png" alt="Lison Ferné">
             </a>
         </div>
-        <div> <!-- FLOTTE -->
+        <div>
+            <!-- FLOTTE -->
             <a href="#formation">
-            <img class="portraitLison" src="public/images/aPropos/portraitLison.png" alt="Lison Ferné">Formation + image</a>
+                <img class="portraitLison" src="public/images/aPropos/portraitLison.png" alt="Lison Ferné">Formation + image</a>
         </div>
     </div>
 
@@ -116,34 +122,34 @@ Section 4: #Developpement Web
 
 <!-- --------------- PAGE WEBDEV --------------- -->
 
-<section id="webdev">
-    <!-- ////////////// Compétences ////////////// -->
 
-    <div id="competences">
-        <div>
-            <!-- Float -->
-            <div>Panneau contact</div>
-            <div>Bloc des compétences</div>
-            <div>Fil d'ariane</div>
-        </div>
-        <div>
-            <a href="#portfolioWebDev">Portfolio</a>
-        </div>
+<!-- ////////////// Compétences ////////////// -->
+
+<section id="competences">
+    <div>
+        <!-- Float -->
+        <div>Panneau contact</div>
+        <div>Bloc des compétences</div>
+        <div>Fil d'ariane</div>
     </div>
-
-    <!-- ////////////// Portfolio WebDev ////////////// -->
-
-    <div id="portfolioWebDev">
-        <div>
-            <!-- Float -->
-            <div>Menu des languages de programmation</div>
-            <div>Bloc portfolio</div>
-            <div>Fil d'ariane</div>
-        </div>
-        <div>
-            <a href="#aPropos">à propos</a>
-        </div>
+    <div>
+        <a href="#portfolioWebDev">Portfolio</a>
     </div>
 </section>
+
+<!-- ////////////// Portfolio WebDev ////////////// -->
+
+<section id="portfolioWebDev">
+    <div>
+        <!-- Float -->
+        <div>Menu des languages de programmation</div>
+        <div>Bloc portfolio</div>
+        <div>Fil d'ariane</div>
+    </div>
+    <div>
+        <a href="#aPropos">à propos</a>
+    </div>
+</section>
+
 
 <!-- --------------- FIN PAGE WEBDEV --------------- -->
