@@ -60,7 +60,7 @@ html {
 body {
     margin: 0;
     font-family: "montserrat";
-    /* Désactivation de la barre de scroll */
+    /*TODO Désactivation de la barre de scroll */
     overflow-x: hidden;
 }
 
@@ -68,6 +68,27 @@ body a:link,
 a:visited {
     color: violet;
     text-decoration: none;
+}
+
+
+/* FLOAT */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Centrer une image */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-self {
+    align-self: center;
 }
 
 #aPropos,
@@ -78,6 +99,10 @@ a:visited {
     height: 100vh;
     width: 100%;
     z-index: -10;
+}
+
+.rubriqueAPropos {
+    width: 200px;
 }
 
 #carteContact {
@@ -101,27 +126,39 @@ a:visited {
 
 /* Le float pour faire flotter les blocs "à propos" et "formation" //TODO Mettre dans "Global" */
 
-.float {
-    display: flex;
-}
-
 
 /* Attention: on met en position "absolute" une des deux section ("formation") pour qu'elle disparaisse de l'écran. Je ne sais pas si c'est la bonne méthode... Je crois que ce n'est pas "absolute" la propriété. */
 
-
-/* #formation {
-    /*  width: 100vw;
-    position: absolute; 
-    top: 100vh;
-    left: 200vw;
-    z-index: 10;
-
-
-}
-*/
-
 .portraitLison {
-    height: 69vh;
+    height: 80vh;
+    position: relative;
+    right: -50px;
+}
+
+
+/* Hover sur l'image qui fait apparaître le texte "Formation" */
+
+.texteFormationHover {
+    display: none;
+}
+
+.portraitLisonHover:hover .texteFormationHover {
+    display: block;
+    position: absolute;
+    top: 160vh;
+    right: 160px;
+}
+
+.rubriqueAProposArt {
+    position: absolute;
+    left: 45vw;
+}
+
+.rubriqueAProposDev {
+    width: 250px;
+    position: absolute;
+    left: 45vw;
+    top: 175vh;
 }
 
 
@@ -131,7 +168,7 @@ a:visited {
 /* Juste pour voir la partie formation */
 
 #formation {
-    background-color: rgb(145, 89, 89);
+    background-size: cover;
     color: rgb(226, 226, 226);
 }
 
@@ -145,7 +182,3 @@ a:visited {
 
 
 /* #################################### PORTFOLIO WEBDEV #################################### */
-
-#competences {
-    background-image: url("/public/images/fond/gardes300.png");
-}

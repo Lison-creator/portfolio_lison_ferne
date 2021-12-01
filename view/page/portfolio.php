@@ -56,15 +56,19 @@ Section 4: #Developpement Web
     <section id="aPropos">
         <!-- div du haut (top et left à ajuster pour centrer): titre cliquable vers l'ancre "portfolio artistique" -->
         <div>
-            <a href="#portfolioArtistique">ART</a>
+            <a href="#portfolioArtistique">
+                <img class="rubriqueAPropos rubriqueAProposArt center" src="public/images/textes/texte-art.png" alt="Art">
+            </a>
         </div>
 
         <!-- div du milieu FLOAT (top et left à ajuster): Contact, "Lison Ferné" et image Lison + "Formation" -->
-        <div>
-            <div>
+        <div class="flex">
+            <div class="align-self">
                 <!-- FLOTTE -->
                 <div>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">
+                        <img class="rubriqueAPropos rubriqueAProposContact" src="public/images/textes/texte-contact.png" alt="Contact">
+                    </a>
                 </div>
 
                 <!-- Panneau déroulant au clic (js) -->
@@ -94,23 +98,28 @@ Section 4: #Developpement Web
                     <div>Image poissons bottom</div>
                 </div>
             </div>
-            <div>
+            <div class="align-self">
                 <!-- FLOTTE -->
                 <a href="#apropos">
                     <img src="public/images/textes/signatureLison.png" alt="Lison Ferné">
                 </a>
             </div>
-            <div>
-                <!-- FLOTTE -->
+            <div class="portraitLisonHover">
+                <!-- FLOTTE PAS DE FLOTTE, //TODO mettre en position absolue-->
                 <a href="#formation">
-                    </div>
-                    Formation + image</a>
                     <img class="portraitLison" src="public/images/aPropos/portraitLison.png" alt="Lison Ferné">
+                    <div class="texteFormationHover">
+                        <img class="rubriqueAPropos" src="public/images/textes/texte-formation.png" alt="Formation">
+                    </div>
+                </a>
+            </div>
         </div>
 
         <!-- div du bas "Développement Web" -->
         <div>
-            <a href="#competences">Développement Web</a>
+            <a href="#competences">
+                <img class="rubriqueAPropos rubriqueAProposDev" src="public/images/textes/texte-developpementWeb.png" alt="Developpement Web">
+            </a>
         </div>
     </section>
     <!-- --------------- FIN PAGE A PROPOS (bloc principal)--------------- -->
