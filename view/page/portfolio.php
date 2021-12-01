@@ -28,7 +28,6 @@ Section 4: #Developpement Web
             href="#background"
     -->
 
-<h1>Coucou test</h1>
 
 
 <!-- --------------- PAGE PORTFOLIO ARTISTIQUE --------------- -->
@@ -69,6 +68,7 @@ Section 4: #Developpement Web
                 </div>
 
                 <!-- Panneau déroulant au clic (js) -->
+                <!-- //TODO position absolute hors du cadre -->
                 <div id="carteContact">
                     <!-- Les icones dans une div flottante -->
                     <div>
@@ -96,15 +96,16 @@ Section 4: #Developpement Web
             </div>
             <div>
                 <!-- FLOTTE -->
-                <a href="#">
+                <a href="#apropos">
                     <img src="public/images/textes/signatureLison.png" alt="Lison Ferné">
                 </a>
             </div>
             <div>
                 <!-- FLOTTE -->
                 <a href="#formation">
-                    <img class="portraitLison" src="public/images/aPropos/portraitLison.png" alt="Lison Ferné">Formation + image</a>
-            </div>
+                    </div>
+                    Formation + image</a>
+                    <img class="portraitLison" src="public/images/aPropos/portraitLison.png" alt="Lison Ferné">
         </div>
 
         <!-- div du bas "Développement Web" -->
