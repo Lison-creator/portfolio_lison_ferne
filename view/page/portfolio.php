@@ -45,7 +45,15 @@ Section 4: #Developpement Web
     <div></div>
 
     <!-- ////////////// FIN Les projets artistiques (ligne du temps) ////////////// -->
-
+    <!-- Bouton "A Propos RETOUR" -->
+    <div> <!-- //TODO Faire flotter pour le centrer -->
+        <a href="#aPropos">
+            <img class="texte-fleche" src="public/images/textes/texte-aPropos.png" alt="À Propos">
+            <div class="fleche bas">
+                &#11015;
+            </div>
+        </a>
+    </div>
 </section>
 <!-- --------------- FIN PAGE PORTFOLIO ARTISTIQUE --------------- -->
 
