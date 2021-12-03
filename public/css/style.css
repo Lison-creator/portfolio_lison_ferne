@@ -30,30 +30,16 @@
   font-family: "robotoItalic";
   src: url("../fonts/roboto/Roboto-Italic.ttf");
 }
-/* ---------------------- */
-/* TODO créer des variables pour les couleurs ! 
-
-ex --body-font-color:antiquewhite; 
-S'appelle comme ça:
---focus-color: var(--accent-color); */
-/* VARIABLES */
-:root {
-  --beige: #FFF6EF;
-  --grisFonce: #8B8B8B;
-  --blanc: #ededed;
-  --noir: black;
-  --rose: violet;
-}
-
 /* POLICES DE CARACTERE */
 /* ---------------------- */
-/* VARIABLES COULEURS */
-/* ---------------------- */
-/* TODO créer des variables pour les couleurs ! 
+/* VARIABLES COULEURS 
 
-ex --body-font-color:antiquewhite; 
-S'appelle comme ça:
+@use "variables.scss";
+---------------------- */
+/*  ex --body-font-color:antiquewhite;
+  S'appelle comme ça:
 --focus-color: var(--accent-color); */
+/* SYMBOLES */
 /* VARIABLES */
 :root {
   --beige: #FFF6EF;
@@ -80,17 +66,35 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
 body a:link,
-a:visited {
+body a:visited {
   color: var(--rose);
   text-decoration: none;
+}
+
+/* Flèches de retour en arrière */
+.retour {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.fleche {
+  position: absolute;
+  top: 50px;
 }
 
 /* FLOAT */
 .flex {
   display: flex;
   justify-content: space-between;
+}
+
+.flex-direction-column {
+  flex-direction: column;
 }
 
 /* Centrer une image */
@@ -104,13 +108,15 @@ a:visited {
   align-self: center;
 }
 
-/* Les Flèches */
+/* Les Flèches de retour en arrière */
 .fleche {
   font-size: 60px;
 }
-
 .fleche.bas {
   color: var(--noir);
+}
+.fleche.haut {
+  color: var(--blanc);
 }
 
 .texte-fleche {
@@ -127,13 +133,6 @@ a:visited {
   z-index: -10;
 }
 
-#carteContact {
-  display: none;
-  background-color: black;
-  color: #e2e2e2;
-  width: 10vh;
-}
-
 /* #################################### PORTFOLIO ARTISTIQUE #################################### */
 #portfolioArtistique {
   background-color: var(--beige);
@@ -144,13 +143,12 @@ a:visited {
 /* Le float pour faire flotter les blocs "à propos" et "formation" //TODO Mettre dans "Global" */
 /* Attention: on met en position "absolute" une des deux section ("formation") pour qu'elle disparaisse de l'écran. Je ne sais pas si c'est la bonne méthode... Je crois que ce n'est pas "absolute" la propriété. */
 #aPropos {
-  background: #fff6ef;
-  background: linear-gradient(180deg, #fff6ef 0%, white 29%);
+  /* background: rgb(255, 246, 239);
+  background: linear-gradient(180deg, rgba(255, 246, 239, 1) 0%, rgba(255, 255, 255, 1) 29%); */
+  background-image: url("../images/fond/fond_aPropos.jpg");
+  background-position: center;
 }
 
-/* BLANC VERS TRANSPARENT
-  background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 100%);  */
 .rubriqueAPropos {
   width: 200px;
 }
@@ -185,17 +183,50 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 26
   top: 175vh;
 }
 
+/* CARTE CONTACT */
+#carteContact {
+  /* display: none; */
+  background-color: black;
+  color: #e2e2e2;
+  width: 330px;
+  height: 55vh;
+}
+#carteContact i {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.image-contact {
+  width: 338px;
+}
+
+.contact-padding {
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 /* #################################### FORMATION #################################### */
 /* Juste pour voir la partie formation */
 #formation {
-  background-size: cover;
-  color: #e2e2e2;
+  background-image: url("../images/fond/fond_comp_form.jpg");
+  background-position: center;
+  position: absolute;
+  /* Pour faire l'ancrage qui swipe à droite <3 */
+  top: 100vh;
+  left: 200vw;
+  z-index: 10;
 }
 
 /* #################################### COMPETENCES #################################### */
+#competences {
+  background-image: url("../images/fond/fond_comp_form.jpg");
+  background-position: center;
+}
+
+/* #################################### PORTFOLIO WEBDEV #################################### */
 #portfolioWebDev {
   background-color: black;
   color: #e2e2e2;
-  /* #################################### PORTFOLIO WEBDEV #################################### */
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

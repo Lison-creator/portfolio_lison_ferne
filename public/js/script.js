@@ -2,3 +2,5 @@
  if (document.location.hash === '') {
      document.location.hash = '#aPropos';
  }
+
+ /* Carte contact toggle */

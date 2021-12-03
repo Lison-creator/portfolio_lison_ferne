@@ -45,11 +45,12 @@ Section 4: #Developpement Web
     <div></div>
 
     <!-- ////////////// FIN Les projets artistiques (ligne du temps) ////////////// -->
-    <!-- Bouton "A Propos RETOUR" -->
-    <div> <!-- //TODO Faire flotter pour le centrer -->
-        <a href="#aPropos">
-            <img class="texte-fleche" src="public/images/textes/texte-aPropos.png" alt="À Propos">
-            <div class="fleche bas">
+
+    <!-- Flèche "A Propos RETOUR" -->
+    <div>
+        <a href="#aPropos" class="flex retour">
+            <img class="texte-fleche align-self-center" src="public/images/textes/texte-aPropos.png" alt="À Propos">
+            <div class="fleche bas align-self-center">
                 &#11015;
             </div>
         </a>
@@ -83,27 +84,33 @@ Section 4: #Developpement Web
                 <!-- //TODO position absolute hors du cadre -->
                 <div id="carteContact">
                     <!-- Les icones dans une div flottante -->
-                    <div>
-                        <!-- div parente flottante -->
+                    <!-- div sans l'image -->
+                    <div class="flex contact-padding">
                         <div>
-                            <!-- flotter à gauche -->
-                            Les icones
-                            <i class="fab fa-linkedin"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-tumblr"></i>
-                            <i class="fab fa-wix"></i>
+                            <!-- div parente flottante -->
+                            <div class="flex flex-direction-column">
+                                <!-- flotter à gauche -->
+                                Les icones
+                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-wix"></i>
+                                <i class="fab fa-tumblr"></i>
+                            </div>
                         </div>
                         <div>
                             <!-- flotter à droite-->
                             <i class="fas fa-envelope"></i>
+                            <div>
+                                <a href="">Mail</a> <br>
+                                Née le 22 avril 1993
+                            </div>
                         </div>
                     </div>
+                    <!-- Image bottom -->
                     <div>
-                        <a href="">Mail</a> <br>
-                        Née le 22 avril 1993
+                        <img class="image-contact" src="public/images/contact/motifPoissons.png" alt="">
                     </div>
-                    <div>Image poissons bottom</div>
                 </div>
             </div>
             <div class="align-self">
@@ -135,7 +142,17 @@ Section 4: #Developpement Web
 
     <!-- --------------- PAGE FORMATION (float avec "A propos") --------------- -->
 
-    <section id="formation"></section>
+    <section id="formation">
+        <!-- Flèche "A Propos RETOUR" -->
+        <div>
+            <a href="#aPropos" class="">
+                <img class="texte-fleche align-self-center" src="public/images/textes/texte-aPropos.png" alt="À Propos">
+                <div class="fleche bas align-self-center">
+                    &#11013;
+                </div>
+            </a>
+        </div>
+    </section>
 
     <!-- --------------- FIN PAGE FORMATION --------------- -->
 </div>
