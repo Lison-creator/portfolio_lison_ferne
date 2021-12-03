@@ -45,6 +45,25 @@ S'appelle comme ça:
   --rose: violet;
 }
 
+/* POLICES DE CARACTERE */
+/* ---------------------- */
+/* VARIABLES COULEURS */
+/* ---------------------- */
+/* TODO créer des variables pour les couleurs ! 
+
+ex --body-font-color:antiquewhite; 
+S'appelle comme ça:
+--focus-color: var(--accent-color); */
+/* VARIABLES */
+:root {
+  --beige: #FFF6EF;
+  --grisFonce: #8B8B8B;
+  --blanc: #ededed;
+  --noir: black;
+  --rose: violet;
+}
+
+/* ---------------------- */
 /* #################################### GLOBAL #################################### */
 * {
   box-sizing: border-box;

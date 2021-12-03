@@ -1,188 +1,159 @@
-    /* POLICES DE CARACTERES */
-    
-    @font-face {
-        /* montserrat */
-        font-family: 'montserrat';
-        src: url('../fonts/montserrat/Montserrat-Regular.ttf');
-    }
-    
-    @font-face {
-        /* montserrat bold */
-        font-family: 'montserratBold';
-        src: url('../fonts/montserrat/Montserrat-Bold.ttf');
-    }
-    
-    @font-face {
-        /* montserrat italic */
-        font-family: 'montserratItalic';
-        src: url('../fonts/montserrat/Montserrat-Italic.ttf');
-    }
-    
-    @font-face {
-        /* roboto */
-        font-family: 'roboto';
-        src: url('../fonts/roboto/Roboto-Regular.ttf');
-    }
-    
-    @font-face {
-        /* roboto bold */
-        font-family: 'robotoBold';
-        src: url('../fonts/roboto/Roboto-Bold.ttf');
-    }
-    
-    @font-face {
-        /* roboto italic */
-        font-family: 'robotoItalic';
-        src: url('../fonts/roboto/Roboto-Italic.ttf');
-    }
-    /* ---------------------- */
-    /* TODO créer des variables pour les couleurs ! 
-
-ex --body-font-color:antiquewhite; 
-S'appelle comme ça:
---focus-color: var(--accent-color); */
-    /* VARIABLES */
-    
-     :root {
-        --beige: #FFF6EF;
-        --grisFonce: #8B8B8B;
-        --blanc: #ededed;
-        --noir: black;
-        --rose: violet;
-    }
-    /* #################################### GLOBAL #################################### */
-    
-    * {
-        box-sizing: border-box;
-    }
-    
-    html {
-        scroll-behavior: smooth;
-    }
-    
-    body {
-        margin: 0;
-        font-family: "montserrat";
-        /*TODO Désactivation de la barre de scroll */
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-    
-    body a:link,
-    a:visited {
-        color: var(--rose);
-        text-decoration: none;
-    }
-    /* FLOAT */
-    
-    .flex {
-        display: flex;
-        justify-content: space-between;
-    }
-    /* Centrer une image */
-    
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .align-self {
-        align-self: center;
-    }
-    /* Les Flèches */
-    
-    .fleche {
-        font-size: 60px;
-    }
-    
-    .fleche.bas {
-        color: var(--noir);
-    }
-    
-    .texte-fleche {
-        width: 100px;
-    }
-    
-    #aPropos,
-    #formation,
-    #competences,
-    #portfolioWebDev,
-    #portfolioArtistique {
-        height: 100vh;
-        width: 100%;
-        z-index: -10;
-    }
-    
-    #carteContact {
-        display: none;
-        background-color: black;
-        color: rgb(226, 226, 226);
-        width: 10vh;
-    }
-    /* #################################### PORTFOLIO ARTISTIQUE #################################### */
-    
-    #portfolioArtistique {
-        background-color: var(--beige);
-        color: rgb(226, 226, 226);
-    }
-    /* #################################### A PROPOS #################################### */
-    /* Le float pour faire flotter les blocs "à propos" et "formation" //TODO Mettre dans "Global" */
-    /* Attention: on met en position "absolute" une des deux section ("formation") pour qu'elle disparaisse de l'écran. Je ne sais pas si c'est la bonne méthode... Je crois que ce n'est pas "absolute" la propriété. */
-    
-    #aPropos {
-        background: rgb(255, 246, 239);
-        background: linear-gradient(180deg, rgba(255, 246, 239, 1) 0%, rgba(255, 255, 255, 1) 29%);
-    }
-    /* BLANC VERS TRANSPARENT
+   /* POLICES DE CARACTERE */
+   
+   @use "fonts.scss";
+   /* ---------------------- */
+   /* VARIABLES COULEURS 
+   
+   @use "variables.scss";
+   ---------------------- */
+   /*  ex --body-font-color:antiquewhite;
+   S'appelle comme ça:
+ --focus-color: var(--accent-color); */
+   
+   */
+   /* VARIABLES */
+   
+    :root {
+       --beige: #FFF6EF;
+       --grisFonce: #8B8B8B;
+       --blanc: #ededed;
+       --noir: black;
+       --rose: violet;
+   }
+   /* ---------------------- */
+   /* #################################### GLOBAL #################################### */
+   
+   * {
+       box-sizing: border-box;
+   }
+   
+   html {
+       scroll-behavior: smooth;
+   }
+   
+   body {
+       margin: 0;
+       font-family: "montserrat";
+       /*TODO Désactivation de la barre de scroll */
+       overflow-x: hidden;
+       overflow-y: hidden;
+   }
+   
+   body a:link,
+   a:visited {
+       color: var(--rose);
+       text-decoration: none;
+   }
+   /* FLOAT */
+   
+   .flex {
+       display: flex;
+       justify-content: space-between;
+   }
+   /* Centrer une image */
+   
+   .center {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   
+   .align-self {
+       align-self: center;
+   }
+   /* Les Flèches */
+   
+   .fleche {
+       font-size: 60px;
+   }
+   
+   .fleche.bas {
+       color: var(--noir);
+   }
+   
+   .texte-fleche {
+       width: 100px;
+   }
+   
+   #aPropos,
+   #formation,
+   #competences,
+   #portfolioWebDev,
+   #portfolioArtistique {
+       height: 100vh;
+       width: 100%;
+       z-index: -10;
+   }
+   
+   #carteContact {
+       display: none;
+       background-color: black;
+       color: rgb(226, 226, 226);
+       width: 10vh;
+   }
+   /* #################################### PORTFOLIO ARTISTIQUE #################################### */
+   
+   #portfolioArtistique {
+       background-color: var(--beige);
+       color: rgb(226, 226, 226);
+   }
+   /* #################################### A PROPOS #################################### */
+   /* Le float pour faire flotter les blocs "à propos" et "formation" //TODO Mettre dans "Global" */
+   /* Attention: on met en position "absolute" une des deux section ("formation") pour qu'elle disparaisse de l'écran. Je ne sais pas si c'est la bonne méthode... Je crois que ce n'est pas "absolute" la propriété. */
+   
+   #aPropos {
+       background: rgb(255, 246, 239);
+       background: linear-gradient(180deg, rgba(255, 246, 239, 1) 0%, rgba(255, 255, 255, 1) 29%);
+   }
+   /* BLANC VERS TRANSPARENT
   background: rgb(255,255,255);
 background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 100%);  */
-    
-    .rubriqueAPropos {
-        width: 200px;
-    }
-    
-    .portraitLison {
-        height: 80vh;
-        position: relative;
-        right: -50px;
-    }
-    /* Hover sur l'image qui fait apparaître le texte "Formation" */
-    
-    .texteFormationHover {
-        display: none;
-    }
-    
-    .portraitLisonHover:hover .texteFormationHover {
-        display: block;
-        position: absolute;
-        top: 160vh;
-        right: 160px;
-    }
-    
-    .rubriqueAProposArt {
-        position: absolute;
-        left: 45vw;
-    }
-    
-    .rubriqueAProposDev {
-        width: 250px;
-        position: absolute;
-        left: 45vw;
-        top: 175vh;
-    }
-    /* #################################### FORMATION #################################### */
-    /* Juste pour voir la partie formation */
-    
-    #formation {
-        background-size: cover;
-        color: rgb(226, 226, 226);
-    }
-    /* #################################### COMPETENCES #################################### */
-    
-    #portfolioWebDev {
-        background-color: black;
-        color: rgb(226, 226, 226);
-        /* #################################### PORTFOLIO WEBDEV #################################### */
-    }
-    /*# sourceMappingURL=style.css.map */
+   
+   .rubriqueAPropos {
+       width: 200px;
+   }
+   
+   .portraitLison {
+       height: 80vh;
+       position: relative;
+       right: -50px;
+   }
+   /* Hover sur l'image qui fait apparaître le texte "Formation" */
+   
+   .texteFormationHover {
+       display: none;
+   }
+   
+   .portraitLisonHover:hover .texteFormationHover {
+       display: block;
+       position: absolute;
+       top: 160vh;
+       right: 160px;
+   }
+   
+   .rubriqueAProposArt {
+       position: absolute;
+       left: 45vw;
+   }
+   
+   .rubriqueAProposDev {
+       width: 250px;
+       position: absolute;
+       left: 45vw;
+       top: 175vh;
+   }
+   /* #################################### FORMATION #################################### */
+   /* Juste pour voir la partie formation */
+   
+   #formation {
+       background-size: cover;
+       color: rgb(226, 226, 226);
+   }
+   /* #################################### COMPETENCES #################################### */
+   
+   #portfolioWebDev {
+       background-color: black;
+       color: rgb(226, 226, 226);
+       /* #################################### PORTFOLIO WEBDEV #################################### */
+   }
+   /*# sourceMappingURL=style.css.map */
