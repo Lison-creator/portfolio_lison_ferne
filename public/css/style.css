@@ -30,15 +30,22 @@
   font-family: "robotoItalic";
   src: url("../fonts/roboto/Roboto-Italic.ttf");
 }
-/* POLICES DE CARACTERE */
+/* RESPONSIVE */
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  /* Le portrait disparaît */
+  .portraitLisonHover {
+    display: none;
+  }
+}
 /* ---------------------- */
 /* VARIABLES COULEURS 
 
-@use "variables.scss";
----------------------- */
+   @use "variables.scss";
+   ---------------------- */
 /*  ex --body-font-color:antiquewhite;
-  S'appelle comme ça:
---focus-color: var(--accent-color); */
+   S'appelle comme ça:
+ --focus-color: var(--accent-color); */
 /* SYMBOLES */
 /* VARIABLES */
 :root {
@@ -144,7 +151,7 @@ body a:visited {
 /* Attention: on met en position "absolute" une des deux section ("formation") pour qu'elle disparaisse de l'écran. Je ne sais pas si c'est la bonne méthode... Je crois que ce n'est pas "absolute" la propriété. */
 #aPropos {
   /* background: rgb(255, 246, 239);
-  background: linear-gradient(180deg, rgba(255, 246, 239, 1) 0%, rgba(255, 255, 255, 1) 29%); */
+     background: linear-gradient(180deg, rgba(255, 246, 239, 1) 0%, rgba(255, 255, 255, 1) 29%); */
   background-image: url("../images/fond/fond_aPropos.jpg");
   background-position: center;
 }
@@ -185,15 +192,37 @@ body a:visited {
 
 /* CARTE CONTACT */
 #carteContact {
-  /* display: none; */
+  /* test avec le js */
+  display: none;
   background-color: black;
   color: #e2e2e2;
   width: 330px;
   height: 55vh;
+  position: fixed;
+  top: 0;
+  left: 50px;
+  transition: 0.5s;
+  transition-timing-function: ease;
+  z-index: 1;
+  /* L'ombre du bloc: */
+  box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
 }
-#carteContact i {
+#carteContact i,
+#carteContact .croix {
   font-size: 30px;
   padding-bottom: 15px;
+}
+#carteContact .croix {
+  position: absolute;
+  top: 10px;
+  right: 26px;
+}
+
+#btnContact,
+.croix {
+  cursor: pointer;
 }
 
 .image-contact {

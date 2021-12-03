@@ -74,10 +74,9 @@ Section 4: #Developpement Web
         <div class="flex">
             <div class="align-self">
                 <!-- FLOTTE -->
-                <div>
-                    <a href="#contact">
-                        <img class="rubriqueAPropos rubriqueAProposContact" src="public/images/textes/texte-contact.png" alt="Contact">
-                    </a>
+                <!-- Le bouton "CONTACT" qui appelle la carte contact -->
+                <div id="btnContact" onclick="toggle_contact()">
+                    <img class="rubriqueAPropos rubriqueAProposContact" src="public/images/textes/texte-contact.png" alt="Contact">
                 </div>
 
                 <!-- Panneau déroulant au clic (js) -->
@@ -87,6 +86,10 @@ Section 4: #Developpement Web
                     <!-- div sans l'image -->
                     <div class="flex contact-padding">
                         <div>
+                            <!-- La petite croix -->
+                            <div class="croix">
+                                &#10005;
+                            </div>
                             <!-- div parente flottante -->
                             <div class="flex flex-direction-column">
                                 <!-- flotter à gauche -->
@@ -102,7 +105,8 @@ Section 4: #Developpement Web
                             <!-- flotter à droite-->
                             <i class="fas fa-envelope"></i>
                             <div>
-                                <a href="">Mail</a> <br>
+                                <a href="">Mail</a> lison.ferne@wanadoo.fr <br>
+                                num tel<br>
                                 Née le 22 avril 1993
                             </div>
                         </div>
