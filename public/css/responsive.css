@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  /* Le portrait disparaît */
+  .portraitLisonHover {
+    display: none;
+  }
+}/*# sourceMappingURL=responsive.css.map */
