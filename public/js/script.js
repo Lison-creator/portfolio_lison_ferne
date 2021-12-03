@@ -5,21 +5,23 @@
 
  /* Carte contact toggle */
 
+ /* //TODO debugguer: pourquoi la boucle ne fonctionne pas ? voir sur la carte de HOME SAFE */
 
  function toggle_contact() {
      var carteContact = document.getElementById("carteContact");
      /*    carteContact.classList.toggle("display"); */
 
-     if (carteContact.style.height === "55vh") {
+     if (carteContact.style.display === "55vh") {
          carteContact.style.display = "none";
-         console.log("If");
+         console.log("If"); //TODO /* à enlever */
 
-     } else {
+     } else if (carteContact.style.display === "none") {
          carteContact.style.height = "55vh";
-         carteContact.style.display = "block";
-         console.log("Else");
-
+         console.log("Else if"); //TODO /* à enlever */
+     } else {
+         console.log("else tout seul"); //TODO /* à enlever */
      }
+     /* console.log(carteContact.style.display); */
  }
 
  console.log("Coucou, ça marche ?");
