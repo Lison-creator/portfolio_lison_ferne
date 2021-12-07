@@ -74,6 +74,7 @@ Section 4: #Developpement Web
         <div class="flex">
             <div class="align-self">
                 <!-- FLOTTE -->
+                
                 <!-- Le bouton "CONTACT" qui appelle la carte contact -->
                 <div id="btnContact" onclick="toggle_contact()">
                     <img class="rubriqueAPropos rubriqueAProposContact" src="public/images/textes/texte-contact.png" alt="Contact">
