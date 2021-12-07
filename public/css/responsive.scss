@@ -2,10 +2,19 @@
 
 @media(max-width:992px) {
     /* Le portrait disparaît */
-    #formation {
+    .portraitLisonHover {
         display: none;
+        /* //TODO debuguer, ça ne marche pas */
     }
     .texteFormationHover {
+        display: block;
+    }
+    .rubriqueAProposDev,
+    .rubriqueAProposContact,
+    .rubriqueAProposArt {
+        display: block;
+    }
+    .flex {
         display: block;
     }
 }
