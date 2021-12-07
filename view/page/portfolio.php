@@ -117,20 +117,21 @@ Section 4: #Developpement Web
                     </div>
                 </div>
             </div>
-            <div class="align-self">
-                <!-- FLOTTE -->
-                <a href="#apropos">
-                    <img src="public/images/textes/signatureLison.png" alt="Lison Ferné">
-                </a>
-            </div>
             <div class="portraitLisonHover">
                 <!-- FLOTTE PAS DE FLOTTE, //TODO mettre en position absolue-->
                 <a href="#formation">
                     <img class="portraitLison" src="public/images/aPropos/portraitLison.png" alt="Lison Ferné">
-                    <div class="texteFormationHover">
-                        <img class="rubriqueAPropos" src="public/images/textes/texte-formation.png" alt="Formation">
-                    </div>
                 </a>
+                <div class="texteFormationHover">
+                    <img class="rubriqueAPropos" src="public/images/textes/texte-formation.png" alt="Formation">
+                </div>
+            </div>
+        </div>
+        <!-- SORT DU FLOAT -->
+        <div class="signatureLison"> 
+            <!-- LISON FERNE -->
+            <div>
+                <img src="public/images/textes/signatureLison.png" alt="Lison Ferné">
             </div>
         </div>
 

@@ -2,7 +2,11 @@
 /* RESPONSIVE */
 @media (max-width: 992px) {
   /* Le portrait disparaît */
-  .portraitLisonHover {
+  #formation {
     display: none;
+  }
+
+  .texteFormationHover {
+    display: block;
   }
 }/*# sourceMappingURL=responsive.css.map */

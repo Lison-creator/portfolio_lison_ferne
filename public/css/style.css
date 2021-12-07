@@ -1,133 +1,174 @@
 @charset "UTF-8";
+
 /* POLICES DE CARACTERES */
+
 @font-face {
-  /* montserrat */
-  font-family: "montserrat";
-  src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+    /* montserrat */
+    font-family: "montserrat";
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
 }
+
 @font-face {
-  /* montserrat bold */
-  font-family: "montserratBold";
-  src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+    /* montserrat bold */
+    font-family: "montserratBold";
+    src: url("../fonts/montserrat/Montserrat-Bold.ttf");
 }
+
 @font-face {
-  /* montserrat italic */
-  font-family: "montserratItalic";
-  src: url("../fonts/montserrat/Montserrat-Italic.ttf");
+    /* montserrat italic */
+    font-family: "montserratItalic";
+    src: url("../fonts/montserrat/Montserrat-Italic.ttf");
 }
+
 @font-face {
-  /* roboto */
-  font-family: "roboto";
-  src: url("../fonts/roboto/Roboto-Regular.ttf");
+    /* roboto */
+    font-family: "roboto";
+    src: url("../fonts/roboto/Roboto-Regular.ttf");
 }
+
 @font-face {
-  /* roboto bold */
-  font-family: "robotoBold";
-  src: url("../fonts/roboto/Roboto-Bold.ttf");
+    /* roboto bold */
+    font-family: "robotoBold";
+    src: url("../fonts/roboto/Roboto-Bold.ttf");
 }
+
 @font-face {
-  /* roboto italic */
-  font-family: "robotoItalic";
-  src: url("../fonts/roboto/Roboto-Italic.ttf");
+    /* roboto italic */
+    font-family: "robotoItalic";
+    src: url("../fonts/roboto/Roboto-Italic.ttf");
 }
+
+
 /* RESPONSIVE */
+
+
 /* RESPONSIVE */
+
 @media (max-width: 992px) {
-  /* Le portrait disparaît */
-  .portraitLisonHover {
-    display: none;
-  }
+    /* Le portrait disparaît */
+    #formation {
+        display: none;
+    }
+    .texteFormationHover {
+        display: block;
+    }
 }
+
+
 /* ---------------------- */
+
+
 /* VARIABLES COULEURS 
 
    @use "variables.scss";
    ---------------------- */
+
+
 /*  ex --body-font-color:antiquewhite;
    S'appelle comme ça:
  --focus-color: var(--accent-color); */
+
+
 /* SYMBOLES */
+
+
 /* VARIABLES */
+
 :root {
-  --beige: #FFF6EF;
-  --grisFonce: #8B8B8B;
-  --blanc: #ededed;
-  --noir: black;
-  --rose: violet;
+    --beige: #FFF6EF;
+    --grisFonce: #8B8B8B;
+    --blanc: #ededed;
+    --noir: black;
+    --rose: violet;
 }
 
+
 /* ---------------------- */
+
+
 /* #################################### GLOBAL #################################### */
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: "montserrat";
-  /*TODO Désactivation de la barre de scroll */
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-body a:link,
-body a:visited {
-  color: var(--rose);
-  text-decoration: none;
+    margin: 0;
+    font-family: "montserrat";
+    /*TODO Désactivation de la barre de scroll */
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
+body a:link,
+body a:visited {
+    color: var(--rose);
+    text-decoration: none;
+}
+
+
 /* Flèches de retour en arrière */
+
 .retour {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .align-self-center {
-  align-self: center;
+    align-self: center;
 }
 
 .fleche {
-  position: absolute;
-  top: 50px;
+    position: absolute;
+    top: 50px;
 }
 
+
 /* FLOAT */
+
 .flex {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .flex-direction-column {
-  flex-direction: column;
+    flex-direction: column;
 }
 
+
 /* Centrer une image */
+
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .align-self {
-  align-self: center;
+    align-self: center;
 }
 
+
 /* Les Flèches de retour en arrière */
+
 .fleche {
-  font-size: 60px;
+    font-size: 60px;
 }
+
 .fleche.bas {
-  color: var(--noir);
+    color: var(--noir);
 }
+
 .fleche.haut {
-  color: var(--blanc);
+    color: var(--blanc);
 }
 
 .texte-fleche {
-  width: 100px;
+    width: 100px;
 }
 
 #aPropos,
@@ -135,127 +176,163 @@ body a:visited {
 #competences,
 #portfolioWebDev,
 #portfolioArtistique {
-  height: 100vh;
-  width: 100%;
-  z-index: -10;
+    height: 100vh;
+    width: 100%;
+    z-index: -10;
 }
+
 
 /* #################################### PORTFOLIO ARTISTIQUE #################################### */
+
 #portfolioArtistique {
-  background-color: var(--beige);
-  color: #e2e2e2;
+    background-color: var(--beige);
+    color: #e2e2e2;
 }
 
+
 /* #################################### A PROPOS #################################### */
+
+
 /* Le float pour faire flotter les blocs "à propos" et "formation" //TODO Mettre dans "Global" */
+
+
 /* Attention: on met en position "absolute" une des deux section ("formation") pour qu'elle disparaisse de l'écran. Je ne sais pas si c'est la bonne méthode... Je crois que ce n'est pas "absolute" la propriété. */
+
 #aPropos {
-  /* background: rgb(255, 246, 239);
+    /* background: rgb(255, 246, 239);
      background: linear-gradient(180deg, rgba(255, 246, 239, 1) 0%, rgba(255, 255, 255, 1) 29%); */
-  background-image: url("../images/fond/fond_aPropos.jpg");
-  background-position: center;
+    background-image: url("../images/fond/fond_aPropos.jpg");
+    background-position: center;
 }
 
 .rubriqueAPropos {
-  width: 200px;
+    width: 200px;
 }
 
 .portraitLison {
-  height: 80vh;
-  position: relative;
-  right: -50px;
+    height: 80vh;
+    position: relative;
+    right: -50px;
 }
 
+.signatureLison {
+    position: absolute;
+    top: 143%;
+    left: 50%;
+    /* This is a shorthand of translateX(-50%) and translateY(-50%) and translate() function with the (negative) value of -50% moves the element by the half of its size. Hence the element will be positioned at the middle. https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element */
+    transform: translate(-50%, -50%);
+}
+
+
 /* Hover sur l'image qui fait apparaître le texte "Formation" */
+
 .texteFormationHover {
-  display: none;
+    display: none;
 }
 
 .portraitLisonHover:hover .texteFormationHover {
-  display: block;
-  position: absolute;
-  top: 160vh;
-  right: 160px;
+    display: block;
+    position: absolute;
+    top: 160vh;
+    right: 160px;
 }
 
 .rubriqueAProposArt {
-  position: absolute;
-  left: 45vw;
+    position: absolute;
+    left: 45vw;
+    cursor: pointer;
 }
 
 .rubriqueAProposDev {
-  width: 250px;
-  position: absolute;
-  left: 45vw;
-  top: 175vh;
+    width: 250px;
+    position: absolute;
+    left: 45vw;
+    top: 175vh;
 }
 
+
 /* CARTE CONTACT */
+
 #carteContact {
-  /* test avec le js */
-  display: none;
-  background-color: black;
-  color: #e2e2e2;
-  width: 330px;
-  height: 55vh;
-  position: fixed;
-  top: 0;
-  left: 50px;
-  transition: 0.5s;
-  transition-timing-function: ease;
-  z-index: 1;
-  /* L'ombre du bloc: */
-  box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
-  -webkit-box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
-  -moz-box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
+    /* test avec le js */
+    display: none;
+    background-color: black;
+    color: #e2e2e2;
+    width: 330px;
+    height: 55vh;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    transition: 0.5s;
+    transition-timing-function: ease;
+    z-index: 1;
+    /* L'ombre du bloc: */
+    box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
 }
+
 #carteContact i,
 #carteContact .croix {
-  font-size: 30px;
-  padding-bottom: 15px;
+    font-size: 30px;
+    padding-bottom: 15px;
 }
+
 #carteContact .croix {
-  position: absolute;
-  top: 10px;
-  right: 26px;
+    position: absolute;
+    top: 10px;
+    right: 26px;
 }
 
 #btnContact,
 .croix {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .image-contact {
-  width: 338px;
+    width: 338px;
 }
 
 .contact-padding {
-  padding-top: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
 
 /* #################################### FORMATION #################################### */
+
+
 /* Juste pour voir la partie formation */
+
 #formation {
-  background-image: url("../images/fond/fond_comp_form.jpg");
-  background-position: center;
-  position: absolute;
-  /* Pour faire l'ancrage qui swipe à droite <3 */
-  top: 100vh;
-  left: 200vw;
-  z-index: 10;
+    background-image: url("../images/fond/fond_comp_form.jpg");
+    background-position: center;
+    position: absolute;
+    /* Pour faire l'ancrage qui swipe à droite <3 */
+    top: 100vh;
+    left: 200vw;
+    z-index: 10;
 }
+
 
 /* #################################### COMPETENCES #################################### */
+
 #competences {
-  background-image: url("../images/fond/fond_comp_form.jpg");
-  background-position: center;
+    background-image: url("../images/fond/fond_comp_form.jpg");
+    background-position: center;
 }
 
+
 /* #################################### PORTFOLIO WEBDEV #################################### */
+
 #portfolioWebDev {
-  background-color: black;
-  color: #e2e2e2;
+    background-color: black;
+    color: #e2e2e2;
 }
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */

@@ -161,6 +161,14 @@ body {
     right: -50px;
 }
 
+.signatureLison {
+    position: absolute;
+    top: 143%;
+    left: 50%;
+    /* This is a shorthand of translateX(-50%) and translateY(-50%) and translate() function with the (negative) value of -50% moves the element by the half of its size. Hence the element will be positioned at the middle. https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element */
+    transform: translate(-50%, -50%);
+}
+
 
 /* Hover sur l'image qui fait apparaître le texte "Formation" */
 
@@ -178,6 +186,7 @@ body {
 .rubriqueAProposArt {
     position: absolute;
     left: 45vw;
+    cursor: pointer;
 }
 
 .rubriqueAProposDev {
