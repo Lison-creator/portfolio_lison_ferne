@@ -59,6 +59,13 @@ body {
 }
 
 
+/* Positions */
+
+.relative {
+    position: relative;
+}
+
+
 /* Flèches de retour en arrière */
 
 .retour {
@@ -87,6 +94,10 @@ body {
     flex-direction: column;
 }
 
+.space-around {
+    justify-content: space-around;
+}
+
 
 /* Centrer une image */
 
@@ -99,6 +110,9 @@ body {
 .align-self {
     align-self: center;
 }
+
+
+/* Texte */
 
 
 /* Les Flèches de retour en arrière */
@@ -137,10 +151,28 @@ body {
     color: rgb(226, 226, 226);
 }
 
+
+/* BLOC CONTACT */
+
+
+/* Les icones du bloc contact */
+
+#icones {
+    margin-right: 27px;
+}
+
+#blocContactPortfolioArtistique i {
+    font-size: 25px;
+    padding-top: 25px;
+}
+
 #blocContactPortfolioArtistique {
     background-color: var(--noir);
-    width: 400px;
+    width: 445px;
+    height: 100%;
     margin-left: 50px;
+    overflow-y: clip;
+    font-size: 14px;
 }
 
 .image-contact-portfolio-artistique {
@@ -185,8 +217,33 @@ body {
     margin: auto;
     width: 70vw;
     height: 40vw;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10%;
+    color: var(--noir);
+}
+
+#ligneTempsContainer img {
+    width: 135px;
+}
+
+#ligneTempsContainer p {
+    text-align: center;
+}
+
+#blocDeesseRequin,
+#blocSirenesMasculines,
+#blocPlantesOctobre,
+#blocCreaturesObscures,
+#blocBienMonsieur,
+#blocWBDM,
+#blocAbecedaire,
+#blocFanart {
+    position: absolute;
+}
+
+#blocSirenesMasculines {
+    top: -116px;
 }
 
 .blocVerticalGauche {
@@ -208,15 +265,26 @@ body {
 }
 
 .blocHorizontalBas {
+    position: relative;
     height: 1px;
-    width: 70px;
+    width: 100%;
     background-color: var(--noir);
 }
 
 .flecheLigneTemps {
     position: absolute;
-    top: 0;
+    top: -10px;
+    right: 0;
     color: var(--noir)
+}
+
+#blocDeesseRequin {
+    top: 135px;
+    left: -55px;
+}
+
+span.bold {
+    font-family: "montserratBold";
 }
 
 

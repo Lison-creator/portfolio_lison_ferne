@@ -41,7 +41,6 @@ Section 4: #Developpement Web
                 <div id="icones">
                     <div class="flex flex-direction-column">
                         <!-- flotter à gauche -->
-                        Les icones
                         <i class="fab fa-linkedin"></i>
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-facebook-f"></i>
@@ -80,19 +79,129 @@ Section 4: #Developpement Web
         </div> -->
         <div id="ligneTempsContainer">
             <div class="flex">
-                <div class="blocVerticalGauche">
+                <div class="flex blocVerticalGauche">
+                    <div class="relative">
+                        <div id="blocDeesseRequin">
+                            <img src="./public/images/portfolioArtistique/deesseRequin.png" alt="La Déesse Requin">
+                            <!-- //TODO background beige aux textes -->
+                            <p>
+                                <span class="bold">
+                                    Janvier 2020
+                                </span>
+
+                                « La Déesse Requin »
+                                Première bande dessinée parue aux éditions Cfc
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="blocHorizontalHaut">
+                <div class="blocHorizontalHaut flex space-around">
+                    <div class="relative">
+                        <div id="blocSirenesMasculines">
+                            <img src="./public/images/portfolioArtistique/sireneMasculine.png" alt="Sirènes masculines">
+                            <p>
+                                <span class="bold">
+                                    Mai 2020
+
+                                </span>
+
+                                Sirenes
+                                Série de sirènes masculines
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div id="blocPlantesOctobre">
+                            <img src="./public/images/portfolioArtistique/plantes_octobre.png" alt="Plantes d'Octobre">
+                            <p>
+                                <span class="bold">
+                                    2020
+                                </span>
+                                Plantes d’octobre
+                                Série de dessins
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div id="blocCreaturesObscures">
+                            <img src="./public/images/portfolioArtistique/creatures_obscures.png" alt="Créatures Obscures">
+                            <p>
+                                <span class="bold">
+                                    2019
+
+                                </span>
+                                Créatures Obscures
+                                Série de dessins
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="blocVerticalDroit">
+                    <div class="relative">
+                        <div id="blocBienMonsieur">
+                            <img src="./public/images/portfolioArtistique/bienMonsieur.png" alt="Bien Monsieur">
+                            <p>
+                                <span class="bold">
+                                    2016
+
+                                </span>
+
+                                Bien Monsieur
+                                Revue de bande dessinée alternative
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="flex flex-direction-column">
-                <div class="blocHorizontalBas">
-                    <div class="flecheLigneTemps"></div>
+                <div class="blocHorizontalBas flex space-around">
+                    <div class="relative">
+                        <div id="blocWBDM">
+                            <img src="./public/images/portfolioArtistique/WBDM.png" alt="WBDM">
+                            <p>
+                                <span class="bold">
+
+                                    Janvier 2021
+                                </span>
+
+                                Portraits pour WBDM
+                                Portraits de commande
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div id="blocAbecedaire">
+                            <img src="./public/images/portfolioArtistique/escarpins.png" alt="Abécédaire Fétichiste">
+                            <p>
+                                <span class="bold">
+                                    Avril 2021
+
+                                </span>
+
+                                Abécédaire Fétichiste
+                                Série de dessins
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div id="blocFanart">
+                            <img src="./public/images/portfolioArtistique/inktober_fanart.png" alt="Hommage Fanart">
+                            <p>
+                                <span class="bold">
+                                    Octobre 2021
+
+                                </span>
+
+                                [titre]
+                                Série de dessins en hommage aux titres de référence
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flecheLigneTemps">&#10148;</div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- ////////////// FIN Les projets artistiques (ligne du temps) ////////////// -->
 
