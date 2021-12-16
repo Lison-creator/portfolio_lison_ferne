@@ -1,40 +1,50 @@
- // arriver diretement sur section "aPropos"
+ // arriver diretement sur section "aPropos" à l'ouverture de la page
  if (document.location.hash === '') {
      document.location.hash = '#aPropos';
  }
 
+ /* ####################### PORTFOLIO ARTISTIQUE ####################### */
+
+ /* CANVAS */
+
+
+ var canvas = document.getElementById("canvasLigneTemps");
+ var ctx = canvas.getContext("2d");
+
+
+ /* Responsive canvas: height & width */
+
+ /* var heightRatio = 1.5;
+ canvas.height = canvas.width * heightRatio; */
+
+ /* La ligne du temps */
+
+ /*  ctx.fillRect(0, 0, 0.5, 500);
+  ctx.fillRect(150, 0, 0.5, 500); */
+
+ /* ctx.beginPath()
+ ctx.moveTo(0, 0)
+ ctx.lineTo(0, 100)
+ ctx.stroke()
+ ctx.closePath()
+ ctx.strokeStyle("black") */
+
  /* Carte contact toggle */
 
- /* //TODO debugguer: pourquoi la boucle ne fonctionne pas ? voir sur la carte de HOME SAFE */
 
  function toggle_contact() {
      var carteContact = document.getElementById("carteContact");
-     /*    carteContact.classList.toggle("display"); */
-
-     if (carteContact.style.display === "55vh") {
-         carteContact.style.display = "none";
-         console.log("If"); //TODO /* à enlever */
-
-     } else if (carteContact.style.display === "none") {
-         carteContact.style.height = "55vh";
-         console.log("Else if"); //TODO /* à enlever */
-     } else {
-         console.log("else tout seul"); //TODO /* à enlever */
-     }
-     /* console.log(carteContact.style.display); */
+     carteContact.classList.toggle("displayNone");
+     console.log("display none de la fonction toggle contact");
  }
 
- console.log("Coucou, ça marche ?");
 
- /* Jouer sur la height pour l'effet toggle */
- /*  function openContact() {
-      var carteContact = document.getElementById("carteContact");
-      carteContact.style.height = "55vh";
-  } */
 
- /* Pour la petite croix de la carteContact */
+ /* Pour la petite croix de la carteContact //TODO  insérer la fonction dans le html */
 
  function closeContact() {
      var carteContact = document.getElementById("carteContact");
-     carteContact.style.display = "none";
+     carteContact.classList.toggle("displayNone");
+     console.log("display none de la croix");
+
  }

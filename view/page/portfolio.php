@@ -34,16 +34,66 @@ Section 4: #Developpement Web
 <section id="portfolioArtistique">
     <!-- ////////////// Bloc noir de contact ////////////// -->
 
-    <div>
+    <!-- Div qui fait flotter le bloc noir contact et la ligne du temps -->
+    <div class="flex">
+        <div id="blocContactPortfolioArtistique" class="">
+            <div class="flex contenantCarteContactPortfolioArtistique">
+                <div id="icones">
+                    <div class="flex flex-direction-column">
+                        <!-- flotter à gauche -->
+                        Les icones
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-wix"></i>
+                        <i class="fab fa-tumblr"></i>
+                    </div>
+                </div>
+                <aside id="recompenses">
+                    <i class="fas fa-award"></i>
+                    <h2>Récompenses</h2>
+                    <span>2020</span>
+                    <p><a target="blank" href="http://www.assoartemisia.fr/prix-artemisia-2021-ecologie-lison-ferne/">Prix Artemisia mention écologie</a> pour le livre « La Déesse Requin » (éditions Cfc)</p>
+                    <span>2020</span>
+                    <p>Lauréate de la bourse de la SCAM “Un Ticket pour Angoulême” (Janvier).</p>
+                    <span>2019</span>
+                    <p>Lauréate de la Bourse Découverte de la Fédération Wallonie-Bruxelles</p>
+                    <span>2018</span>
+                    <p><a href="https://cnl.propal.net/actualites/fauve-de-la-bd-alternative-2018">Fauve de la bande dessinée alternative </a>au Festival de bande dessinée d’Angoulême pour la revue collective « Bien Monsieur »</p>
+                </aside>
+            </div>
+            <!-- Image bottom -->
+            <div>
+                <img class="image-contact-portfolio-artistique" src="public/images/contact/motifPoissons.png" alt="">
+            </div>
+        </div>
+
+        <!-- ////////////// FIN Bloc noir de contact ////////////// -->
+
+
+        <!-- ////////////// Les projets artistiques (ligne du temps) CANVAS ////////////// -->
+
+        <!-- <div id="canvasPosition">
+            <canvas id="canvasLigneTemps">
+
+            </canvas>
+        </div> -->
+        <div id="ligneTempsContainer">
+            <div class="flex">
+                <div class="blocVerticalGauche">
+                </div>
+                <div class="blocHorizontalHaut">
+                </div>
+                <div class="blocVerticalDroit">
+                </div>
+            </div>
+            <div class="flex flex-direction-column">
+                <div class="blocHorizontalBas">
+                    <div class="flecheLigneTemps"></div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- ////////////// FIN Bloc noir de contact ////////////// -->
-
-
-    <!-- ////////////// Les projets artistiques (ligne du temps) ////////////// -->
-
-    <div></div>
-
     <!-- ////////////// FIN Les projets artistiques (ligne du temps) ////////////// -->
 
     <!-- Flèche "A Propos RETOUR" -->
@@ -74,48 +124,50 @@ Section 4: #Developpement Web
         <div class="flex">
             <div class="align-self">
                 <!-- FLOTTE -->
-                
+
+                <!-- //TODO Debugguer: pourquoi seul le fond est affecté par le js ? -->
                 <!-- Le bouton "CONTACT" qui appelle la carte contact -->
                 <div id="btnContact" onclick="toggle_contact()">
                     <img class="rubriqueAPropos rubriqueAProposContact" src="public/images/textes/texte-contact.png" alt="Contact">
                 </div>
-
                 <!-- Panneau déroulant au clic (js) -->
-                <!-- //TODO position absolute hors du cadre -->
-                <div id="carteContact">
-                    <!-- Les icones dans une div flottante -->
-                    <!-- div sans l'image -->
-                    <div class="flex contact-padding">
-                        <div>
-                            <!-- La petite croix -->
-                            <div class="croix">
-                                &#10005;
-                            </div>
-                            <!-- div parente flottante -->
-                            <div class="flex flex-direction-column">
-                                <!-- flotter à gauche -->
-                                Les icones
-                                <i class="fab fa-linkedin"></i>
-                                <i class="fab fa-instagram"></i>
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-wix"></i>
-                                <i class="fab fa-tumblr"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <!-- flotter à droite-->
-                            <i class="fas fa-envelope"></i>
+                <!--  //TODO enlever le style="display:none" dans la balise quand fini de bosser -->
+                <div style="display:none" id="carteContact" class="carteContact">
+                    <aside>
+                        <!-- Les icones dans une div flottante -->
+                        <!-- div sans l'image -->
+                        <div class="flex contact-padding">
                             <div>
-                                <a href="">Mail</a> lison.ferne@wanadoo.fr <br>
-                                num tel<br>
-                                Née le 22 avril 1993
+                                <!-- La petite croix -->
+                                <div onclick="closeContact()" class="croix">
+                                    &#10005;
+                                </div>
+                                <!-- div parente flottante -->
+                                <div class="flex flex-direction-column">
+                                    <!-- flotter à gauche -->
+                                    Les icones
+                                    <i class="fab fa-linkedin"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-wix"></i>
+                                    <i class="fab fa-tumblr"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <!-- flotter à droite-->
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <a href="">Mail</a> lison.ferne@wanadoo.fr <br>
+                                    num tel<br>
+                                    Née le 22 avril 1993
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Image bottom -->
-                    <div>
-                        <img class="image-contact" src="public/images/contact/motifPoissons.png" alt="">
-                    </div>
+                        <!-- Image bottom -->
+                        <div>
+                            <img class="image-contact" src="public/images/contact/motifPoissons.png" alt="">
+                        </div>
+                    </aside>
                 </div>
             </div>
             <div class="portraitLisonHover">
@@ -129,7 +181,7 @@ Section 4: #Developpement Web
             </div>
         </div>
         <!-- SORT DU FLOAT -->
-        <div class="signatureLison"> 
+        <div class="signatureLison">
             <!-- LISON FERNE -->
             <div>
                 <img src="public/images/textes/signatureLison.png" alt="Lison Ferné">
