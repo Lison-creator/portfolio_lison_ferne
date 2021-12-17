@@ -465,6 +465,25 @@ body {
     background-position: center;
 }
 
+#blocContactCompetences i {
+    font-size: 25px;
+    padding-top: 25px;
+    color: var(--blanc);
+}
+
+#blocContactCompetences {
+    background-color: var(--noir);
+    width: 445px;
+    height: 100%;
+    margin-left: 50px;
+    overflow-y: clip;
+    font-size: 14px;
+}
+
+.image-contact-portfolio-artistique {
+    width: 100%;
+}
+
 
 /* #################################### PORTFOLIO WEBDEV #################################### */
 

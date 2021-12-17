@@ -265,7 +265,7 @@ Section 4: #Developpement Web
                 <!-- Panneau déroulant au clic (js) -->
                 <!--  //TODO enlever le style="display:none" dans la balise quand fini de bosser -->
                 <div style="display:none" id="carteContact" class="carteContact">
-                    <aside>
+                    <aside id="test1">
                         <!-- Les icones dans une div flottante -->
                         <!-- div sans l'image -->
                         <div class="flex contact-padding">
@@ -355,7 +355,36 @@ Section 4: #Developpement Web
 <section id="competences">
     <div>
         <!-- Float -->
-        <div>Panneau contact</div>
+        <div id="blocContactCompetences" class="">
+            <div class="flex ">
+                <div id="icones">
+                    <div class="flex flex-direction-column">
+                        <!-- flotter à gauche -->
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-wix"></i>
+                        <i class="fab fa-tumblr"></i>
+                    </div>
+                </div>
+                <aside id="recompenses">
+                    <i class="fas fa-award"></i>
+                    <h2>Récompenses</h2>
+                    <span>2020</span>
+                    <p><a target="blank" href="http://www.assoartemisia.fr/prix-artemisia-2021-ecologie-lison-ferne/">Prix Artemisia mention écologie</a> pour le livre « La Déesse Requin » (éditions Cfc)</p>
+                    <span>2020</span>
+                    <p>Lauréate de la bourse de la SCAM “Un Ticket pour Angoulême” (Janvier).</p>
+                    <span>2019</span>
+                    <p>Lauréate de la Bourse Découverte de la Fédération Wallonie-Bruxelles</p>
+                    <span>2018</span>
+                    <p><a href="https://cnl.propal.net/actualites/fauve-de-la-bd-alternative-2018">Fauve de la bande dessinée alternative </a>au Festival de bande dessinée d’Angoulême pour la revue collective « Bien Monsieur »</p>
+                </aside>
+            </div>
+            <!-- Image bottom -->
+            <div>
+                <img class="image-contact-portfolio-artistique" src="public/images/contact/motifPoissons.png" alt="">
+            </div>
+        </div>
         <div>Bloc des compétences</div>
         <div>Fil d'ariane</div>
     </div>
