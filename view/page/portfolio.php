@@ -88,9 +88,12 @@ Section 4: #Developpement Web
                                 <span class="bold">
                                     Janvier 2020
                                 </span>
-
+                                <br>
                                 « La Déesse Requin »
-                                Première bande dessinée parue aux éditions Cfc
+                                <br>
+                                <span class="italic">
+                                    Première bande dessinée parue aux éditions Cfc
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -102,11 +105,13 @@ Section 4: #Developpement Web
                             <p>
                                 <span class="bold">
                                     Mai 2020
-
                                 </span>
-
+                                <br>
                                 Sirenes
-                                Série de sirènes masculines
+                                <br>
+                                <span class="italic">
+                                    Série de sirènes masculines
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -117,8 +122,12 @@ Section 4: #Developpement Web
                                 <span class="bold">
                                     2020
                                 </span>
+                                <br>
                                 Plantes d’octobre
-                                Série de dessins
+                                <br>
+                                <span class="italic">
+                                    Série de dessins
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -128,10 +137,13 @@ Section 4: #Developpement Web
                             <p>
                                 <span class="bold">
                                     2019
-
                                 </span>
+                                <br>
                                 Créatures Obscures
-                                Série de dessins
+                                <br>
+                                <span class="italic">
+                                    Série de dessins
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -143,11 +155,13 @@ Section 4: #Developpement Web
                             <p>
                                 <span class="bold">
                                     2016
-
                                 </span>
-
+                                <br>
                                 Bien Monsieur
-                                Revue de bande dessinée alternative
+                                <br>
+                                <span class="italic">
+                                    Revue de bande dessinée alternative
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -163,9 +177,13 @@ Section 4: #Developpement Web
 
                                     Janvier 2021
                                 </span>
-
+                                <br>
                                 Portraits pour WBDM
-                                Portraits de commande
+                                <br>
+                                <span class="italic">
+                                    Portraits de commande
+                                </span>
+
                             </p>
                         </div>
                     </div>
@@ -175,11 +193,13 @@ Section 4: #Developpement Web
                             <p>
                                 <span class="bold">
                                     Avril 2021
-
                                 </span>
-
+                                <br>
                                 Abécédaire Fétichiste
-                                Série de dessins
+                                <br>
+                                <span class="italic">
+                                    Série de dessins
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -189,11 +209,14 @@ Section 4: #Developpement Web
                             <p>
                                 <span class="bold">
                                     Octobre 2021
-
+                                </span>
+                                <br>
+                                [titre]
+                                <br>
+                                <span class="italic">                       
+                                    Série de dessins en hommage aux titres de référence
                                 </span>
 
-                                [titre]
-                                Série de dessins en hommage aux titres de référence
                             </p>
                         </div>
                     </div>

@@ -293,8 +293,45 @@ body a:visited {
   left: -55px;
 }
 
-span.bold {
+#blocPlantesOctobre {
+  top: -65px;
+}
+
+#blocCreaturesObscures {
+  top: -132px;
+}
+
+#blocBienMonsieur {
+  right: -69px;
+  top: 80px;
+}
+
+#blocWBDM {
+  top: -169px;
+}
+
+#blocAbecedaire {
+  top: -147px;
+}
+
+#blocFanart {
+  top: -159px;
+  right: -75px;
+}
+
+#blocFanart:hover {
+  border-radius: 5%;
+  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.55);
+}
+
+#ligneTempsContainer span.bold {
   font-family: "montserratBold";
+  font-size: 13px;
+}
+
+#ligneTempsContainer span.italic {
+  font-family: "montserratItalic";
+  font-size: 12px;
 }
 
 /* #################################### A PROPOS #################################### */
