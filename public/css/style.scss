@@ -161,11 +161,6 @@ body {
     margin-right: 27px;
 }
 
-#blocContactPortfolioArtistique i {
-    font-size: 25px;
-    padding-top: 25px;
-}
-
 #blocContactPortfolioArtistique {
     background-color: var(--noir);
     width: 445px;
@@ -173,6 +168,10 @@ body {
     margin-left: 50px;
     overflow-y: clip;
     font-size: 14px;
+    i {
+        font-size: 25px;
+        padding-top: 25px;
+    }
 }
 
 .image-contact-portfolio-artistique {
@@ -221,14 +220,12 @@ body {
     margin-right: 100px;
     margin-top: 10%;
     color: var(--noir);
-}
-
-#ligneTempsContainer img {
-    width: 135px;
-}
-
-#ligneTempsContainer p {
-    text-align: center;
+    img {
+        width: 135px;
+    }
+    p {
+        text-align: center;
+    }
 }
 
 #blocDeesseRequin,
@@ -307,15 +304,17 @@ body {
 #blocFanart {
     top: -159px;
     right: -75px;
+    &:hover {
+        border-radius: 5%;
+        -webkit-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.55);
+        box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.55);
+    }
 }
 
-#blocFanart:hover {
-    border-radius: 5%;
-    -webkit-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.55);
-    box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.55);
-}
 
-#ligneTempsContainer span.bold {
+/* //TODO ? pourquoi un hover ici ? */
+
+#blocFanart:hover #ligneTempsContainer span.bold {
     font-family: "montserratBold";
     font-size: 13px;
 }
@@ -465,12 +464,6 @@ body {
     background-position: center;
 }
 
-#blocContactCompetences i {
-    font-size: 25px;
-    padding-top: 25px;
-    color: var(--blanc);
-}
-
 #blocContactCompetences {
     background-color: var(--noir);
     width: 445px;
@@ -478,6 +471,27 @@ body {
     margin-left: 50px;
     overflow-y: clip;
     font-size: 14px;
+    i {
+        font-size: 25px;
+        padding-top: 25px;
+        color: var(--blanc);
+    }
+}
+
+#blocBackEnd {
+    background-color: var(--noir);
+}
+
+#blocFrontEnd {
+    background-color: var(--blanc);
+}
+
+#blocDesign {
+    background-color: var(--beige);
+}
+
+#blocOutils {
+    background-color: var(--grisFonce);
 }
 
 .image-contact-portfolio-artistique {
