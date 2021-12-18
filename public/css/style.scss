@@ -65,6 +65,10 @@ body {
     position: relative;
 }
 
+.margin-auto {
+    margin: auto;
+}
+
 
 /* Flèches de retour en arrière */
 
@@ -479,19 +483,44 @@ body {
 }
 
 #blocBackEnd {
+    //TODO à enlever après
+    color: white;
+    width: 33%;
     background-color: var(--noir);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    h3 {
+        padding-bottom: 50px;
+    }
+    #iconesBackEnd {
+        padding-bottom: 35px;
+    }
 }
 
 #blocFrontEnd {
     background-color: var(--blanc);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 #blocDesign {
     background-color: var(--beige);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 #blocOutils {
     background-color: var(--grisFonce);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 .image-contact-portfolio-artistique {
