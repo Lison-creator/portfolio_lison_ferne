@@ -406,7 +406,7 @@ Section 4: #Developpement Web
                             </div>
 
                         </div>
-                        <div>
+                        <div id="texteBackEnd">
                             JavaScript<br>
                             JQuery<br>
                             PHP<br>
@@ -429,7 +429,7 @@ Section 4: #Developpement Web
                                         <i class="fab fa-bootstrap"></i>
                                     </div>
                                 </div>
-                                <div>
+                                <div id="texteFrontEnd">
                                     HTML5<br>
                                     CSS<br>
                                     SASS<br>
@@ -444,7 +444,7 @@ Section 4: #Developpement Web
                             <div id="blocDesign">
                                 <h3>design</h3>
                                 <div class="flex">
-                                    <div>
+                                    <div id="texteDesign">
                                         Photoshop<br>
                                         Illustrator<br>
                                         InDesign<br>
@@ -485,7 +485,7 @@ Section 4: #Developpement Web
                             <div id="blocOutils">
                                 <h3>outils</h3>
                                 <div class="flex">
-                                    <div>
+                                    <div id="texteOutils">
                                         GitHub<br>
                                         SublimeMerge<br>
                                         Clip Studio Paint<br>

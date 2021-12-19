@@ -472,13 +472,19 @@ body a:visited {
 }
 
 #blocBackEnd {
-  color: white;
-  width: 33%;
+  color: var(--blanc);
   background-color: var(--noir);
+  cursor: pointer;
+  width: 230px;
+  height: 400px;
   padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+}
+#blocBackEnd #iconesBackEnd,
+#blocBackEnd #texteBackEnd {
+  display: none;
 }
 #blocBackEnd h3 {
   padding-bottom: 50px;
@@ -486,29 +492,79 @@ body a:visited {
 #blocBackEnd #iconesBackEnd {
   padding-bottom: 35px;
 }
+#blocBackEnd:hover {
+  background-color: var(--grisFonce);
+}
+#blocBackEnd:hover #iconesBackEnd,
+#blocBackEnd:hover #texteBackEnd {
+  display: block;
+}
 
 #blocFrontEnd {
+  color: var(--noir);
   background-color: var(--blanc);
   padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+  width: 500px;
+  height: 200px;
+}
+#blocFrontEnd #iconesFrontEnd,
+#blocFrontEnd #texteFrontEnd {
+  display: none;
+}
+#blocFrontEnd:hover {
+  background-color: var(--beige);
+}
+#blocFrontEnd:hover #iconesFrontEnd,
+#blocFrontEnd:hover #texteFrontEnd {
+  display: block;
 }
 
 #blocDesign {
+  color: var(--noir);
   background-color: var(--beige);
   padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+  height: 200px;
+  width: 250px;
+}
+#blocDesign #iconesDesign,
+#blocDesign #texteDesign {
+  display: none;
+}
+#blocDesign:hover {
+  color: var(--noir);
+  background-color: var(--blanc);
+}
+#blocDesign:hover #iconesDesign,
+#blocDesign:hover #texteDesign {
+  display: flex;
 }
 
 #blocOutils {
+  color: var(--blanc);
   background-color: var(--grisFonce);
   padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+  height: 200px;
+  width: 250px;
+}
+#blocOutils #iconesOutils,
+#blocOutils #texteOutils {
+  display: none;
+}
+#blocOutils:hover {
+  background-color: var(--noir);
+}
+#blocOutils:hover #iconesOutils,
+#blocOutils:hover #texteOutils {
+  display: flex;
 }
 
 .image-contact-portfolio-artistique {
