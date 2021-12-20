@@ -468,6 +468,10 @@ body {
     background-position: center;
 }
 
+#grandBlocCompetences {
+    height: 60vh;
+}
+
 #blocContactCompetences {
     background-color: var(--noir);
     width: 445px;
@@ -487,7 +491,7 @@ body {
     background-color: var(--noir);
     cursor: pointer;
     width: 230px;
-    height: 400px;
+    height: 100%;
     padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
@@ -519,7 +523,7 @@ body {
     padding-right: 30px;
     padding-bottom: 30px;
     width: 500px;
-    height: 200px;
+    height: 50%;
     #iconesFrontEnd,
     #texteFrontEnd {
         display: none;
@@ -533,6 +537,10 @@ body {
     }
 }
 
+#blocDesign_outils {
+    height: 50%;
+}
+
 #blocDesign {
     color: var(--noir);
     background-color: var(--beige);
@@ -540,7 +548,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-    height: 200px;
+    height: 100%;
     width: 250px;
     #iconesDesign,
     #texteDesign {
@@ -563,7 +571,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-    height: 200px;
+    height: 100%;
     width: 250px;
     #iconesOutils,
     #texteOutils {

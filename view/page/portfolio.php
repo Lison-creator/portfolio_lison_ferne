@@ -439,7 +439,7 @@ Section 4: #Developpement Web
                             </div>
                         </div>
                         <!-- Bloc design et outils -->
-                        <div class="flex">
+                        <div class="flex" id="blocDesign_outils">
                             <!-- Design -->
                             <div id="blocDesign">
                                 <h3>design</h3>

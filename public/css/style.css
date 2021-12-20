@@ -457,6 +457,10 @@ body a:visited {
   background-position: center;
 }
 
+#grandBlocCompetences {
+  height: 60vh;
+}
+
 #blocContactCompetences {
   background-color: var(--noir);
   width: 445px;
@@ -476,7 +480,7 @@ body a:visited {
   background-color: var(--noir);
   cursor: pointer;
   width: 230px;
-  height: 400px;
+  height: 100%;
   padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
@@ -508,7 +512,7 @@ body a:visited {
   padding-right: 30px;
   padding-bottom: 30px;
   width: 500px;
-  height: 200px;
+  height: 50%;
 }
 #blocFrontEnd #iconesFrontEnd,
 #blocFrontEnd #texteFrontEnd {
@@ -522,6 +526,10 @@ body a:visited {
   display: block;
 }
 
+#blocDesign_outils {
+  height: 50%;
+}
+
 #blocDesign {
   color: var(--noir);
   background-color: var(--beige);
@@ -529,7 +537,7 @@ body a:visited {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
-  height: 200px;
+  height: 100%;
   width: 250px;
 }
 #blocDesign #iconesDesign,
@@ -552,7 +560,7 @@ body a:visited {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
-  height: 200px;
+  height: 100%;
   width: 250px;
 }
 #blocOutils #iconesOutils,
