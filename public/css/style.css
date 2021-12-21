@@ -633,9 +633,30 @@ body a:visited {
   width: 100%;
 }
 
+/* Flèche vers Portfolio Web */
+.texte-fleche-competences-portfolioWeb {
+  width: 130px;
+  position: relative;
+  top: 22px;
+}
+
 /* #################################### PORTFOLIO WEBDEV #################################### */
 #portfolioWebDev {
   background-color: black;
   color: #e2e2e2;
+}
+
+/* Flèche retour à propos */
+#divFleche-retour-portfolio-aPropos .texte-fleche-retour-portfolio {
+  width: 100px;
+  position: absolute;
+  top: 300vh;
+}
+#divFleche-retour-portfolio-aPropos .fleche-retour-portfolio {
+  position: absolute;
+  top: 305vh;
+}
+#divFleche-retour-portfolio-aPropos .fleche-retour-portfolio .blanc {
+  color: var(--blanc);
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

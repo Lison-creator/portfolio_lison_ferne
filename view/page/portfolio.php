@@ -567,11 +567,17 @@ Section 4: #Developpement Web
 
             </div>
         </div>
-        <div>Fil d'ariane</div>
     </div>
-    <div>
-        <a href="#portfolioWebDev">Portfolio</a>
+    <!-- Flèche "Portfolio WEB RETOUR" -->
+    <div id="divFleche-competences-portfolioWeb">
+        <a href="#portfolioWebDev" class="flex retour">
+            <img class="texte-fleche-competences-portfolioWeb align-self-center" src="public/images/textes/texte-portfolio.png" alt="À Propos">
+            <div class="fleche-retour-competences fleche-size haut align-self-center">
+            &#11015;
+            </div>
+        </a>
     </div>
+    
 </section>
 
 <!-- ////////////// Portfolio WebDev ////////////// -->
@@ -579,12 +585,19 @@ Section 4: #Developpement Web
 <section id="portfolioWebDev">
     <div>
         <!-- Float -->
-        <div>Menu des languages de programmation</div>
+        <div>
+            Menu des languages de programmation
+        </div>
         <div>Bloc portfolio</div>
-        <div>Fil d'ariane</div>
     </div>
-    <div>
-        <a href="#aPropos">à propos</a>
+     <!-- Flèche "A Propos RETOUR" -->
+    <div id="divFleche-retour-portfolio-aPropos">
+        <a href="#aPropos" class="flex retour">
+            <img class="texte-fleche-retour-portfolio align-self-center" src="public/images/textes/texte-aProposBlanc.png" alt="À Propos">
+            <div class="fleche-retour-portfolio fleche-size blanc align-self-center">
+            &#x2B06;
+            </div>
+        </a>
     </div>
 </section>
 
