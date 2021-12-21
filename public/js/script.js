@@ -33,8 +33,10 @@
 
 
  function toggle_contact() {
-     var carteContact = document.getElementById("carteContact");
-     carteContact.classList.toggle("displayNone");
+     /* var carteContact = document.getElementById("carteContact");
+     carteContact.toggleClass("displayNone"); */
+
+     $('#carteContact').toggleClass("displayNone");
      console.log("display none de la fonction toggle contact");
  }
 
@@ -48,3 +50,13 @@
      console.log("display none de la croix");
 
  }
+
+ /* Le tri du Portfolio */
+
+ /* Au clic du bouton de l'id "html", exécute ceci: */
+ $("button" [id = "html"]).click(function() {
+
+     /* Ajoute la classe "selection" à toutes les div de la classe "html" */
+     $("div.html").toggleClass("selection");
+
+ })

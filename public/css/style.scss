@@ -679,8 +679,73 @@ body {
     .fleche-retour-portfolio {
         position: absolute;
         top: 305vh;
-        .blanc {
-            color: var(--blanc);
+    }
+    .blanc {
+        color: var(--blanc);
+    }
+}
+
+
+/* Menu Portfolio */
+
+#menuPortfolio {
+    border: 1px solid var(--blanc);
+    height: 90vh;
+    width: 290px;
+    margin-left: 50px;
+    #caseVide {
+        height: 60px;
+    }
+    button {
+        border: 1px solid var(--blanc);
+        color: var(--blanc);
+        background-color: inherit;
+        text-align: left;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        &:hover {
+            background-color: var(--blanc);
+            color: var(--noir);
+        }
+    }
+    #imageMenuPortfolio {
+        width: 100%;
+    }
+}
+
+#grandBlocPortfolio {
+    margin: auto;
+    h1 {
+        text-align: left;
+    }
+    #blocPortfolio {
+        /* border: 1px solid var(--blanc); */
+        width: 100%;
+        height: 60vh;
+        h2 {
+            font-size: 16px;
+        }
+        .border {
+            border: 1px solid var(--blanc);
+        }
+        .blocHomeSafe {
+            height: 50%;
+            width: 300px;
+        }
+        .blocHackaton {
+            height: 60%;
+            width: 300px;
+        }
+        .blocGithub {
+            height: 40%;
+            width: 300px;
+        }
+        .blocProjetFinal {
+            width: 250px;
         }
     }
 }

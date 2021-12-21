@@ -371,14 +371,14 @@ Section 4: #Developpement Web
 <section id="competences">
     <div>
         <!-- Flèche "A Propos RETOUR" -->
-    <div id="divFleche-retour-competences-aPropos">
-        <a href="#aPropos" class="flex retour">
-            <img class="texte-fleche-retour-competences align-self-center" src="public/images/textes/texte-aPropos.png" alt="À Propos">
-            <div class="fleche-retour-competences fleche-size haut align-self-center">
-            &#x2B06;
-            </div>
-        </a>
-    </div>
+        <div id="divFleche-retour-competences-aPropos">
+            <a href="#aPropos" class="flex retour">
+                <img class="texte-fleche-retour-competences align-self-center" src="public/images/textes/texte-aPropos.png" alt="À Propos">
+                <div class="fleche-retour-competences fleche-size haut align-self-center">
+                    &#x2B06;
+                </div>
+            </a>
+        </div>
         <!-- Float -->
         <div class="flex">
             <div id="blocContactCompetences" class="">
@@ -411,7 +411,7 @@ Section 4: #Developpement Web
                             Lison Ferné
                         </p>
                         <a href="mailto:lison.ferne@wanadoo.fr">
-                            <i class="fas fa-envelope"></i> 
+                            <i class="fas fa-envelope"></i>
                             <span>
                                 lison.ferne@wanadoo.fr
                             </span>
@@ -419,7 +419,7 @@ Section 4: #Developpement Web
                         <p>
                             Née le 22 avril 1993
                         </p>
-                           
+
                         </a>
                     </aside>
                 </div>
@@ -431,7 +431,7 @@ Section 4: #Developpement Web
             <!-- Grande div + titre du bloc ("Compétences") -->
             <div class="margin-auto" id="grandBlocCompetencesPlusTitre">
                 <h1>
-                     Compétences
+                    Compétences
                 </h1>
 
                 <!-- Grand bloc Compétences (sans titre) -->
@@ -573,31 +573,122 @@ Section 4: #Developpement Web
         <a href="#portfolioWebDev" class="flex retour">
             <img class="texte-fleche-competences-portfolioWeb align-self-center" src="public/images/textes/texte-portfolio.png" alt="À Propos">
             <div class="fleche-retour-competences fleche-size haut align-self-center">
-            &#11015;
+                &#11015;
             </div>
         </a>
     </div>
-    
+
 </section>
 
 <!-- ////////////// Portfolio WebDev ////////////// -->
 
 <section id="portfolioWebDev">
-    <div>
-        <!-- Float -->
-        <div>
-            Menu des languages de programmation
-        </div>
-        <div>Bloc portfolio</div>
-    </div>
-     <!-- Flèche "A Propos RETOUR" -->
+
+    <!-- Flèche "A Propos RETOUR" -->
     <div id="divFleche-retour-portfolio-aPropos">
         <a href="#aPropos" class="flex retour">
             <img class="texte-fleche-retour-portfolio align-self-center" src="public/images/textes/texte-aProposBlanc.png" alt="À Propos">
             <div class="fleche-retour-portfolio fleche-size blanc align-self-center">
-            &#x2B06;
+                &#x2B06;
             </div>
         </a>
+    </div>
+    <div>
+        <!-- Float -->
+        <!-- 2 blocs (menu + Portfolio) -->
+        <div class="flex">
+            <!-- Menu  -->
+            <div id="menuPortfolio" class="flex flex-direction-column">
+                <div>
+                    <div id="caseVide">
+                    </div>
+                    <div>
+                        <button class="tous">
+                            Tous les projets
+                        </button>
+                    </div>
+                    <div>
+                        <button class="html">
+                            Html / CSS
+                        </button>
+                    </div>
+
+                    <div>
+                        <button class="bootstrap">
+                            Bootstrap
+                        </button>
+                    </div>
+                    <div>
+                        <button class="sass">
+                            SASS
+                        </button>
+                    </div>
+                    <div>
+                        <button class="php">
+                            PHP
+                        </button>
+                    </div>
+                    <div>
+                        <button class="javascript">
+                            JavaScript
+                        </button>
+                    </div>
+                    <div>
+                        <button class="mysql">
+                            MySQL
+                        </button>
+                    </div>
+                </div>
+                <!-- Image bottom -->
+                <div id="divImageMenuPortfolio">
+                    <img id="imageMenuPortfolio" src="public/images/portfolio/gardesMini.jpg" alt="Motif Noir & Blanc">
+                </div>
+
+            </div>
+            <!-- Portfolio -->
+            <div id="grandBlocPortfolio">
+                <h1>
+                    Portfolio
+                </h1>
+                <!-- Div Globale -->
+                <div id="blocPortfolio" class=flex>
+                    <!-- Div Home Safe + Site CV -->
+                    <div class="flex flex-direction-column">
+                        <div class="border blocHomeSafe">
+                            <h3>
+                                Home Safe
+                            </h3>
+                        </div>
+                        <div class="border blocHomeSafe">
+                            <h3>
+                                Site CV
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Div Projet final Lison -->
+                    <div class="border blocProjetFinal">
+                        <h3>
+                            Projet final Lison
+                        </h3>
+                    </div>
+                    <!-- Div Hackaton + Exo Github -->
+                    <div class="flex flex-direction-column">
+                        <div class="border blocHackaton">
+                            <h3>
+                                Hackathon
+                            </h3>
+                        </div>
+                        <div class="border blocGithub">
+                            <h3>
+                                Exercices Github
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
