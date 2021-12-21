@@ -27,6 +27,7 @@
     --beige: #FFF6EF;
     --grisFonce: #8B8B8B;
     --blanc: #ededed;
+    --blancPur: white;
     --noir: black;
     --rose: violet;
 }
@@ -81,6 +82,10 @@ body {
     align-self: center;
 }
 
+.fleche-size {
+    font-size: 60px;
+}
+
 .fleche {
     position: absolute;
     bottom: 30px;
@@ -126,9 +131,10 @@ body {
     &.bas {
         color: var(--noir);
     }
-    &.haut {
-        color: var(--blanc);
-    }
+}
+
+.haut {
+    color: var(--noir);
 }
 
 .texte-fleche {
@@ -175,6 +181,24 @@ body {
     i {
         font-size: 25px;
         padding-top: 25px;
+    }
+    #icones {
+        margin-right: 27px;
+    }
+    a {
+        &:hover {
+            color: var(--blancPur);
+        }
+    }
+    aside p {
+        padding-bottom: 10px;
+    }
+    #recompensesDiv {
+        justify-content: flex-start;
+        h2 {
+            padding-left: 14px;
+            padding-top: 8px;
+        }
     }
 }
 
@@ -468,21 +492,57 @@ body {
     background-position: center;
 }
 
+
+/* Flèche retour vers A Propos */
+
+#divFleche-retour-competences-aPropos {
+    .texte-fleche-retour-competences {
+        width: 100px;
+        position: absolute;
+        top: 200vh;
+    }
+    .fleche-retour-competences {
+        position: absolute;
+        top: 205vh;
+    }
+}
+
 #grandBlocCompetences {
     height: 60vh;
 }
 
+#grandBlocCompetencesPlusTitre {
+    margin-top: 116px;
+}
+
 #blocContactCompetences {
     background-color: var(--noir);
-    width: 445px;
-    height: 100%;
+    width: 400px;
     margin-left: 50px;
     overflow-y: clip;
     font-size: 14px;
+    /* Position relative pour mettre l'image de la frise des poissons en bas avec la position absolute */
+    position: relative;
     i {
         font-size: 25px;
         padding-top: 25px;
         color: var(--blanc);
+    }
+    /* Images frise poissons */
+    #imageBlocContactCompetences {
+        position: absolute;
+        bottom: 0;
+    }
+    #blocContactCompetencesContenu {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    aside {
+        color: var(--blanc);
+        span {
+            padding-left: 10px;
+        }
     }
 }
 

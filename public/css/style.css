@@ -67,6 +67,7 @@
   --beige: #FFF6EF;
   --grisFonce: #8B8B8B;
   --blanc: #ededed;
+  --blancPur: white;
   --noir: black;
   --rose: violet;
 }
@@ -113,6 +114,10 @@ body a:visited {
   align-self: center;
 }
 
+.fleche-size {
+  font-size: 60px;
+}
+
 .fleche {
   position: absolute;
   bottom: 30px;
@@ -151,8 +156,9 @@ body a:visited {
 .fleche.bas {
   color: var(--noir);
 }
-.fleche.haut {
-  color: var(--blanc);
+
+.haut {
+  color: var(--noir);
 }
 
 .texte-fleche {
@@ -194,6 +200,22 @@ body a:visited {
 #blocContactPortfolioArtistique i {
   font-size: 25px;
   padding-top: 25px;
+}
+#blocContactPortfolioArtistique #icones {
+  margin-right: 27px;
+}
+#blocContactPortfolioArtistique a:hover {
+  color: var(--blancPur);
+}
+#blocContactPortfolioArtistique aside p {
+  padding-bottom: 10px;
+}
+#blocContactPortfolioArtistique #recompensesDiv {
+  justify-content: flex-start;
+}
+#blocContactPortfolioArtistique #recompensesDiv h2 {
+  padding-left: 14px;
+  padding-top: 8px;
 }
 
 .image-contact-portfolio-artistique {
@@ -457,22 +479,54 @@ body a:visited {
   background-position: center;
 }
 
+/* Flèche retour vers A Propos */
+#divFleche-retour-competences-aPropos .texte-fleche-retour-competences {
+  width: 100px;
+  position: absolute;
+  top: 200vh;
+}
+#divFleche-retour-competences-aPropos .fleche-retour-competences {
+  position: absolute;
+  top: 205vh;
+}
+
 #grandBlocCompetences {
   height: 60vh;
 }
 
+#grandBlocCompetencesPlusTitre {
+  margin-top: 116px;
+}
+
 #blocContactCompetences {
   background-color: var(--noir);
-  width: 445px;
-  height: 100%;
+  width: 400px;
   margin-left: 50px;
   overflow-y: clip;
   font-size: 14px;
+  /* Position relative pour mettre l'image de la frise des poissons en bas avec la position absolute */
+  position: relative;
+  /* Images frise poissons */
 }
 #blocContactCompetences i {
   font-size: 25px;
   padding-top: 25px;
   color: var(--blanc);
+}
+#blocContactCompetences #imageBlocContactCompetences {
+  position: absolute;
+  bottom: 0;
+}
+#blocContactCompetences #blocContactCompetencesContenu {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#blocContactCompetences aside {
+  color: var(--blanc);
+}
+#blocContactCompetences aside span {
+  padding-left: 10px;
 }
 
 #blocBackEnd {

@@ -41,16 +41,32 @@ Section 4: #Developpement Web
                 <div id="icones">
                     <div class="flex flex-direction-column">
                         <!-- flotter à gauche -->
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-wix"></i>
-                        <i class="fab fa-tumblr"></i>
+                        <a href="https://www.linkedin.com/in/lison-fern%C3%A9-488914168/" target="blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/lison.ferne/" target="blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/LisonIllustratrice" target="blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://lisonferne.wixsite.com/lisonferne" target="blank">
+                            <i class="fab fa-wix"></i>
+                        </a>
+                        <a href="https://lasireneterrestre.tumblr.com/" target="blank">
+                            <i class="fab fa-tumblr"></i>
+                        </a>
+                        <a href="mailto:lison.ferne@wanadoo.fr">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
                 <aside id="recompenses">
-                    <i class="fas fa-award"></i>
-                    <h2>Récompenses</h2>
+                    <div id="recompensesDiv" class="flex">
+                        <i class="fas fa-award"></i>
+                        <h2>Récompenses</h2>
+                    </div>
+
                     <span>2020</span>
                     <p><a target="blank" href="http://www.assoartemisia.fr/prix-artemisia-2021-ecologie-lison-ferne/">Prix Artemisia mention écologie</a> pour le livre « La Déesse Requin » (éditions Cfc)</p>
                     <span>2020</span>
@@ -354,32 +370,69 @@ Section 4: #Developpement Web
 
 <section id="competences">
     <div>
+        <!-- Flèche "A Propos RETOUR" -->
+    <div id="divFleche-retour-competences-aPropos">
+        <a href="#aPropos" class="flex retour">
+            <img class="texte-fleche-retour-competences align-self-center" src="public/images/textes/texte-aPropos.png" alt="À Propos">
+            <div class="fleche-retour-competences fleche-size haut align-self-center">
+            &#x2B06;
+            </div>
+        </a>
+    </div>
         <!-- Float -->
         <div class="flex">
             <div id="blocContactCompetences" class="">
-                <div class="flex ">
-                    <div id="icones">
-                        <div class="flex flex-direction-column">
+                <div class="flex" id="blocContactCompetencesContenu">
+                    <div id="icones" class="flex flex-direction-column">
+                        <div class="">
                             <!-- flotter à gauche -->
-                            <i class="fab fa-linkedin"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-wix"></i>
-                            <i class="fab fa-tumblr"></i>
+                            <div class="flex flex-direction-column">
+                                <!-- flotter à gauche -->
+                                <a href="https://www.linkedin.com/in/lison-fern%C3%A9-488914168/" target="blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.instagram.com/lison.ferne/" target="blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/LisonIllustratrice" target="blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://lisonferne.wixsite.com/lisonferne" target="blank">
+                                    <i class="fab fa-wix"></i>
+                                </a>
+                                <a href="https://lasireneterrestre.tumblr.com/" target="blank">
+                                    <i class="fab fa-tumblr"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <aside id="">
-
+                        <p>
+                            Lison Ferné
+                        </p>
+                        <a href="mailto:lison.ferne@wanadoo.fr">
+                            <i class="fas fa-envelope"></i> 
+                            <span>
+                                lison.ferne@wanadoo.fr
+                            </span>
+                        </a>
+                        <p>
+                            Née le 22 avril 1993
+                        </p>
+                           
+                        </a>
                     </aside>
                 </div>
                 <!-- Image bottom -->
-                <div>
+                <div id="imageBlocContactCompetences">
                     <img class="image-contact-portfolio-artistique" src="public/images/contact/motifPoissons.png" alt="">
                 </div>
             </div>
             <!-- Grande div + titre du bloc ("Compétences") -->
-            <div class="margin-auto">
-                Bloc des compétences
+            <div class="margin-auto" id="grandBlocCompetencesPlusTitre">
+                <h1>
+                     Compétences
+                </h1>
 
                 <!-- Grand bloc Compétences (sans titre) -->
                 <div id="grandBlocCompetences" class="flex">
