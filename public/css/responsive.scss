@@ -4,7 +4,6 @@
     /* Le portrait disparaît */
     .portraitLisonHover {
         display: none;
-        /* //TODO debuguer, ça ne marche pas */
     }
     .texteFormationHover {
         display: block;
@@ -14,7 +13,10 @@
     .rubriqueAProposArt {
         display: block;
     }
-    .flex {
-        display: block;
+    #formation,
+    #competences,
+    #portfolioWebDev,
+    #portfolioArtistique {
+        display: none;
     }
 }

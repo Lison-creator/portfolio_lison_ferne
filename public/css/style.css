@@ -1,170 +1,213 @@
 @charset "UTF-8";
+
 /* POLICES DE CARACTERES */
+
 @font-face {
-  /* montserrat */
-  font-family: "montserrat";
-  src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+    /* montserrat */
+    font-family: "montserrat";
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
 }
+
 @font-face {
-  /* montserrat bold */
-  font-family: "montserratBold";
-  src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+    /* montserrat bold */
+    font-family: "montserratBold";
+    src: url("../fonts/montserrat/Montserrat-Bold.ttf");
 }
+
 @font-face {
-  /* montserrat italic */
-  font-family: "montserratItalic";
-  src: url("../fonts/montserrat/Montserrat-Italic.ttf");
+    /* montserrat italic */
+    font-family: "montserratItalic";
+    src: url("../fonts/montserrat/Montserrat-Italic.ttf");
 }
+
 @font-face {
-  /* roboto */
-  font-family: "roboto";
-  src: url("../fonts/roboto/Roboto-Regular.ttf");
+    /* roboto */
+    font-family: "roboto";
+    src: url("../fonts/roboto/Roboto-Regular.ttf");
 }
+
 @font-face {
-  /* roboto bold */
-  font-family: "robotoBold";
-  src: url("../fonts/roboto/Roboto-Bold.ttf");
+    /* roboto bold */
+    font-family: "robotoBold";
+    src: url("../fonts/roboto/Roboto-Bold.ttf");
 }
+
 @font-face {
-  /* roboto italic */
-  font-family: "robotoItalic";
-  src: url("../fonts/roboto/Roboto-Italic.ttf");
+    /* roboto italic */
+    font-family: "robotoItalic";
+    src: url("../fonts/roboto/Roboto-Italic.ttf");
 }
+
+
 /* RESPONSIVE */
+
+
 /* RESPONSIVE */
+
 @media (max-width: 992px) {
-  /* Le portrait disparaît */
-  .portraitLisonHover {
-    display: none;
-    /* //TODO debuguer, ça ne marche pas */
-  }
-
-  .texteFormationHover {
-    display: block;
-  }
-
-  .rubriqueAProposDev,
-.rubriqueAProposContact,
-.rubriqueAProposArt {
-    display: block;
-  }
-
-  .flex {
-    display: block;
-  }
+    /* Le portrait disparaît */
+    .portraitLisonHover {
+        display: none;
+    }
+    .texteFormationHover {
+        display: block;
+    }
+    .rubriqueAProposDev,
+    .rubriqueAProposContact,
+    .rubriqueAProposArt {
+        display: block;
+    }
+    .flex {
+        display: block;
+    }
+    #formation,
+    #competences,
+    #portfolioWebDev,
+    #portfolioArtistique {
+        display: none;
+    }
 }
+
+
 /* ---------------------- */
+
+
 /* VARIABLES COULEURS 
 
    @use "variables.scss";
    ---------------------- */
+
+
 /*  ex --body-font-color:antiquewhite;
    S'appelle comme ça:
  --focus-color: var(--accent-color); */
+
+
 /* SYMBOLES */
+
+
 /* VARIABLES */
+
 :root {
-  --beige: #FFF6EF;
-  --grisFonce: #8B8B8B;
-  --blanc: #ededed;
-  --blancPur: white;
-  --noir: black;
-  --rose: violet;
+    --beige: #FFF6EF;
+    --grisFonce: #8B8B8B;
+    --blanc: #ededed;
+    --blancPur: white;
+    --noir: black;
+    --rose: violet;
 }
 
+
 /* ---------------------- */
+
+
 /* #################################### GLOBAL #################################### */
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: "montserrat";
-  /*TODO Désactivation de la barre de scroll */
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-body a:link,
-body a:visited {
-  color: var(--rose);
-  text-decoration: none;
+    margin: 0;
+    font-family: "montserrat";
+    /*TODO Désactivation de la barre de scroll */
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
+body a:link,
+body a:visited {
+    color: var(--rose);
+    text-decoration: none;
+}
+
+
 /* Positions */
+
 .relative {
-  position: relative;
+    position: relative;
 }
 
 .margin-auto {
-  margin: auto;
+    margin: auto;
 }
 
+
 /* Flèches de retour en arrière */
+
 .retour {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .align-self-center {
-  align-self: center;
+    align-self: center;
 }
 
 .fleche-size {
-  font-size: 60px;
+    font-size: 60px;
 }
 
 .fleche {
-  position: absolute;
-  bottom: 30px;
+    position: absolute;
+    bottom: 30px;
 }
 
+
 /* FLOAT */
+
 .flex {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .flex-direction-column {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .space-around {
-  justify-content: space-around;
+    justify-content: space-around;
 }
 
+
 /* Centrer une image */
+
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .align-self {
-  align-self: center;
+    align-self: center;
 }
 
+
 /* Texte */
+
+
 /* Les Flèches de retour en arrière */
+
 .fleche {
-  font-size: 60px;
+    font-size: 60px;
 }
+
 .fleche.bas {
-  color: var(--noir);
+    color: var(--noir);
 }
 
 .haut {
-  color: var(--noir);
+    color: var(--noir);
 }
 
 .texte-fleche {
-  width: 100px;
-  position: absolute;
-  bottom: -18px;
+    width: 100px;
+    position: absolute;
+    bottom: -18px;
 }
 
 #aPropos,
@@ -172,68 +215,85 @@ body a:visited {
 #competences,
 #portfolioWebDev,
 #portfolioArtistique {
-  height: 100vh;
-  width: 100%;
-  z-index: -10;
+    height: 100vh;
+    width: 100%;
+    z-index: -10;
 }
+
 
 /* #################################### PORTFOLIO ARTISTIQUE #################################### */
+
 #portfolioArtistique {
-  background-color: var(--beige);
-  color: #e2e2e2;
+    background-color: var(--beige);
+    color: #e2e2e2;
 }
 
+
 /* BLOC CONTACT */
+
+
 /* Les icones du bloc contact */
+
 #icones {
-  margin-right: 27px;
+    margin-right: 27px;
 }
 
 #blocContactPortfolioArtistique {
-  background-color: var(--noir);
-  width: 445px;
-  height: 100%;
-  margin-left: 50px;
-  overflow-y: clip;
-  font-size: 14px;
+    background-color: var(--noir);
+    width: 445px;
+    height: 100%;
+    margin-left: 50px;
+    overflow-y: clip;
+    font-size: 14px;
 }
+
 #blocContactPortfolioArtistique i {
-  font-size: 25px;
-  padding-top: 25px;
+    font-size: 25px;
+    padding-top: 25px;
 }
+
 #blocContactPortfolioArtistique #icones {
-  margin-right: 27px;
+    margin-right: 27px;
 }
+
 #blocContactPortfolioArtistique a:hover {
-  color: var(--blancPur);
+    color: var(--blancPur);
 }
+
 #blocContactPortfolioArtistique aside p {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
+
 #blocContactPortfolioArtistique #recompensesDiv {
-  justify-content: flex-start;
+    justify-content: flex-start;
 }
+
 #blocContactPortfolioArtistique #recompensesDiv h2 {
-  padding-left: 14px;
-  padding-top: 8px;
+    padding-left: 14px;
+    padding-top: 8px;
 }
 
 .image-contact-portfolio-artistique {
-  width: 100%;
+    width: 100%;
 }
 
 #recompenses span {
-  font-family: "montserratItalic";
+    font-family: "montserratItalic";
 }
+
 
 /* Padding sur le contenu du bloc noir Contact */
+
 .contenantCarteContactPortfolioArtistique {
-  padding-top: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
+
 /* CANVAS */
+
+
 /* #canvasPosition {
     margin: auto;
     width: 70%;
@@ -247,21 +307,26 @@ body a:visited {
     height: 100%;
 }
  */
+
+
 /* Ligne du temps */
+
 #ligneTempsContainer {
-  margin: auto;
-  width: 70vw;
-  height: 40vw;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 10%;
-  color: var(--noir);
+    margin: auto;
+    width: 70vw;
+    height: 40vw;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10%;
+    color: var(--noir);
 }
+
 #ligneTempsContainer img {
-  width: 135px;
+    width: 135px;
 }
+
 #ligneTempsContainer p {
-  text-align: center;
+    text-align: center;
 }
 
 #blocDeesseRequin,
@@ -272,454 +337,526 @@ body a:visited {
 #blocWBDM,
 #blocAbecedaire,
 #blocFanart {
-  position: absolute;
+    position: absolute;
 }
 
 #blocSirenesMasculines {
-  top: -116px;
+    top: -116px;
 }
 
 .blocVerticalGauche {
-  width: 1px;
-  height: 500px;
-  background-color: var(--noir);
+    width: 1px;
+    height: 500px;
+    background-color: var(--noir);
 }
 
 .blocVerticalDroit {
-  width: 1px;
-  height: 400px;
-  background-color: var(--noir);
+    width: 1px;
+    height: 400px;
+    background-color: var(--noir);
 }
 
 .blocHorizontalHaut {
-  height: 1px;
-  width: 100%;
-  background-color: var(--noir);
+    height: 1px;
+    width: 100%;
+    background-color: var(--noir);
 }
 
 .blocHorizontalBas {
-  position: relative;
-  height: 1px;
-  width: 100%;
-  background-color: var(--noir);
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: var(--noir);
 }
 
 .flecheLigneTemps {
-  position: absolute;
-  top: -10px;
-  right: 0;
-  color: var(--noir);
+    position: absolute;
+    top: -10px;
+    right: 0;
+    color: var(--noir);
 }
 
 #blocDeesseRequin {
-  top: 135px;
-  left: -55px;
+    top: 135px;
+    left: -55px;
 }
 
 #blocPlantesOctobre {
-  top: -65px;
+    top: -65px;
 }
 
 #blocCreaturesObscures {
-  top: -132px;
+    top: -132px;
 }
 
 #blocBienMonsieur {
-  right: -69px;
-  top: 80px;
+    right: -69px;
+    top: 80px;
 }
 
 #blocWBDM {
-  top: -169px;
+    top: -169px;
 }
 
 #blocAbecedaire {
-  top: -147px;
+    top: -147px;
 }
 
 #blocFanart {
-  top: -159px;
-  right: -75px;
-}
-#blocFanart:hover {
-  border-radius: 5%;
-  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.55);
+    top: -159px;
+    right: -75px;
 }
 
+#blocFanart:hover {
+    border-radius: 5%;
+    box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.55);
+}
+
+
 /* //TODO ? pourquoi un hover ici ? */
+
 #blocFanart:hover #ligneTempsContainer span.bold {
-  font-family: "montserratBold";
-  font-size: 13px;
+    font-family: "montserratBold";
+    font-size: 13px;
 }
 
 #ligneTempsContainer span.italic {
-  font-family: "montserratItalic";
-  font-size: 12px;
+    font-family: "montserratItalic";
+    font-size: 12px;
 }
 
+
 /* #################################### A PROPOS #################################### */
+
+
 /* Le float pour faire flotter les blocs "à propos" et "formation" //TODO Mettre dans "Global" */
+
+
 /* Attention: on met en position "absolute" une des deux section ("formation") pour qu'elle disparaisse de l'écran. Je ne sais pas si c'est la bonne méthode... Je crois que ce n'est pas "absolute" la propriété. */
+
 #aPropos {
-  /* background: rgb(255, 246, 239);
+    /* background: rgb(255, 246, 239);
      background: linear-gradient(180deg, rgba(255, 246, 239, 1) 0%, rgba(255, 255, 255, 1) 29%); */
-  background-image: url("../images/fond/fond_aPropos.jpg");
-  background-position: center;
+    background-image: url("../images/fond/fond_aPropos.jpg");
+    background-position: center;
 }
 
 .rubriqueAPropos {
-  width: 200px;
+    width: 200px;
 }
 
 .portraitLison {
-  height: 80vh;
-  position: relative;
-  right: -50px;
+    height: 80vh;
+    position: relative;
+    right: -50px;
 }
 
 .signatureLison {
-  position: absolute;
-  top: 143%;
-  left: 50%;
-  /* This is a shorthand of translateX(-50%) and translateY(-50%) and translate() function with the (negative) value of -50% moves the element by the half of its size. Hence the element will be positioned at the middle. https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element */
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 143%;
+    left: 50%;
+    /* This is a shorthand of translateX(-50%) and translateY(-50%) and translate() function with the (negative) value of -50% moves the element by the half of its size. Hence the element will be positioned at the middle. https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element */
+    transform: translate(-50%, -50%);
 }
 
+
 /* Hover sur l'image qui fait apparaître le texte "Formation" */
+
 .texteFormationHover {
-  display: none;
+    display: none;
 }
 
 .portraitLisonHover:hover .texteFormationHover {
-  display: block;
-  position: absolute;
-  top: 160vh;
-  right: 160px;
+    display: block;
+    position: absolute;
+    top: 160vh;
+    right: 160px;
 }
 
 .rubriqueAProposArt {
-  position: absolute;
-  left: 45vw;
-  cursor: pointer;
+    position: absolute;
+    left: 45vw;
+    cursor: pointer;
 }
 
 .rubriqueAProposDev {
-  width: 250px;
-  position: absolute;
-  left: 45vw;
-  top: 175vh;
+    width: 250px;
+    position: absolute;
+    left: 45vw;
+    top: 175vh;
 }
 
+
 /* CARTE CONTACT */
+
 .carteContact {
-  /* test avec le js */
-  background-color: black;
-  color: #e2e2e2;
-  width: 330px;
-  height: 55vh;
-  position: fixed;
-  top: 0;
-  left: 50px;
-  transition: 0.5s;
-  transition-timing-function: ease;
-  z-index: 1;
-  /* L'ombre du bloc: */
-  box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
-  -webkit-box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
-  -moz-box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
+    /* test avec le js */
+    background-color: black;
+    color: #e2e2e2;
+    width: 330px;
+    height: 55vh;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    transition: 0.5s;
+    transition-timing-function: ease;
+    z-index: 1;
+    /* L'ombre du bloc: */
+    box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
 }
+
 .carteContact i,
 .carteContact .croix {
-  font-size: 30px;
-  padding-bottom: 15px;
+    font-size: 30px;
+    padding-bottom: 15px;
 }
+
 .carteContact .croix {
-  position: absolute;
-  top: 10px;
-  right: 26px;
+    position: absolute;
+    top: 10px;
+    right: 26px;
 }
 
 #btnContact,
 .croix {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .image-contact {
-  width: 338px;
+    width: 338px;
 }
 
 .contact-padding {
-  padding-top: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
 
 /* //TODO Debugguer: pourquoi le toggle ne s'applique que sur le background ? */
+
 .displayNone {
-  height: 0;
-  transition: height 0.3s;
-  transition-timing-function: ease;
+    height: 0;
+    transition: height 0.3s;
+    transition-timing-function: ease;
 }
+
 
 /* #################################### FORMATION #################################### */
+
+
 /* Juste pour voir la partie formation */
+
 #formation {
-  background-image: url("../images/fond/fond_comp_form.jpg");
-  background-position: center;
-  position: absolute;
-  /* Pour faire l'ancrage qui swipe à droite <3 */
-  top: 100vh;
-  left: 200vw;
-  z-index: 10;
+    background-image: url("../images/fond/fond_comp_form.jpg");
+    background-position: center;
+    position: absolute;
+    /* Pour faire l'ancrage qui swipe à droite <3 */
+    top: 100vh;
+    left: 200vw;
+    z-index: 10;
 }
+
 
 /* #################################### COMPETENCES #################################### */
+
 #competences {
-  background-image: url("../images/fond/fond_comp_form.jpg");
-  background-position: center;
+    background-image: url("../images/fond/fond_comp_form.jpg");
+    background-position: center;
 }
 
+
 /* Flèche retour vers A Propos */
+
 #divFleche-retour-competences-aPropos .texte-fleche-retour-competences {
-  width: 100px;
-  position: absolute;
-  top: 200vh;
+    width: 100px;
+    position: absolute;
+    top: 200vh;
 }
+
 #divFleche-retour-competences-aPropos .fleche-retour-competences {
-  position: absolute;
-  top: 205vh;
+    position: absolute;
+    top: 205vh;
 }
 
 #grandBlocCompetences {
-  height: 60vh;
+    height: 60vh;
 }
 
 #grandBlocCompetencesPlusTitre {
-  margin-top: 116px;
+    margin-top: 116px;
 }
 
 #blocContactCompetences {
-  background-color: var(--noir);
-  width: 400px;
-  margin-left: 50px;
-  overflow-y: clip;
-  font-size: 14px;
-  /* Position relative pour mettre l'image de la frise des poissons en bas avec la position absolute */
-  position: relative;
-  /* Images frise poissons */
+    background-color: var(--noir);
+    width: 290px;
+    margin-left: 50px;
+    overflow-y: clip;
+    font-size: 14px;
+    /* Position relative pour mettre l'image de la frise des poissons en bas avec la position absolute */
+    position: relative;
+    /* Images frise poissons */
 }
+
 #blocContactCompetences i {
-  font-size: 25px;
-  padding-top: 25px;
-  color: var(--blanc);
+    font-size: 25px;
+    padding-top: 25px;
+    color: var(--blanc);
 }
+
 #blocContactCompetences #imageBlocContactCompetences {
-  position: absolute;
-  bottom: 0;
+    position: absolute;
+    bottom: 0;
 }
+
 #blocContactCompetences #blocContactCompetencesContenu {
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
 #blocContactCompetences aside {
-  color: var(--blanc);
+    color: var(--blanc);
 }
+
 #blocContactCompetences aside span {
-  padding-left: 10px;
+    padding-left: 10px;
 }
 
 #blocBackEnd {
-  color: var(--blanc);
-  background-color: var(--noir);
-  cursor: pointer;
-  width: 230px;
-  height: 100%;
-  padding-top: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
+    color: var(--blanc);
+    background-color: var(--noir);
+    cursor: pointer;
+    width: 230px;
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
+
 #blocBackEnd #iconesBackEnd,
 #blocBackEnd #texteBackEnd {
-  display: none;
+    display: none;
 }
+
 #blocBackEnd h3 {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
+
 #blocBackEnd #iconesBackEnd {
-  padding-bottom: 35px;
+    padding-bottom: 35px;
 }
+
 #blocBackEnd:hover {
-  background-color: var(--grisFonce);
+    background-color: var(--grisFonce);
 }
+
 #blocBackEnd:hover #iconesBackEnd,
 #blocBackEnd:hover #texteBackEnd {
-  display: block;
+    display: block;
 }
 
 #blocFrontEnd {
-  color: var(--noir);
-  background-color: var(--blanc);
-  padding-top: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  width: 500px;
-  height: 50%;
+    color: var(--noir);
+    background-color: var(--blanc);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    width: 500px;
+    height: 50%;
 }
+
 #blocFrontEnd #iconesFrontEnd,
 #blocFrontEnd #texteFrontEnd {
-  display: none;
+    display: none;
 }
+
 #blocFrontEnd:hover {
-  background-color: var(--beige);
+    background-color: var(--beige);
 }
+
 #blocFrontEnd:hover #iconesFrontEnd,
 #blocFrontEnd:hover #texteFrontEnd {
-  display: block;
+    display: block;
 }
 
 #blocDesign_outils {
-  height: 50%;
+    height: 50%;
 }
 
 #blocDesign {
-  color: var(--noir);
-  background-color: var(--beige);
-  padding-top: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  height: 100%;
-  width: 250px;
+    color: var(--noir);
+    background-color: var(--beige);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    height: 100%;
+    width: 250px;
 }
+
 #blocDesign #iconesDesign,
 #blocDesign #texteDesign {
-  display: none;
+    display: none;
 }
+
 #blocDesign:hover {
-  color: var(--noir);
-  background-color: var(--blanc);
+    color: var(--noir);
+    background-color: var(--blanc);
 }
+
 #blocDesign:hover #iconesDesign,
 #blocDesign:hover #texteDesign {
-  display: flex;
+    display: flex;
 }
 
 #blocOutils {
-  color: var(--blanc);
-  background-color: var(--grisFonce);
-  padding-top: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  height: 100%;
-  width: 250px;
+    color: var(--blanc);
+    background-color: var(--grisFonce);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    height: 100%;
+    width: 250px;
 }
+
 #blocOutils #iconesOutils,
 #blocOutils #texteOutils {
-  display: none;
+    display: none;
 }
+
 #blocOutils:hover {
-  background-color: var(--noir);
+    background-color: var(--noir);
 }
+
 #blocOutils:hover #iconesOutils,
 #blocOutils:hover #texteOutils {
-  display: flex;
+    display: flex;
 }
 
 .image-contact-portfolio-artistique {
-  width: 100%;
+    width: 100%;
 }
+
 
 /* Flèche vers Portfolio Web */
+
 .texte-fleche-competences-portfolioWeb {
-  width: 130px;
-  position: relative;
-  top: 22px;
+    width: 130px;
+    position: relative;
+    top: 22px;
 }
+
 
 /* #################################### PORTFOLIO WEBDEV #################################### */
+
 #portfolioWebDev {
-  background-color: black;
-  color: #e2e2e2;
+    background-color: black;
+    color: #e2e2e2;
 }
+
 
 /* Flèche retour à propos */
+
 #divFleche-retour-portfolio-aPropos .texte-fleche-retour-portfolio {
-  width: 100px;
-  position: absolute;
-  top: 300vh;
-}
-#divFleche-retour-portfolio-aPropos .fleche-retour-portfolio {
-  position: absolute;
-  top: 305vh;
-}
-#divFleche-retour-portfolio-aPropos .blanc {
-  color: var(--blanc);
+    width: 100px;
+    position: absolute;
+    top: 300vh;
 }
 
+#divFleche-retour-portfolio-aPropos .fleche-retour-portfolio {
+    position: absolute;
+    top: 305vh;
+}
+
+#divFleche-retour-portfolio-aPropos .blanc {
+    color: var(--blanc);
+}
+
+
 /* Menu Portfolio */
+
 #menuPortfolio {
-  border: 1px solid var(--blanc);
-  height: 90vh;
-  width: 290px;
-  margin-left: 50px;
+    border: 1px solid var(--blanc);
+    height: 90vh;
+    width: 290px;
+    margin-left: 50px;
 }
+
 #menuPortfolio #caseVide {
-  height: 60px;
+    height: 60px;
 }
+
 #menuPortfolio button {
-  border: 1px solid var(--blanc);
-  color: var(--blanc);
-  background-color: inherit;
-  text-align: left;
-  padding: 15px 32px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  width: 100%;
+    border: 1px solid var(--blanc);
+    color: var(--blanc);
+    background-color: inherit;
+    text-align: left;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
 }
+
 #menuPortfolio button:hover {
-  background-color: var(--blanc);
-  color: var(--noir);
+    background-color: var(--blanc);
+    color: var(--noir);
 }
+
 #menuPortfolio #imageMenuPortfolio {
-  width: 100%;
+    width: 100%;
 }
 
 #grandBlocPortfolio {
-  margin: auto;
+    margin: auto;
 }
+
 #grandBlocPortfolio h1 {
-  text-align: left;
+    text-align: left;
 }
+
 #grandBlocPortfolio #blocPortfolio {
-  /* border: 1px solid var(--blanc); */
-  width: 100%;
-  height: 60vh;
+    /* border: 1px solid var(--blanc); */
+    width: 100%;
+    height: 60vh;
 }
+
 #grandBlocPortfolio #blocPortfolio h2 {
-  font-size: 16px;
+    font-size: 16px;
 }
+
 #grandBlocPortfolio #blocPortfolio .border {
-  border: 1px solid var(--blanc);
+    border: 1px solid var(--blanc);
 }
+
 #grandBlocPortfolio #blocPortfolio .blocHomeSafe {
-  height: 50%;
-  width: 300px;
+    height: 50%;
+    width: 300px;
 }
+
 #grandBlocPortfolio #blocPortfolio .blocHackaton {
-  height: 60%;
-  width: 300px;
+    height: 60%;
+    width: 300px;
 }
+
 #grandBlocPortfolio #blocPortfolio .blocGithub {
-  height: 40%;
-  width: 300px;
+    height: 40%;
+    width: 300px;
 }
+
 #grandBlocPortfolio #blocPortfolio .blocProjetFinal {
-  width: 250px;
+    width: 250px;
 }
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
