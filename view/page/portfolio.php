@@ -263,7 +263,7 @@ Section 4: #Developpement Web
     <section id="aPropos">
         <!-- div du haut (top et left à ajuster pour centrer): titre cliquable vers l'ancre "portfolio artistique" -->
         <div>
-            <a href="#portfolioArtistique">
+            <a id="lienArtResponsive" href="#portfolioArtistique">
                 <img class="rubriqueAPropos rubriqueAProposArt center" src="public/images/textes/texte-art.png" alt="Art">
             </a>
         </div>

@@ -8,15 +8,23 @@
     .texteFormationHover {
         display: block;
     }
-    .rubriqueAProposDev,
+    /* .rubriqueAProposDev,
     .rubriqueAProposContact,
     .rubriqueAProposArt {
         display: block;
-    }
+    } */
     #formation,
     #competences,
     #portfolioWebDev,
     #portfolioArtistique {
         display: none;
+    }
+    /* Les liens  */
+    #lienArtResponsive {
+        img {
+            position: fixed;
+        }
+        display: block;
+        position: fixed;
     }
 }

@@ -10,16 +10,24 @@
     display: block;
   }
 
-  .rubriqueAProposDev,
-.rubriqueAProposContact,
-.rubriqueAProposArt {
-    display: block;
-  }
-
+  /* .rubriqueAProposDev,
+  .rubriqueAProposContact,
+  .rubriqueAProposArt {
+      display: block;
+  } */
   #formation,
 #competences,
 #portfolioWebDev,
 #portfolioArtistique {
     display: none;
+  }
+
+  /* Les liens  */
+  #lienArtResponsive {
+    display: block;
+    position: fixed;
+  }
+  #lienArtResponsive img {
+    position: fixed;
   }
 }/*# sourceMappingURL=responsive.css.map */
