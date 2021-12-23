@@ -49,7 +49,6 @@ html {
 body {
     margin: 0;
     font-family: "montserrat";
-    /*TODO Désactivation de la barre de scroll */
     overflow-x: hidden;
     overflow-y: hidden;
     & a:link,
@@ -57,6 +56,10 @@ body {
         color: var(--rose);
         text-decoration: none;
     }
+}
+
+.displayNone {
+    display: none;
 }
 
 
@@ -356,7 +359,7 @@ body {
 /* #################################### A PROPOS #################################### */
 
 
-/* Le float pour faire flotter les blocs "à propos" et "formation" //TODO Mettre dans "Global" */
+/* Le float pour faire flotter les blocs "à propos" et "formation" //
 
 
 /* Attention: on met en position "absolute" une des deux section ("formation") pour qu'elle disparaisse de l'écran. Je ne sais pas si c'est la bonne méthode... Je crois que ce n'est pas "absolute" la propriété. */
@@ -458,15 +461,6 @@ body {
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
-}
-
-
-/* //TODO Debugguer: pourquoi le toggle ne s'applique que sur le background ? */
-
-.displayNone {
-    height: 0;
-    transition: height 0.3s;
-    transition-timing-function: ease;
 }
 
 
@@ -712,6 +706,9 @@ body {
             background-color: var(--blanc);
             color: var(--noir);
         }
+    }
+    #html:hover.html {
+        background-color: var(--blanc);
     }
     #imageMenuPortfolio {
         width: 100%;

@@ -317,7 +317,7 @@ Section 4: #Developpement Web
                 </div>
             </div>
             <div class="portraitLisonHover">
-                <!-- FLOTTE PAS DE FLOTTE, //TODO mettre en position absolue-->
+               
                 <a href="#formation">
                     <img class="portraitLison" src="public/images/aPropos/portraitLison.png" alt="Lison Ferné">
                 </a>
@@ -601,38 +601,38 @@ Section 4: #Developpement Web
                     <div id="caseVide">
                     </div>
                     <div>
-                        <button class="tous">
+                        <button id="tous">
                             Tous les projets
                         </button>
                     </div>
                     <div>
-                        <button class="html">
+                        <button id="html">
                             Html / CSS
                         </button>
                     </div>
 
                     <div>
-                        <button class="bootstrap">
+                        <button id="bootstrap">
                             Bootstrap
                         </button>
                     </div>
                     <div>
-                        <button class="sass">
+                        <button id="sass">
                             SASS
                         </button>
                     </div>
                     <div>
-                        <button class="php">
+                        <button id="php">
                             PHP
                         </button>
                     </div>
                     <div>
-                        <button class="javascript">
+                        <button id="javascript">
                             JavaScript
                         </button>
                     </div>
                     <div>
-                        <button class="mysql">
+                        <button id="mysql">
                             MySQL
                         </button>
                     </div>
@@ -652,31 +652,31 @@ Section 4: #Developpement Web
                 <div id="blocPortfolio" class=flex>
                     <!-- Div Home Safe + Site CV -->
                     <div class="flex flex-direction-column">
-                        <div class="border blocHomeSafe">
+                        <div id="homeSafe" class="border blocHomeSafe html bootstrap php mysql javascript">
                             <h3>
                                 Home Safe
                             </h3>
                         </div>
-                        <div class="border blocHomeSafe">
+                        <div id="siteCv" class="border blocHomeSafe html sass javascript">
                             <h3>
                                 Site CV
                             </h3>
                         </div>
                     </div>
                     <!-- Div Projet final Lison -->
-                    <div class="border blocProjetFinal">
+                    <div id="projetFinal" class="border blocProjetFinal html bootstrap php mysql javascript">
                         <h3>
                             Projet final Lison
                         </h3>
                     </div>
                     <!-- Div Hackaton + Exo Github -->
                     <div class="flex flex-direction-column">
-                        <div class="border blocHackaton">
+                        <div id="hackathon" class="border blocHackaton html php mysql javascript">
                             <h3>
                                 Hackathon
                             </h3>
                         </div>
-                        <div class="border blocGithub">
+                        <div id="exercicesGithub" class="border blocGithub html bootstrap php mysql javascript sass">
                             <h3>
                                 Exercices Github
                             </h3>

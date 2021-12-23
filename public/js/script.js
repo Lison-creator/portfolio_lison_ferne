@@ -8,8 +8,8 @@
  /* CANVAS */
 
 
- var canvas = document.getElementById("canvasLigneTemps");
- var ctx = canvas.getContext("2d");
+ /* var canvas = document.getElementById("canvasLigneTemps");
+ var ctx = canvas.getContext("2d"); */
 
 
  /* Responsive canvas: height & width */
@@ -29,8 +29,10 @@
  ctx.closePath()
  ctx.strokeStyle("black") */
 
- /* Ceinture de sécurité //TODO Debugg: Lorsqu'on la met, les fonctions à l'intérieur ne fonctionnent plus */
- $(document).ready(function() {})
+
+ /* Ceinture de sécurité //TODO Debugg: Lorsqu'on la met, les fonctions à l'intérieur ne fonctionnent plus
+ $(document).ready(function() {}) */
+
 
  /* Carte contact toggle: pour le bouton contact & la petite croix */
 
@@ -44,9 +46,28 @@
  /* Le tri du Portfolio */
 
  /* Au clic du bouton de l'id "html", exécute ceci: */
- $("button" [id = "html"]).click(function() {
+ var tous = document.getElementById("tous");
+ var html = document.getElementById("html");
+ var bootstrap = document.getElementById("bootstrap");
+ var sass = document.getElementById("sass");
+ var php = document.getElementById("php");
+ var javascript = document.getElementById("javascript");
+ var mysql = document.getElementById("mysql");
+
+ /*  function btnHtml(){
+
+     
+  }) */
+
+ /* //TODO Question: pourquoi il ne veut pas prendre les attributs $ en dehors des fonctions ? */
+
+ html.click, (function() {
+     console.log("bouton dont l'id est html");
 
      /* Ajoute la classe "selection" à toutes les div de la classe "html" */
      $("div.html").toggleClass("selection");
+
+     /* Ajoute la classe "display-none" aux autres div */
+     $("div:not('.html')").toggleClass("displayNone");
 
  })
