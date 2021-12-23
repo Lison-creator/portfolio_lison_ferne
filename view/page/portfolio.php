@@ -291,7 +291,7 @@ Section 4: #Developpement Web
                                 <!-- div parente flottante -->
                                 <div class="flex flex-direction-column">
                                     <!-- flotter à gauche -->
-                                    Les icones
+                                    
                                     <i class="fab fa-linkedin"></i>
                                     <i class="fab fa-instagram"></i>
                                     <i class="fab fa-facebook-f"></i>
@@ -306,6 +306,7 @@ Section 4: #Developpement Web
                                     <a href="">Mail</a> lison.ferne@wanadoo.fr <br>
                                     num tel<br>
                                     Née le 22 avril 1993
+                                    +CV à télécharger
                                 </div>
                             </div>
                         </div>
