@@ -418,15 +418,14 @@ body {
 
 .carteContact {
     /* test avec le js */
+    display: none;
     background-color: black;
     color: rgb(226, 226, 226);
     width: 330px;
-    height: 55vh;
+    height: 75vh;
     position: fixed;
     top: 0;
-    left: 50px;
-    transition: 0.5s;
-    transition-timing-function: ease;
+    left: 10vw;
     z-index: 1;
     /* L'ombre du bloc: */
     box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
@@ -451,6 +450,8 @@ body {
 
 .image-contact {
     width: 338px;
+    position: absolute;
+    bottom: 0;
 }
 
 .contact-padding {

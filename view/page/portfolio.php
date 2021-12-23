@@ -273,21 +273,19 @@ Section 4: #Developpement Web
             <div class="align-self">
                 <!-- FLOTTE -->
 
-                <!-- //TODO Debugguer: pourquoi seul le fond est affecté par le js ? -->
                 <!-- Le bouton "CONTACT" qui appelle la carte contact -->
-                <div id="btnContact" onclick="toggle_contact()">
+                <div id="btnContact"  onclick="toggle_contact()">
                     <img class="rubriqueAPropos rubriqueAProposContact" src="public/images/textes/texte-contact.png" alt="Contact">
                 </div>
                 <!-- Panneau déroulant au clic (js) -->
-                <!--  //TODO enlever le style="display:none" dans la balise quand fini de bosser -->
-                <div style="display:none" id="carteContact" class="carteContact">
+                <div  id="carteContact" class="carteContact">
                     <aside id="test1">
                         <!-- Les icones dans une div flottante -->
                         <!-- div sans l'image -->
                         <div class="flex contact-padding">
                             <div>
                                 <!-- La petite croix -->
-                                <div onclick="closeContact()" class="croix">
+                                <div onclick="toggle_contact()" class="croix">
                                     &#10005;
                                 </div>
                                 <!-- div parente flottante -->

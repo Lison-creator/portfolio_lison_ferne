@@ -53,6 +53,15 @@
 #portfolioArtistique {
     display: none;
   }
+
+  /* Les liens  */
+  #lienArtResponsive {
+    display: block;
+    position: fixed;
+  }
+  #lienArtResponsive img {
+    position: fixed;
+  }
 }
 /* ---------------------- */
 /* VARIABLES COULEURS 
@@ -414,15 +423,14 @@ body a:visited {
 /* CARTE CONTACT */
 .carteContact {
   /* test avec le js */
+  display: none;
   background-color: black;
   color: #e2e2e2;
   width: 330px;
-  height: 55vh;
+  height: 75vh;
   position: fixed;
   top: 0;
-  left: 50px;
-  transition: 0.5s;
-  transition-timing-function: ease;
+  left: 10vw;
   z-index: 1;
   /* L'ombre du bloc: */
   box-shadow: -1px 27px 38px -2px rgba(0, 0, 0, 0.61);
@@ -447,6 +455,8 @@ body a:visited {
 
 .image-contact {
   width: 338px;
+  position: absolute;
+  bottom: 0;
 }
 
 .contact-padding {

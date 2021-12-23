@@ -29,27 +29,17 @@
  ctx.closePath()
  ctx.strokeStyle("black") */
 
- /* Carte contact toggle */
+ /* Ceinture de sécurité //TODO Debugg: Lorsqu'on la met, les fonctions à l'intérieur ne fonctionnent plus */
+ $(document).ready(function() {})
 
+ /* Carte contact toggle: pour le bouton contact & la petite croix */
 
  function toggle_contact() {
-     /* var carteContact = document.getElementById("carteContact");
-     carteContact.toggleClass("displayNone"); */
 
-     $('#carteContact').toggleClass("displayNone");
-     console.log("display none de la fonction toggle contact");
+     $("#carteContact").slideToggle();
+     console.log("le bouton contact");
  }
 
-
-
- /* Pour la petite croix de la carteContact //TODO  insérer la fonction dans le html */
-
- function closeContact() {
-     var carteContact = document.getElementById("carteContact");
-     carteContact.classList.toggle("displayNone");
-     console.log("display none de la croix");
-
- }
 
  /* Le tri du Portfolio */
 
