@@ -490,7 +490,6 @@ body {
     }
     a:link {
         text-decoration: none;
-        color: var(--noir);
     }
     .bloc-50 {
         width: 50%;
@@ -539,6 +538,9 @@ body {
     .cv-download {
         position: absolute;
         right: 0;
+        a:link {
+            color: var(--noir);
+        }
     }
     .relative {
         position: relative;

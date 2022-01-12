@@ -492,7 +492,6 @@ body a:visited {
 }
 #gros-bloc-formation a:link {
   text-decoration: none;
-  color: var(--noir);
 }
 #gros-bloc-formation .bloc-50 {
   width: 50%;
@@ -541,6 +540,9 @@ body a:visited {
 #gros-bloc-formation .cv-download {
   position: absolute;
   right: 0;
+}
+#gros-bloc-formation .cv-download a:link {
+  color: var(--noir);
 }
 #gros-bloc-formation .relative {
   position: relative;
