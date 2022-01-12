@@ -485,26 +485,65 @@ body a:visited {
 #gros-bloc-formation {
   width: 80vw;
   margin: auto;
-  /*   //TODO caler le bloc au centre (margin-auto mais sur la hauteur) */
+  padding-top: 5vh;
+}
+#gros-bloc-formation span.souligne {
+  text-decoration: underline;
+}
+#gros-bloc-formation a:link {
+  text-decoration: none;
+  color: var(--noir);
+}
+#gros-bloc-formation .bloc-50 {
+  width: 50%;
 }
 #gros-bloc-formation .bloc-blanc {
   background-color: var(--blanc);
   color: var(--noir);
+  height: 50%;
+  padding: 30px;
+  overflow: hidden;
 }
 #gros-bloc-formation .bloc-beige {
   background-color: var(--beige);
   color: var(--noir);
+  height: 50%;
+  padding: 30px;
+  overflow: hidden;
 }
 #gros-bloc-formation .bloc-noir {
   background-color: var(--noir);
   color: var(--blanc);
+  height: 50%;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid white;
 }
 #gros-bloc-formation div.border {
   border: 1px solid var(--blanc);
 }
-
-.logo-formation {
-  width: 60px;
+#gros-bloc-formation h1 {
+  margin: 0;
+}
+#gros-bloc-formation h1.souligne {
+  text-decoration: underline;
+  font-size: 16px;
+}
+#gros-bloc-formation p {
+  font-size: 14px;
+}
+#gros-bloc-formation p.date-formation {
+  font-style: italic;
+}
+#gros-bloc-formation .logo-formation {
+  width: 50px;
+}
+#gros-bloc-formation .cv-download {
+  position: absolute;
+  right: 0;
+}
+#gros-bloc-formation .relative {
+  position: relative;
 }
 
 /* #################################### COMPETENCES #################################### */
