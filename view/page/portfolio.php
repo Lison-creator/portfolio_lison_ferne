@@ -363,7 +363,7 @@ Section 4: #Developpement Web
             <!-- Formation -->
             <div>
                 <!-- Bloc Programmation -->
-                <div>
+                <div class="bloc-noir">
                     <!-- div1 = titre -->
                     <div>
                         <h1>Programmation</h1>
@@ -395,7 +395,7 @@ Section 4: #Developpement Web
                 </div>
 
                 <!-- Bloc Ecoles d'Art -->
-                <div>
+                <div class="bloc-noir">
                     <!-- div1 = titre -->
                     <div>
                         <h1>Écoles d’art</h1>
@@ -431,7 +431,7 @@ Section 4: #Developpement Web
             <!-- Expérience -->
             <div>
                 <!-- Bloc Domaine Artistique -->
-                <div>
+                <div class="bloc-noir">
                     <!-- div1 = titre -->
                     <div>
                         <h1>Domaine Artistique</h1>
@@ -473,7 +473,7 @@ Section 4: #Developpement Web
                 </div>
 
                 <!-- Bloc Autre -->
-                <div>
+                <div class="bloc-noir">
                     <!-- div1 = titre -->
                     <div>
                         <h1>Autre</h1>
@@ -481,9 +481,8 @@ Section 4: #Developpement Web
                     <div class="flex">
                         <!-- TEXTE -->
                         <div>
-                            <p class="date-formation"> 2014-2018 </p>
-                            <p class="titre-formation">Master</p>
-                            <p>Erg (École de Recherche Graphique) option Narration-Bande dessinée - Bruxelles </p>
+                            <p class="date-formation"> 2017-2016 </p>
+                            <p class="titre-formation">Vente et conseil en librairie (Librairie Candide, Bruxelles), Horeca (serveuse, Bruxelles)</p>
                         </div>
                         <!-- logo Interface 3 -->
                         <div>
@@ -493,9 +492,9 @@ Section 4: #Developpement Web
                     <div class="flex">
                         <!-- TEXTE -->
                         <div>
-                            <p class="date-formation"> 2011-2014 </p>
-                            <p class="titre-formation">DMA</p>
-                            <p>(Diplôme des Métiers d’Art) option Illustration, École Estienne - Paris </p>
+                            <p class="date-formation"> 2015 </p>
+                            <p class="titre-formation">Recrutement pour Oxfam Solidarité (Bruxelles et Wallonie)
+                            </p>
                         </div>
                         <!-- logo Interface 3 -->
                         <div>

@@ -482,9 +482,22 @@ body {
 #gros-bloc-formation {
     width: 80vw;
     margin: auto;
-    background-color: black;
-    color: white;
     /*   //TODO caler le bloc au centre (margin-auto mais sur la hauteur) */
+    .bloc-blanc {
+        background-color: var(--blanc);
+        color: var(--noir);
+    }
+    .bloc-beige {
+        background-color: var(--beige);
+        color: var(--noir);
+    }
+    .bloc-noir {
+        background-color: var(--noir);
+        color: var(--blanc);
+    }
+    div.border {
+        border: 1px solid var(--blanc);
+    }
 }
 
 .logo-formation {
