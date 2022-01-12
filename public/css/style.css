@@ -482,6 +482,18 @@ body a:visited {
   z-index: 10;
 }
 
+#gros-bloc-formation {
+  width: 80vw;
+  margin: auto;
+  background-color: black;
+  color: white;
+  /*   //TODO caler le bloc au centre (margin-auto mais sur la hauteur) */
+}
+
+.logo-formation {
+  width: 60px;
+}
+
 /* #################################### COMPETENCES #################################### */
 #competences {
   background-image: url("../images/fond/fond_comp_form.jpg");

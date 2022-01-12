@@ -274,11 +274,11 @@ Section 4: #Developpement Web
                 <!-- FLOTTE -->
 
                 <!-- Le bouton "CONTACT" qui appelle la carte contact -->
-                <div id="btnContact"  onclick="toggle_contact()">
+                <div id="btnContact" onclick="toggle_contact()">
                     <img class="rubriqueAPropos rubriqueAProposContact" src="public/images/textes/texte-contact.png" alt="Contact">
                 </div>
                 <!-- Panneau déroulant au clic (js) -->
-                <div  id="carteContact" class="carteContact">
+                <div id="carteContact" class="carteContact">
                     <aside id="test1">
                         <!-- Les icones dans une div flottante -->
                         <!-- div sans l'image -->
@@ -291,7 +291,7 @@ Section 4: #Developpement Web
                                 <!-- div parente flottante -->
                                 <div class="flex flex-direction-column">
                                     <!-- flotter à gauche -->
-                                    
+
                                     <i class="fab fa-linkedin"></i>
                                     <i class="fab fa-instagram"></i>
                                     <i class="fab fa-facebook-f"></i>
@@ -318,7 +318,7 @@ Section 4: #Developpement Web
                 </div>
             </div>
             <div class="portraitLisonHover">
-               
+
                 <a href="#formation">
                     <img class="portraitLison" src="public/images/aPropos/portraitLison.png" alt="Lison Ferné">
                 </a>
@@ -348,7 +348,7 @@ Section 4: #Developpement Web
     <!-- --------------- PAGE FORMATION (float avec "A propos") --------------- -->
 
     <section id="formation">
-        <!-- Flèche "A Propos RETOUR" -->
+        <!-- Flèche "A Propos RETOUR" //TODO la placer au centre de la page -->
         <div>
             <a href="#aPropos" class="">
                 <img class="texte-fleche align-self-center" src="public/images/textes/texte-aPropos.png" alt="À Propos">
@@ -356,6 +356,156 @@ Section 4: #Developpement Web
                     &#11013;
                 </div>
             </a>
+        </div>
+        <!-- Bloc de Formation + Expérience : FLEX -->
+        <div class="flex" id="gros-bloc-formation">
+
+            <!-- Formation -->
+            <div>
+                <!-- Bloc Programmation -->
+                <div>
+                    <!-- div1 = titre -->
+                    <div>
+                        <h1>Programmation</h1>
+                    </div>
+                    <div class="flex">
+                        <!-- TEXTE -->
+                        <div>
+                            <p class="date-formation">2021-2022</p>
+                            <p class="titre-formation">Front-End Developer</p>
+                            <p>Interface3 - Bruxelles </p>
+                        </div>
+                        <!-- logo Interface 3 -->
+                        <div>
+                            <img class="logo-formation" src="./public/images/formation/interface3-logo.png" alt="logo interface3">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <!-- TEXTE -->
+                        <div>
+                            <p class="date-formation">septembre-novembre 2020</p>
+                            <p class="titre-formation">« Prêt-à-coder »</p>
+                            <p>Interface3 - Bruxelles </p>
+                        </div>
+                        <!-- logo Interface 3 -->
+                        <div>
+                            <img class="logo-formation" src="./public/images/formation/interface3-logo.png" alt="logo interface3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloc Ecoles d'Art -->
+                <div>
+                    <!-- div1 = titre -->
+                    <div>
+                        <h1>Écoles d’art</h1>
+                    </div>
+                    <div class="flex">
+                        <!-- TEXTE -->
+                        <div>
+                            <p class="date-formation"> 2014-2018 </p>
+                            <p class="titre-formation">Master</p>
+                            <p>Erg (École de Recherche Graphique) option Narration-Bande dessinée - Bruxelles </p>
+                        </div>
+                        <!-- logo Interface 3 -->
+                        <div>
+                            <img class="logo-formation" src="./public/images/formation/erg_logo.png" alt="logo erg">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <!-- TEXTE -->
+                        <div>
+                            <p class="date-formation"> 2011-2014 </p>
+                            <p class="titre-formation">DMA</p>
+                            <p>(Diplôme des Métiers d’Art) option Illustration, École Estienne - Paris </p>
+                        </div>
+                        <!-- logo Interface 3 -->
+                        <div>
+                            <img class="logo-formation" src="./public/images/formation/estienne_logo.png" alt="logo estienne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin bloc Formation -->
+
+            <!-- Expérience -->
+            <div>
+                <!-- Bloc Domaine Artistique -->
+                <div>
+                    <!-- div1 = titre -->
+                    <div>
+                        <h1>Domaine Artistique</h1>
+                    </div>
+                    <div class="flex">
+                        <!-- TEXTE -->
+                        <div>
+                            <p class="date-formation">2012-2021</p>
+                            <p class="titre-formation">Édition et publication de mes travaux (première bande dessinée primée, parue en janvier 2020)</p>
+                        </div>
+                        <!-- logo -->
+                        <div>
+                            <img class="logo-formation" src="./public/images/formation/interface3-logo.png" alt="logo interface3">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <!-- TEXTE -->
+                        <div>
+                            <p class="date-formation">Septembre - Décembre 2021 </p>
+                            <p class="titre-formation">Ateliers artistiques pour adolescents (dessin, mangas)</p>
+                        </div>
+                        <!-- logo Interface 3 -->
+                        <div>
+                            <img class="logo-formation" src="./public/images/formation/interface3-logo.png" alt="logo interface3">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <!-- TEXTE -->
+                        <div>
+                            <p class="date-formation">2013-2021</p>
+                            <p class="titre-formation">Montages d’expositions, concerts dessinés, festivals
+                                et salons, séances de dédicaces</p>
+                        </div>
+                        <!-- logo Interface 3 -->
+                        <div>
+                            <img class="logo-formation" src="./public/images/formation/interface3-logo.png" alt="logo interface3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloc Autre -->
+                <div>
+                    <!-- div1 = titre -->
+                    <div>
+                        <h1>Autre</h1>
+                    </div>
+                    <div class="flex">
+                        <!-- TEXTE -->
+                        <div>
+                            <p class="date-formation"> 2014-2018 </p>
+                            <p class="titre-formation">Master</p>
+                            <p>Erg (École de Recherche Graphique) option Narration-Bande dessinée - Bruxelles </p>
+                        </div>
+                        <!-- logo Interface 3 -->
+                        <div>
+                            <img class="logo-formation" src="./public/images/formation/erg_logo.png" alt="logo erg">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <!-- TEXTE -->
+                        <div>
+                            <p class="date-formation"> 2011-2014 </p>
+                            <p class="titre-formation">DMA</p>
+                            <p>(Diplôme des Métiers d’Art) option Illustration, École Estienne - Paris </p>
+                        </div>
+                        <!-- logo Interface 3 -->
+                        <div>
+                            <img class="logo-formation" src="./public/images/formation/estienne_logo.png" alt="logo estienne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin bloc Expérience -->
+
         </div>
     </section>
 
