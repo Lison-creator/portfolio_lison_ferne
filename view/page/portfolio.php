@@ -763,7 +763,7 @@ Section 4: #Developpement Web
                         </button>
                     </div>
                     <div>
-                        <button id="html">
+                        <button onclick="toggleHtml()" id="html">
                             Html / CSS
                         </button>
                     </div>
