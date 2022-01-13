@@ -768,6 +768,13 @@ body a:visited {
   width: 100%;
 }
 
+.selection {
+  display: block;
+  background-color: var(--rose);
+  color: var(--noir);
+}
+
+/* BLOC Portfolio */
 #grandBlocPortfolio {
   margin: auto;
 }
@@ -788,16 +795,32 @@ body a:visited {
 #grandBlocPortfolio #blocPortfolio .blocHomeSafe {
   height: 50%;
   width: 300px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 #grandBlocPortfolio #blocPortfolio .blocHackaton {
   height: 60%;
   width: 300px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 #grandBlocPortfolio #blocPortfolio .blocGithub {
   height: 40%;
   width: 300px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 #grandBlocPortfolio #blocPortfolio .blocProjetFinal {
   width: 250px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

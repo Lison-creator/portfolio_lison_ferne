@@ -783,6 +783,15 @@ body {
     }
 }
 
+.selection {
+    display: block;
+    background-color: var(--rose);
+    color: var(--noir);
+}
+
+
+/* BLOC Portfolio */
+
 #grandBlocPortfolio {
     margin: auto;
     h1 {
@@ -801,17 +810,33 @@ body {
         .blocHomeSafe {
             height: 50%;
             width: 300px;
+            padding-top: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
         }
         .blocHackaton {
             height: 60%;
             width: 300px;
+            padding-top: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
         }
         .blocGithub {
             height: 40%;
             width: 300px;
+            padding-top: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
         }
         .blocProjetFinal {
             width: 250px;
+            padding-top: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
         }
     }
 }

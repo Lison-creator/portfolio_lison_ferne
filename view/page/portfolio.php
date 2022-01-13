@@ -758,7 +758,7 @@ Section 4: #Developpement Web
                     <div id="caseVide">
                     </div>
                     <div>
-                        <button id="tous">
+                        <button onclick="toggleTous()" id="tous">
                             Tous les projets
                         </button>
                     </div>
@@ -769,27 +769,27 @@ Section 4: #Developpement Web
                     </div>
 
                     <div>
-                        <button id="bootstrap">
+                        <button onclick="toggleBootstrap()" id="bootstrap">
                             Bootstrap
                         </button>
                     </div>
                     <div>
-                        <button id="sass">
+                        <button onclick="toggleSass()" id="sass">
                             SASS
                         </button>
                     </div>
                     <div>
-                        <button id="php">
+                        <button onclick="togglePhp()" id="php">
                             PHP
                         </button>
                     </div>
                     <div>
-                        <button id="javascript">
+                        <button onclick="toggleJavascript()" id="javascript">
                             JavaScript
                         </button>
                     </div>
                     <div>
-                        <button id="mysql">
+                        <button onclick="toggleMysql()" id="mysql">
                             MySQL
                         </button>
                     </div>
@@ -809,31 +809,31 @@ Section 4: #Developpement Web
                 <div id="blocPortfolio" class=flex>
                     <!-- Div Home Safe + Site CV -->
                     <div class="flex flex-direction-column">
-                        <div id="homeSafe" class="border blocHomeSafe html bootstrap php mysql javascript">
+                        <div id="homeSafe" class="tous border blocHomeSafe html bootstrap php mysql javascript">
                             <h3>
                                 Home Safe
                             </h3>
                         </div>
-                        <div id="siteCv" class="border blocHomeSafe html sass javascript">
+                        <div id="siteCv" class="tous border blocHomeSafe html sass javascript">
                             <h3>
                                 Site CV
                             </h3>
                         </div>
                     </div>
                     <!-- Div Projet final Lison -->
-                    <div id="projetFinal" class="border blocProjetFinal html bootstrap php mysql javascript">
+                    <div id="projetFinal" class="tous border blocProjetFinal html bootstrap php mysql javascript">
                         <h3>
                             Projet final Lison
                         </h3>
                     </div>
                     <!-- Div Hackaton + Exo Github -->
                     <div class="flex flex-direction-column">
-                        <div id="hackathon" class="border blocHackaton html php mysql javascript">
+                        <div id="hackathon" class="tous border blocHackaton html php mysql javascript">
                             <h3>
                                 Hackathon
                             </h3>
                         </div>
-                        <div id="exercicesGithub" class="border blocGithub html bootstrap php mysql javascript sass">
+                        <div id="exercicesGithub" class="tous border blocGithub html bootstrap php mysql javascript sass">
                             <h3>
                                 Exercices Github
                             </h3>

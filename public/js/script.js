@@ -67,17 +67,61 @@ function toggleHtml() {
     console.log("div html selection");
 
     /* Ajoute la classe "display-none" aux autres div */
-    /*  $("div:not('.html')").toggleClass("displayNone"); */
+    /* $("div:not('.html')").toggleClass("displayNone");
+     */
+
+}
+/*  //TODO  Fix le bug lié au toggle */
+/* Ajouter les classes aux éléments concernés, les retirer aux autres */
+
+function toggleTous() {
+    $("div.tous").toggleClass("selection");
+    console.log("div tous selection");
 }
 
-html.click, (function() {
+function toggleHtml() {
+    $("div.html").addClass("selection");
+    console.log("div html selection");
+}
+
+function toggleBootstrap() {
+    $("div.bootstrap").addClass("selection");
+    $("div:not('.bootstrap')").removeClass("selection");
+    console.log("div bootstrap selection");
+}
+
+function toggleSass() {
+    $("div.sass").addClass("selection");
+    $("div:not('.sass')").removeClass("selection");
+    console.log("div sass selection");
+}
+
+function togglePhp() {
+    $("div.php").addClass("selection");
+    $("div:not('.php')").removeClass("selection");
+    console.log("div php selection");
+}
+
+function toggleJavascript() {
+    $("div.javascript").addClass("selection");
+    $("div:not('.javascript')").removeClass("selection");
+    console.log("div javascript selection");
+}
+
+function toggleMysql() {
+    $("div.mysql").addClass("selection");
+    $("div:not('.mysql')").removeClass("selection");
+    console.log("div mysql selection");
+}
+
+/* html.on("click", (function() {
     console.log("bouton dont l'id est html");
 
-    /* Ajoute la classe "selection" à toutes les div de la classe "html" */
+     Ajoute la classe "selection" à toutes les div de la classe "html" 
     $("div.html").toggleClass("selection");
     console.log("div selection");
 
-    /* Ajoute la classe "display-none" aux autres div */
+     Ajoute la classe "display-none" aux autres div 
     $("div:not('.html')").toggleClass("displayNone");
 
-})
+}) */
