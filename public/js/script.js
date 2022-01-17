@@ -74,44 +74,50 @@ function toggleHtml() {
 /*  //TODO  Fix le bug lié au toggle */
 /* Ajouter les classes aux éléments concernés, les retirer aux autres */
 
-function toggleTous() {
-    $("div.tous").toggleClass("selection");
-    console.log("div tous selection");
+function renduBlocPortfolio() {
+    $(".elementPortfolio").removeClass('selection');
+
+    $('#menuPortfolio>div>div').each((index, element) => {
+        if ($(element).hasClass('selection')) {
+            const elementSelected = $(element).attr('id');
+
+            $('.elementPortfolio').each((i2, child) => {
+                if ($(child).hasClass(elementSelected)) {
+                    $(child).addClass('selection');
+                }
+            })
+        }
+    });
 }
 
 function toggleHtml() {
-    $("div.html").addClass("selection");
-    console.log("div html selection");
+    $("#html").toggleClass("selection");
+    renduBlocPortfolio();
 }
 
 function toggleBootstrap() {
-    $("div.bootstrap").addClass("selection");
-    $("div:not('.bootstrap')").removeClass("selection");
-    console.log("div bootstrap selection");
+    $("#bootstrap").toggleClass("selection");
+    renduBlocPortfolio();
 }
 
 function toggleSass() {
-    $("div.sass").addClass("selection");
-    $("div:not('.sass')").removeClass("selection");
-    console.log("div sass selection");
+    $("#sass").toggleClass("selection");
+    renduBlocPortfolio();
 }
 
 function togglePhp() {
-    $("div.php").addClass("selection");
-    $("div:not('.php')").removeClass("selection");
-    console.log("div php selection");
+    $("#php").toggleClass("selection");
+    renduBlocPortfolio();
 }
 
 function toggleJavascript() {
-    $("div.javascript").addClass("selection");
-    $("div:not('.javascript')").removeClass("selection");
-    console.log("div javascript selection");
+    $("#javascript").toggleClass("selection");
+    renduBlocPortfolio();
 }
 
 function toggleMysql() {
-    $("div.mysql").addClass("selection");
-    $("div:not('.mysql')").removeClass("selection");
-    console.log("div mysql selection");
+    $("#mysql").toggleClass("selection");
+    renduBlocPortfolio();
 }
 
 /* html.on("click", (function() {

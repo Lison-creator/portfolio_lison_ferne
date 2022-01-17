@@ -757,39 +757,34 @@ Section 4: #Developpement Web
                 <div>
                     <div id="caseVide">
                     </div>
-                    <div>
-                        <button onclick="toggleTous()" id="tous">
-                            Tous les projets
-                        </button>
-                    </div>
-                    <div>
-                        <button onclick="toggleHtml()" id="html">
+                    <div id="html">
+                        <button onclick="toggleHtml()" >
                             Html / CSS
                         </button>
                     </div>
 
-                    <div>
-                        <button onclick="toggleBootstrap()" id="bootstrap">
+                    <div id="bootstrap">
+                        <button onclick="toggleBootstrap()" >
                             Bootstrap
                         </button>
                     </div>
-                    <div>
-                        <button onclick="toggleSass()" id="sass">
+                    <div id="sass">
+                        <button onclick="toggleSass()" >
                             SASS
                         </button>
                     </div>
-                    <div>
-                        <button onclick="togglePhp()" id="php">
+                    <div id="php">
+                        <button onclick="togglePhp()" >
                             PHP
                         </button>
                     </div>
-                    <div>
-                        <button onclick="toggleJavascript()" id="javascript">
+                    <div id="javascript">
+                        <button onclick="toggleJavascript()" >
                             JavaScript
                         </button>
                     </div>
-                    <div>
-                        <button onclick="toggleMysql()" id="mysql">
+                    <div id="mysql">
+                        <button onclick="toggleMysql()" >
                             MySQL
                         </button>
                     </div>
@@ -809,31 +804,31 @@ Section 4: #Developpement Web
                 <div id="blocPortfolio" class=flex>
                     <!-- Div Home Safe + Site CV -->
                     <div class="flex flex-direction-column">
-                        <div id="homeSafe" class="tous border blocHomeSafe html bootstrap php mysql javascript">
+                        <div id="homeSafe" class="elementPortfolio border blocHomeSafe html bootstrap php mysql javascript">
                             <h3>
                                 Home Safe
                             </h3>
                         </div>
-                        <div id="siteCv" class="tous border blocHomeSafe html sass javascript">
+                        <div id="siteCv" class="elementPortfolio border blocHomeSafe html sass javascript">
                             <h3>
                                 Site CV
                             </h3>
                         </div>
                     </div>
                     <!-- Div Projet final Lison -->
-                    <div id="projetFinal" class="tous border blocProjetFinal html bootstrap php mysql javascript">
+                    <div id="projetFinal" class="elementPortfolio border blocProjetFinal html bootstrap php mysql javascript">
                         <h3>
                             Projet final Lison
                         </h3>
                     </div>
                     <!-- Div Hackaton + Exo Github -->
                     <div class="flex flex-direction-column">
-                        <div id="hackathon" class="tous border blocHackaton html php mysql javascript">
+                        <div id="hackathon" class="elementPortfolio border blocHackaton html php mysql javascript">
                             <h3>
                                 Hackathon
                             </h3>
                         </div>
-                        <div id="exercicesGithub" class="tous border blocGithub html bootstrap php mysql javascript sass">
+                        <div id="exercicesGithub" class="elementPortfolio border blocGithub html bootstrap php mysql javascript sass">
                             <h3>
                                 Exercices Github
                             </h3>
