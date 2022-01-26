@@ -282,32 +282,55 @@ Section 4: #Developpement Web
                     <aside id="test1">
                         <!-- Les icones dans une div flottante -->
                         <!-- div sans l'image -->
-                        <div class="flex contact-padding">
-                            <div>
-                                <!-- La petite croix -->
-                                <div onclick="toggle_contact()" class="croix">
-                                    &#10005;
-                                </div>
-                                <!-- div parente flottante -->
-                                <div class="flex flex-direction-column">
-                                    <!-- flotter à gauche -->
-
-                                    <i class="fab fa-linkedin"></i>
-                                    <i class="fab fa-instagram"></i>
-                                    <i class="fab fa-facebook-f"></i>
-                                    <i class="fab fa-wix"></i>
-                                    <i class="fab fa-tumblr"></i>
-                                </div>
+                        <div id="contenuCarteContact" class="flex contact-padding">
+                            <!-- La petite croix -->
+                            <div onclick="toggle_contact()" class="croix">
+                                &#10005;
                             </div>
                             <div>
-                                <!-- flotter à droite-->
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <a href="">Mail</a> lison.ferne@wanadoo.fr <br>
-                                    num tel<br>
-                                    Née le 22 avril 1993
-                                    +CV à télécharger
+
+                                <!-- div parente flottante -->
+                                <div id="iconesReseaux" class="flex flex-direction-column">
+                                    <!-- flotter à gauche -->
+
+                                    <a href="https://www.linkedin.com/in/lison-fern%C3%A9-488914168/" target="blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/lison.ferne/" target="blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/LisonIllustratrice" target="blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://lisonferne.wixsite.com/lisonferne" target="blank">
+                                        <i class="fab fa-wix"></i>
+                                    </a>
+                                    <a href="https://lasireneterrestre.tumblr.com/" target="blank">
+                                        <i class="fab fa-tumblr"></i>
+                                    </a>
+                                    <a href="mailto:lison.ferne@wanadoo.fr">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
                                 </div>
+                            </div>
+                            <!-- flotter à droite-->
+                            <div class="texteCarteContact">
+                                <p>
+                                    Lison Ferné
+                                </p>
+                                <p>
+                                    Née le 22 avril 1993
+                                </p>
+                                <div>
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:lison.ferne@wanadoo.fr">Mail</a>
+                                </div>
+
+                                <div class="cv-download">
+                                    <i class="fas fa-paperclip"></i>
+                                    <a href="./public/images/formation/cv-Lison-Ferne.pdf" download><span class="souligne">Télécharger le CV</span> </a>
+                                </div>
+
                             </div>
                         </div>
                         <!-- Image bottom -->
@@ -349,12 +372,14 @@ Section 4: #Developpement Web
 
     <section id="formation">
         <!-- Flèche "A Propos RETOUR" //TODO la placer au centre de la page -->
-        <div>
-            <a href="#aPropos" class="">
-                <img class="texte-fleche align-self-center" src="public/images/textes/texte-aPropos.png" alt="À Propos">
-                <div class="fleche bas align-self-center">
+        <div id="flecheRetourFormation">
+            <a href="#aPropos">
+                <img class="texte-fleche align-self-center" src="public/images/textes/texte-aProposBlanc.png" alt="À Propos">
+                <div class="fleche blanc align-self-center">
                     &#11013;
                 </div>
+
+
             </a>
         </div>
         <!-- Bloc de Formation + Expérience : FLEX -->
@@ -363,10 +388,10 @@ Section 4: #Developpement Web
             <!-- Div FLEX : Titres + CV à télécharger -->
             <div class="flex relative">
                 <div class="bloc-50">
-                    <h1>Formation</h1>
+                    <h1 class="titreBloc">Formation</h1>
                 </div>
                 <div class="bloc-50">
-                    <h1>Expérience</h1>
+                    <h1 class="titreBloc">Expérience</h1>
                 </div>
                 <!-- CV à télécharger -->
                 <div class="cv-download">
@@ -378,12 +403,12 @@ Section 4: #Developpement Web
                 <!-- Formation -->
                 <div class="bloc-50">
                     <!-- Bloc Programmation -->
-                    <div class="bloc-noir">
+                    <div class="bloc-blanc">
                         <!-- div1 = titre -->
-                        <div>
+                        <div class="padding-30">
                             <h1 class="souligne">Programmation</h1>
                         </div>
-                        <div class="flex">
+                        <div class="flex padding-30">
                             <!-- TEXTE -->
                             <div>
                                 <p class="date-formation">2021-2022</p>
@@ -397,7 +422,7 @@ Section 4: #Developpement Web
                                 </a>
                             </div>
                         </div>
-                        <div class="flex">
+                        <div class="flex padding-30">
                             <!-- TEXTE -->
                             <div>
                                 <p class="date-formation">septembre-novembre 2020</p>
@@ -414,12 +439,12 @@ Section 4: #Developpement Web
                     </div>
 
                     <!-- Bloc Ecoles d'Art -->
-                    <div class="bloc-noir">
+                    <div class="bloc-beige">
                         <!-- div1 = titre -->
-                        <div>
+                        <div class="padding-30">
                             <h1 class="souligne">Écoles d’art</h1>
                         </div>
-                        <div class="flex">
+                        <div class="flex padding-30">
                             <!-- TEXTE -->
                             <div>
                                 <p class="date-formation"> 2014-2018 </p>
@@ -433,7 +458,7 @@ Section 4: #Developpement Web
                                 </a>
                             </div>
                         </div>
-                        <div class="flex">
+                        <div class="flex padding-30">
                             <!-- TEXTE -->
                             <div>
                                 <p class="date-formation"> 2011-2014 </p>
@@ -457,24 +482,24 @@ Section 4: #Developpement Web
                     <!-- Bloc Domaine Artistique -->
                     <div class="bloc-noir">
                         <!-- div1 = titre -->
-                        <div>
+                        <div class="padding-30">
                             <h1 class="souligne">Domaine Artistique</h1>
                         </div>
-                        <div class="flex">
+                        <div class="flex padding-30">
                             <!-- TEXTE -->
                             <div>
                                 <p class="date-formation">2012-2021</p>
                                 <p class="titre-formation">Édition et publication de mes travaux <a href="http://www.assoartemisia.fr/prix-artemisia-2021-ecologie-lison-ferne/" target="blank">(première bande dessinée primée, parue en janvier 2020)</a></p>
                             </div>
                         </div>
-                        <div class="flex">
+                        <div class="flex padding-30">
                             <!-- TEXTE -->
                             <div>
                                 <p class="date-formation">Septembre - Décembre 2021 </p>
                                 <p class="titre-formation">Ateliers artistiques pour adolescents (dessin, mangas)</p>
                             </div>
                         </div>
-                        <div class="flex">
+                        <div class="flex padding-30">
                             <!-- TEXTE -->
                             <div>
                                 <p class="date-formation">2013-2021</p>
@@ -487,10 +512,10 @@ Section 4: #Developpement Web
                     <!-- Bloc Autre -->
                     <div class="bloc-noir">
                         <!-- div1 = titre -->
-                        <div>
+                        <div class="padding-30">
                             <h1 class="souligne">Autre</h1>
                         </div>
-                        <div class="flex">
+                        <div class="flex padding-30">
                             <!-- TEXTE -->
                             <div>
                                 <p class="date-formation"> 2017-2016 </p>
@@ -498,7 +523,7 @@ Section 4: #Developpement Web
                             </div>
 
                         </div>
-                        <div class="flex">
+                        <div class="flex padding-30">
                             <!-- TEXTE -->
                             <div>
                                 <p class="date-formation"> 2015 </p>
@@ -565,15 +590,16 @@ Section 4: #Developpement Web
                         <p>
                             Lison Ferné
                         </p>
-                        <a href="mailto:lison.ferne@wanadoo.fr">
-                            <i class="fas fa-envelope"></i>
-                            <span>
-                                lison.ferne@wanadoo.fr
-                            </span>
-                        </a>
                         <p>
                             Née le 22 avril 1993
                         </p>
+                        <a href="mailto:lison.ferne@wanadoo.fr">
+                            <i class="fas fa-envelope"></i>
+                            <span>
+                                Mail
+                            </span>
+                        </a>
+
 
                         </a>
                     </aside>
@@ -605,7 +631,7 @@ Section 4: #Developpement Web
                                 </svg>
                             </div>
                             <div>
-                                <!-- SVG MMySQL -->
+                                <!-- SVG MySQL -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45.327" height="30.779" viewBox="0 0 45.327 30.779">
                                     <path id="Icon_simple-mysql" data-name="Icon simple-mysql" d="M30.983,9.155a2.084,2.084,0,0,0-.517.062v.025h.026a4.261,4.261,0,0,0,.4.516c.1.2.189.4.291.6l.026-.028a.7.7,0,0,0,.264-.629c-.076-.089-.087-.178-.151-.264-.076-.127-.238-.189-.34-.289ZM10.9,34.074H9.147c-.057-2.95-.232-5.723-.51-8.329H8.622L5.959,34.074H4.627L1.983,25.745H1.964q-.292,3.748-.368,8.329H0Q.156,28.5.774,23.63H2.946L5.468,31.3h.015L8.027,23.63h2.068q.686,5.708.808,10.444Zm7.587-7.706q-1.071,5.793-2.818,8.423-1.365,2.028-2.99,2.026a2.948,2.948,0,0,1-1.069-.261v-.933a4.846,4.846,0,0,0,.729.049,1.761,1.761,0,0,0,1.222-.419,1.521,1.521,0,0,0,.557-1.143,7.576,7.576,0,0,0-.434-1.783l-1.915-5.961h1.719l1.373,4.457a5.984,5.984,0,0,1,.387,2.121,28.812,28.812,0,0,0,1.577-6.578h1.662Zm23.277,7.706H36.794V23.63h1.671v9.16h3.3Zm-6.27.255-1.919-.944a4.056,4.056,0,0,0,.482-.472,6.4,6.4,0,0,0,1.224-4.255q0-5.184-4.07-5.186a3.872,3.872,0,0,0-3.116,1.316,6.411,6.411,0,0,0-1.22,4.24,6.191,6.191,0,0,0,1.084,4.042,3.712,3.712,0,0,0,2.99,1.162,4.8,4.8,0,0,0,1.369-.185l2.5,1.458.68-1.175Zm-6.217-2.346a6.418,6.418,0,0,1-.636-3.279q0-3.946,2.4-3.947a2.018,2.018,0,0,1,1.845.944,6.388,6.388,0,0,1,.635,3.254q0,3.977-2.4,3.981a2.019,2.019,0,0,1-1.847-.944Zm-3.131-.8a2.767,2.767,0,0,1-.975,2.183,3.829,3.829,0,0,1-2.614.85,5.238,5.238,0,0,1-2.971-.973l.448-.9a5.067,5.067,0,0,0,2.247.619,2.361,2.361,0,0,0,1.479-.415,1.423,1.423,0,0,0,.567-1.162c0-.623-.434-1.152-1.224-1.6-.733-.4-2.2-1.241-2.2-1.241a2.5,2.5,0,0,1-1.194-2.223,2.592,2.592,0,0,1,.888-2.049,3.346,3.346,0,0,1,2.3-.784,4.741,4.741,0,0,1,2.644.774l-.4.9a5.148,5.148,0,0,0-2.009-.434,1.778,1.778,0,0,0-1.235.389,1.293,1.293,0,0,0-.468.99c0,.619.442,1.152,1.258,1.605.742.406,2.242,1.265,2.242,1.265a2.459,2.459,0,0,1,1.224,2.206ZM43.861,20.128a5.79,5.79,0,0,0-2.45.355c-.189.076-.491.076-.517.315.1.1.119.264.208.4a2.9,2.9,0,0,0,.653.769c.264.208.529.408.806.585.491.3,1.048.482,1.53.786.274.178.553.4.831.591.138.094.227.264.4.325v-.038c-.087-.113-.113-.278-.2-.4-.127-.127-.253-.24-.378-.365a6.087,6.087,0,0,0-1.313-1.275c-.4-.276-1.288-.661-1.454-1.124l-.025-.026a5.082,5.082,0,0,0,.869-.2c.429-.113.822-.089,1.265-.2.2-.051.4-.113.6-.178v-.113c-.227-.227-.4-.534-.631-.746a16.747,16.747,0,0,0-2.085-1.554c-.4-.253-.9-.415-1.316-.631-.151-.076-.4-.113-.491-.24a4.869,4.869,0,0,1-.519-.971c-.363-.7-.718-1.464-1.033-2.2a13.078,13.078,0,0,0-.642-1.441A12.724,12.724,0,0,0,33.1,7.835a6.15,6.15,0,0,0-1.617-.517c-.315-.015-.631-.038-.944-.051a4.582,4.582,0,0,1-.585-.444c-.718-.453-2.576-1.435-3.1-.136-.34.82.5,1.628.8,2.043a5.822,5.822,0,0,1,.642.944c.089.219.113.444.2.672a15.113,15.113,0,0,0,.655,1.694,5.792,5.792,0,0,0,.466.78c.1.138.276.2.315.429a3.676,3.676,0,0,0-.291.944A5.594,5.594,0,0,0,30,18.443c.2.314.684,1.009,1.328.742.567-.227.442-.944.6-1.577.038-.151.013-.251.091-.353v.028c.178.355.355.693.517,1.048a7.106,7.106,0,0,0,1.637,1.69c.3.227.542.619.92.759v-.038h-.028a1.686,1.686,0,0,0-.291-.251,6.506,6.506,0,0,1-.661-.755,16.544,16.544,0,0,1-1.411-2.3c-.208-.4-.382-.823-.548-1.214-.076-.151-.076-.378-.2-.453a4.661,4.661,0,0,0-.6.856A7.215,7.215,0,0,0,31,18.532c-.051.013-.026,0-.051.026-.4-.1-.542-.517-.693-.869a5.482,5.482,0,0,1-.113-3.371c.089-.264.466-1.1.315-1.352-.079-.24-.329-.378-.466-.572a4.679,4.679,0,0,1-.453-.806c-.3-.706-.453-1.488-.782-2.195a6.542,6.542,0,0,0-.631-.969,6.355,6.355,0,0,1-.7-.982c-.062-.138-.151-.366-.051-.517a.215.215,0,0,1,.178-.17c.166-.136.633.042.8.117A6.459,6.459,0,0,1,29.6,7.5c.178.125.368.365.595.427h.264c.4.089.859.026,1.237.138a8.081,8.081,0,0,1,1.817.869,11.243,11.243,0,0,1,3.938,4.317c.151.291.217.557.355.859.264.623.591,1.252.859,1.855a8.223,8.223,0,0,0,.9,1.694c.189.264.948.4,1.288.54a9.176,9.176,0,0,1,.869.355c.434.264.857.567,1.265.857.208.144.837.459.874.714Z" transform="translate(0 -6.039)" fill="#fff" />
                                 </svg>
@@ -758,33 +784,33 @@ Section 4: #Developpement Web
                     <div id="caseVide">
                     </div>
                     <div id="html">
-                        <button onclick="toggleHtml()" >
+                        <button onclick="toggleHtml()">
                             Html / CSS
                         </button>
                     </div>
 
                     <div id="bootstrap">
-                        <button onclick="toggleBootstrap()" >
+                        <button onclick="toggleBootstrap()">
                             Bootstrap
                         </button>
                     </div>
                     <div id="sass">
-                        <button onclick="toggleSass()" >
+                        <button onclick="toggleSass()">
                             SASS
                         </button>
                     </div>
                     <div id="php">
-                        <button onclick="togglePhp()" >
+                        <button onclick="togglePhp()">
                             PHP
                         </button>
                     </div>
                     <div id="javascript">
-                        <button onclick="toggleJavascript()" >
+                        <button onclick="toggleJavascript()">
                             JavaScript
                         </button>
                     </div>
                     <div id="mysql">
-                        <button onclick="toggleMysql()" >
+                        <button onclick="toggleMysql()">
                             MySQL
                         </button>
                     </div>
