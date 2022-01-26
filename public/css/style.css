@@ -162,6 +162,11 @@ body a:visited {
 }
 
 /* Texte */
+.souligne {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 /* Les Flèches de retour en arrière */
 .fleche {
   font-size: 60px;
@@ -290,9 +295,131 @@ body a:visited {
 #blocFanart {
   position: absolute;
 }
-
-#blocSirenesMasculines {
-  top: -116px;
+#blocDeesseRequin a:link,
+#blocDeesseRequin a:visited,
+#blocSirenesMasculines a:link,
+#blocSirenesMasculines a:visited,
+#blocPlantesOctobre a:link,
+#blocPlantesOctobre a:visited,
+#blocCreaturesObscures a:link,
+#blocCreaturesObscures a:visited,
+#blocBienMonsieur a:link,
+#blocBienMonsieur a:visited,
+#blocWBDM a:link,
+#blocWBDM a:visited,
+#blocAbecedaire a:link,
+#blocAbecedaire a:visited,
+#blocFanart a:link,
+#blocFanart a:visited {
+  color: var(--noir);
+  text-decoration: none;
+}
+#blocDeesseRequin p,
+#blocSirenesMasculines p,
+#blocPlantesOctobre p,
+#blocCreaturesObscures p,
+#blocBienMonsieur p,
+#blocWBDM p,
+#blocAbecedaire p,
+#blocFanart p {
+  background-color: var(--beige);
+  border-radius: 23px;
+}
+#blocDeesseRequin:hover,
+#blocSirenesMasculines:hover,
+#blocPlantesOctobre:hover,
+#blocCreaturesObscures:hover,
+#blocBienMonsieur:hover,
+#blocWBDM:hover,
+#blocAbecedaire:hover,
+#blocFanart:hover {
+  font-style: italic;
+  /* SHAKER Animation */
+  /* -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; */
+}
+#blocDeesseRequin:hover img,
+#blocSirenesMasculines:hover img,
+#blocPlantesOctobre:hover img,
+#blocCreaturesObscures:hover img,
+#blocBienMonsieur:hover img,
+#blocWBDM:hover img,
+#blocAbecedaire:hover img,
+#blocFanart:hover img {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 .blocVerticalGauche {
@@ -327,39 +454,58 @@ body a:visited {
   color: var(--noir);
 }
 
+#blocSirenesMasculines {
+  top: -116px;
+  left: -42px;
+  cursor: pointer;
+}
+
 #blocDeesseRequin {
   top: 135px;
   left: -55px;
+  cursor: pointer;
 }
 
 #blocPlantesOctobre {
-  top: -65px;
+  top: -84px;
+  left: -47px;
+  cursor: pointer;
+}
+#blocPlantesOctobre img {
+  width: 146px;
 }
 
 #blocCreaturesObscures {
   top: -132px;
+  left: -47px;
+  cursor: pointer;
 }
 
 #blocBienMonsieur {
   right: -69px;
   top: 80px;
+  cursor: pointer;
 }
 
 #blocWBDM {
   top: -169px;
+  cursor: pointer;
 }
 
 #blocAbecedaire {
   top: -147px;
+  cursor: pointer;
 }
 
 #blocFanart {
   top: -159px;
   right: -75px;
-}
-#blocFanart:hover {
-  border-radius: 5%;
-  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  /* &:hover {
+      border-radius: 5%;
+      -webkit-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.55);
+      box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.55);
+  } */
 }
 
 /* //TODO ? pourquoi un hover ici ? */
@@ -394,6 +540,7 @@ body a:visited {
   position: relative;
   right: 0;
   top: 7vh;
+  transition: transform 0.2s;
 }
 
 .signatureLison {
@@ -409,11 +556,19 @@ body a:visited {
   display: none;
 }
 
+.portraitLisonHover:hover {
+  /* Shaker */
+}
 .portraitLisonHover:hover .texteFormationHover {
-  display: block;
+  /* display: block; */
   position: absolute;
   top: 160vh;
   right: 160px;
+}
+.portraitLisonHover:hover img {
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 .rubriqueAProposArt {
@@ -426,7 +581,7 @@ body a:visited {
   width: 250px;
   position: absolute;
   left: 45vw;
-  top: 175vh;
+  top: 170vh;
 }
 
 /* CARTE CONTACT */
@@ -486,6 +641,37 @@ body a:visited {
   cursor: pointer;
 }
 
+#btnContact {
+  position: relative;
+  left: 30px;
+}
+#btnContact img {
+  transition: transform 0.2s;
+}
+#btnContact:hover {
+  /* Shaker */
+}
+#btnContact:hover img {
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+#btnDeveloppementWeb img,
+#btnPortfolioArtistique img {
+  transition: transform 0.2s;
+}
+#btnDeveloppementWeb:hover,
+#btnPortfolioArtistique:hover {
+  /* Shaker */
+}
+#btnDeveloppementWeb:hover img,
+#btnPortfolioArtistique:hover img {
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
 .image-contact {
   width: 333px;
   position: absolute;
@@ -509,7 +695,6 @@ body a:visited {
   top: 100vh;
   left: 200vw;
   z-index: 10;
-  /* //TODO J'arrive pas à cibler ni la flèche, ni l'image, très bizarre */
 }
 #formation #flecheRetourFormation div.fleche {
   position: absolute;
@@ -522,6 +707,19 @@ body a:visited {
   width: 100px;
   position: absolute;
 }
+#formation #flecheRetourFormation img,
+#formation #flecheRetourFormation div {
+  transition: transform 0.2s;
+}
+#formation #flecheRetourFormation:hover {
+  /* Shaker */
+}
+#formation #flecheRetourFormation:hover img,
+#formation #flecheRetourFormation:hover div {
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
 #formation #gros-bloc-formation {
   width: 80vw;
   height: 80vh;
@@ -530,6 +728,7 @@ body a:visited {
 }
 #formation #gros-bloc-formation span.souligne {
   text-decoration: underline;
+  text-underline-position: under;
 }
 #formation #gros-bloc-formation a:link {
   text-decoration: none;
@@ -603,6 +802,7 @@ body a:visited {
 #formation #gros-bloc-formation h1.souligne {
   text-decoration: underline;
   font-size: 16px;
+  text-underline-position: under;
 }
 #formation #gros-bloc-formation p {
   font-size: 14px;
@@ -631,6 +831,19 @@ body a:visited {
 }
 
 /* Flèche retour vers A Propos */
+#divFleche-retour-competences-aPropos img,
+#divFleche-retour-competences-aPropos div {
+  transition: transform 0.2s;
+}
+#divFleche-retour-competences-aPropos:hover {
+  /* Shaker */
+}
+#divFleche-retour-competences-aPropos:hover img,
+#divFleche-retour-competences-aPropos:hover div {
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
 #divFleche-retour-competences-aPropos .texte-fleche-retour-competences {
   width: 100px;
   position: absolute;
@@ -638,7 +851,7 @@ body a:visited {
 }
 #divFleche-retour-competences-aPropos .fleche-retour-competences {
   position: absolute;
-  top: 205vh;
+  top: 206vh;
 }
 
 #grandBlocCompetences {
@@ -707,14 +920,26 @@ body a:visited {
 #blocBackEnd:hover {
   background-color: var(--noir);
   color: var(--blanc);
+  border: 0px;
 }
-#blocBackEnd:hover #iconesBackEnd,
+#blocBackEnd:hover #iconesBackEnd {
+  display: flex;
+  justify-content: center;
+}
 #blocBackEnd:hover #texteBackEnd {
   display: block;
+  position: relative;
+  right: -45px;
 }
 #blocBackEnd:hover #iconesBackEnd i {
   font-size: 25px;
   padding-bottom: 5px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+#blocBackEnd:hover #iconesBackEnd svg {
+  padding-bottom: 5px;
+  padding-right: 7px;
 }
 #blocBackEnd:hover h3 {
   text-decoration: underline;
@@ -740,15 +965,29 @@ body a:visited {
 #blocFrontEnd:hover {
   background-color: var(--noir);
   color: var(--blanc);
+  border: 0px;
 }
 #blocFrontEnd:hover #iconesFrontEnd,
 #blocFrontEnd:hover #texteFrontEnd {
   display: block;
   transition: 0.3s;
 }
+#blocFrontEnd:hover #texteFrontEnd {
+  position: relative;
+  left: -100px;
+  top: 0px;
+  text-align: right;
+}
+#blocFrontEnd:hover #iconesFrontEnd {
+  position: relative;
+  right: -113px;
+  top: 15px;
+}
 #blocFrontEnd:hover #iconesFrontEnd i {
   font-size: 25px;
   padding-bottom: 5px;
+  padding-bottom: 10px;
+  padding-right: 7px;
 }
 #blocFrontEnd:hover h3 {
   text-decoration: underline;
@@ -778,6 +1017,7 @@ body a:visited {
 #blocDesign:hover {
   color: var(--blanc);
   background-color: var(--noir);
+  border: 0px;
 }
 #blocDesign:hover #iconesDesign,
 #blocDesign:hover #texteDesign {
@@ -816,6 +1056,7 @@ body a:visited {
 #blocOutils:hover {
   background-color: var(--noir);
   color: var(--blanc);
+  border: 0px;
 }
 #blocOutils:hover #iconesOutils,
 #blocOutils:hover #texteOutils {
@@ -824,7 +1065,7 @@ body a:visited {
 }
 #blocOutils:hover #iconesOutils {
   position: relative;
-  top: -20px;
+  top: -33px;
 }
 #blocOutils:hover #iconesOutils i {
   font-size: 25px;
@@ -839,10 +1080,27 @@ body a:visited {
 }
 
 /* Flèche vers Portfolio Web */
-.texte-fleche-competences-portfolioWeb {
+#divFleche-competences-portfolioWeb img,
+#divFleche-competences-portfolioWeb div {
+  transition: transform 0.2s;
+}
+#divFleche-competences-portfolioWeb:hover {
+  /* Shaker */
+}
+#divFleche-competences-portfolioWeb:hover img,
+#divFleche-competences-portfolioWeb:hover div {
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+#divFleche-competences-portfolioWeb .fleche-retour-competences {
+  position: relative;
+  bottom: 17px;
+}
+#divFleche-competences-portfolioWeb .texte-fleche-competences-portfolioWeb {
   width: 130px;
   position: relative;
-  top: 22px;
+  top: 17px;
 }
 
 /* #################################### PORTFOLIO WEBDEV #################################### */
@@ -852,6 +1110,19 @@ body a:visited {
 }
 
 /* Flèche retour à propos */
+#divFleche-retour-portfolio-aPropos img,
+#divFleche-retour-portfolio-aPropos div {
+  transition: transform 0.2s;
+}
+#divFleche-retour-portfolio-aPropos:hover {
+  /* Shaker */
+}
+#divFleche-retour-portfolio-aPropos:hover img,
+#divFleche-retour-portfolio-aPropos:hover div {
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
 #divFleche-retour-portfolio-aPropos .texte-fleche-retour-portfolio {
   width: 100px;
   position: absolute;
@@ -859,7 +1130,7 @@ body a:visited {
 }
 #divFleche-retour-portfolio-aPropos .fleche-retour-portfolio {
   position: absolute;
-  top: 305vh;
+  top: 306vh;
 }
 #divFleche-retour-portfolio-aPropos .blanc {
   color: var(--blanc);

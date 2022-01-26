@@ -90,95 +90,107 @@ Section 4: #Developpement Web
 
         <!-- <div id="canvasPosition">
             <canvas id="canvasLigneTemps">
+                
 
             </canvas>
         </div> -->
+        <!-- //TODO Changer les tailles d'image dans le dossier htdocs -->
         <div id="ligneTempsContainer">
             <div class="flex">
                 <div class="flex blocVerticalGauche">
                     <div class="relative">
                         <div id="blocDeesseRequin">
-                            <img src="./public/images/portfolioArtistique/deesseRequin.png" alt="La Déesse Requin">
-                            <!-- //TODO background beige aux textes -->
-                            <p>
-                                <span class="bold">
-                                    Janvier 2020
-                                </span>
-                                <br>
-                                « La Déesse Requin »
-                                <br>
-                                <span class="italic">
-                                    Première bande dessinée parue aux éditions Cfc
-                                </span>
-                            </p>
+                            <a href="https://lisonferne.wixsite.com/lisonferne/la-deesse-requin" target="blank">
+                                <img src="./public/images/portfolioArtistique/deesseRequin.png" alt="La Déesse Requin">
+                                <p>
+                                    <span class="bold">
+                                        Janvier 2020
+                                    </span>
+                                    <br>
+                                    « La Déesse Requin »
+                                    <br>
+                                    <span class="italic">
+                                        Première bande dessinée parue aux éditions Cfc
+                                    </span>
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="blocHorizontalHaut flex space-around">
                     <div class="relative">
                         <div id="blocSirenesMasculines">
-                            <img src="./public/images/portfolioArtistique/sireneMasculine.png" alt="Sirènes masculines">
-                            <p>
-                                <span class="bold">
-                                    Mai 2020
-                                </span>
-                                <br>
-                                Sirenes
-                                <br>
-                                <span class="italic">
-                                    Série de sirènes masculines
-                                </span>
-                            </p>
+                            <!-- //TODO changer l'URL dans Wix  -->
+                            <a href="https://lisonferne.wixsite.com/lisonferne/projet09" target="blank">
+                                <img src="./public/images/portfolioArtistique/sireneMasculine.png" alt="Sirènes masculines">
+                                <p>
+                                    <span class="bold">
+                                        Mai 2020
+                                    </span>
+                                    <br>
+                                    Sirenes
+                                    <br>
+                                    <span class="italic">
+                                        Série de sirènes masculines
+                                    </span>
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="relative">
                         <div id="blocPlantesOctobre">
-                            <img src="./public/images/portfolioArtistique/plantes_octobre.png" alt="Plantes d'Octobre">
-                            <p>
-                                <span class="bold">
-                                    2020
-                                </span>
-                                <br>
-                                Plantes d’octobre
-                                <br>
-                                <span class="italic">
-                                    Série de dessins
-                                </span>
-                            </p>
+                            <a href="https://lisonferne.wixsite.com/lisonferne/inktober-plantes" target="blank">
+                                <img src="./public/images/portfolioArtistique/plantes_octobre.png" alt="Plantes d'Octobre">
+                                <p>
+                                    <span class="bold">
+                                        2020
+                                    </span>
+                                    <br>
+                                    Plantes d’octobre
+                                    <br>
+                                    <span class="italic">
+                                        Série de dessins
+                                    </span>
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="relative">
                         <div id="blocCreaturesObscures">
-                            <img src="./public/images/portfolioArtistique/creatures_obscures.png" alt="Créatures Obscures">
-                            <p>
-                                <span class="bold">
-                                    2019
-                                </span>
-                                <br>
-                                Créatures Obscures
-                                <br>
-                                <span class="italic">
-                                    Série de dessins
-                                </span>
-                            </p>
+                            <a href="https://lisonferne.wixsite.com/lisonferne/obscures" target="blank">
+                                <img src="./public/images/portfolioArtistique/creatures_obscures.png" alt="Créatures Obscures">
+                                <p>
+                                    <span class="bold">
+                                        2019
+                                    </span>
+                                    <br>
+                                    Créatures Obscures
+                                    <br>
+                                    <span class="italic">
+                                        Série de dessins
+                                    </span>
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="blocVerticalDroit">
                     <div class="relative">
                         <div id="blocBienMonsieur">
-                            <img src="./public/images/portfolioArtistique/bienMonsieur.png" alt="Bien Monsieur">
-                            <p>
-                                <span class="bold">
-                                    2016
-                                </span>
-                                <br>
-                                Bien Monsieur
-                                <br>
-                                <span class="italic">
-                                    Revue de bande dessinée alternative
-                                </span>
-                            </p>
+                            <a href="https://lisonferne.wixsite.com/lisonferne/bien-monsieur" target="blank">
+                                <img src="./public/images/portfolioArtistique/bienMonsieur.png" alt="Bien Monsieur">
+                                <p>
+                                    <span class="bold">
+                                        2016
+                                    </span>
+                                    <br>
+                                    Bien Monsieur
+                                    <br>
+                                    <span class="italic">
+                                        Revue de bande dessinée alternative
+                                    </span>
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -187,53 +199,59 @@ Section 4: #Developpement Web
                 <div class="blocHorizontalBas flex space-around">
                     <div class="relative">
                         <div id="blocWBDM">
-                            <img src="./public/images/portfolioArtistique/WBDM.png" alt="WBDM">
-                            <p>
-                                <span class="bold">
+                            <!-- //TODO changer l'URL dans Wix -->
+                            <a href="https://lisonferne.wixsite.com/lisonferne/projects-7" target="blank">
+                                <img src="./public/images/portfolioArtistique/WBDM.png" alt="WBDM">
+                                <p>
+                                    <span class="bold">
 
-                                    Janvier 2021
-                                </span>
-                                <br>
-                                Portraits pour WBDM
-                                <br>
-                                <span class="italic">
-                                    Portraits de commande
-                                </span>
+                                        Janvier 2021
+                                    </span>
+                                    <br>
+                                    Portraits pour WBDM
+                                    <br>
+                                    <span class="italic">
+                                        Portraits de commande
+                                    </span>
 
-                            </p>
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="relative">
                         <div id="blocAbecedaire">
-                            <img src="./public/images/portfolioArtistique/escarpins.png" alt="Abécédaire Fétichiste">
-                            <p>
-                                <span class="bold">
-                                    Avril 2021
-                                </span>
-                                <br>
-                                Abécédaire Fétichiste
-                                <br>
-                                <span class="italic">
-                                    Série de dessins
-                                </span>
-                            </p>
+                            <a href="https://lisonferne.wixsite.com/lisonferne/ab%C3%A9c%C3%A9daire-f%C3%A9tichiste" target="blank">
+                                <img src="./public/images/portfolioArtistique/escarpins.png" alt="Abécédaire Fétichiste">
+                                <p>
+                                    <span class="bold">
+                                        Avril 2021
+                                    </span>
+                                    <br>
+                                    Abécédaire Fétichiste
+                                    <br>
+                                    <span class="italic">
+                                        Série de dessins
+                                    </span>
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="relative">
                         <div id="blocFanart">
-                            <img src="./public/images/portfolioArtistique/inktober_fanart.png" alt="Hommage Fanart">
-                            <p>
-                                <span class="bold">
-                                    Octobre 2021
-                                </span>
-                                <br>
-                                [titre]
-                                <br>
-                                <span class="italic">
-                                    Série de dessins en hommage aux titres de référence
-                                </span>
-
-                            </p>
+                            <a href="https://www.instagram.com/lison.ferne/" target="blank">
+                                <img src="./public/images/portfolioArtistique/inktober_fanart.png" alt="Hommage Fanart">
+                                <p>
+                                    <span class="bold">
+                                        Octobre 2021
+                                    </span>
+                                    <br>
+                                    [titre]
+                                    <br>
+                                    <span class="italic">
+                                        Série de dessins en hommage aux titres de référence
+                                    </span>
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="flecheLigneTemps">&#10148;</div>
@@ -262,7 +280,7 @@ Section 4: #Developpement Web
 
     <section id="aPropos">
         <!-- div du haut (top et left à ajuster pour centrer): titre cliquable vers l'ancre "portfolio artistique" -->
-        <div>
+        <div id="btnPortfolioArtistique">
             <a id="lienArtResponsive" href="#portfolioArtistique">
                 <img class="rubriqueAPropos rubriqueAProposArt center" src="public/images/textes/texte-art.png" alt="Art">
             </a>
@@ -359,7 +377,7 @@ Section 4: #Developpement Web
         </div>
 
         <!-- div du bas "Développement Web" -->
-        <div>
+        <div id="btnDeveloppementWeb">
             <a href="#competences">
                 <img class="rubriqueAPropos rubriqueAProposDev" src="public/images/textes/texte-developpementWeb.png" alt="Developpement Web">
             </a>
@@ -723,8 +741,8 @@ Section 4: #Developpement Web
                                         GitHub<br>
                                         SublimeMerge<br>
                                         Clip Studio Paint<br>
-                                        WordPress<br>
                                         Wix<br>
+                                        WordPress<br>
 
                                     </div>
 
