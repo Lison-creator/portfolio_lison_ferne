@@ -1,5 +1,5 @@
 // arriver diretement sur section "aPropos" à l'ouverture de la page
-if (document.location.hash === '') {
+if (document.location.hash === '' ) {
     document.location.hash = '#aPropos';
 }
 

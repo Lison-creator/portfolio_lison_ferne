@@ -115,11 +115,9 @@ body {
 
 /* Texte */
 
-
-.souligne{
+.souligne {
     text-decoration: underline;
     text-underline-position: under;
-
 }
 
 /* Les Flèches de retour en arrière */
@@ -1121,36 +1119,97 @@ body {
         .border {
             border: 1px solid var(--blanc);
         }
-        .blocHomeSafe {
+        #homeSafe {
             height: 50%;
             width: 300px;
             padding-top: 15px;
             padding-left: 30px;
             padding-right: 30px;
             padding-bottom: 30px;
+
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--blanc);
+                color: var(--noir);
+            }
         }
-        .blocHackaton {
+        #siteCv {
+            height: 50%;
+            width: 300px;
+            padding-top: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            transition: 0.3s;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--blanc);
+                color: var(--noir);
+            }
+        }
+
+        #hackathon {
             height: 60%;
             width: 300px;
             padding-top: 15px;
             padding-left: 30px;
             padding-right: 30px;
             padding-bottom: 30px;
+            transition: 0.3s;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--blanc);
+                color: var(--noir);
+            }
+            #imgHackathon {
+                img {
+                    width: 50px;
+                }
+                margin: auto;
+                position: relative;
+                position: relative;
+                top: 3%;
+                left: 13%;
+            }
         }
-        .blocGithub {
+
+        #exercicesGithub {
             height: 40%;
             width: 300px;
             padding-top: 15px;
             padding-left: 30px;
             padding-right: 30px;
             padding-bottom: 30px;
+            transition: 0.3s;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--blanc);
+                color: var(--noir);
+            }
         }
-        .blocProjetFinal {
+
+        #projetFinal {
             width: 250px;
             padding-top: 15px;
             padding-left: 30px;
             padding-right: 30px;
             padding-bottom: 30px;
+            transition: 0.3s;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--blanc);
+                color: var(--noir);
+            }
         }
     }
 }

@@ -1193,35 +1193,83 @@ body a:visited {
 #grandBlocPortfolio #blocPortfolio .border {
   border: 1px solid var(--blanc);
 }
-#grandBlocPortfolio #blocPortfolio .blocHomeSafe {
+#grandBlocPortfolio #blocPortfolio #homeSafe {
   height: 50%;
   width: 300px;
   padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+  transition: 0.3s;
+  cursor: pointer;
 }
-#grandBlocPortfolio #blocPortfolio .blocHackaton {
+#grandBlocPortfolio #blocPortfolio #homeSafe:hover {
+  background-color: var(--blanc);
+  color: var(--noir);
+}
+#grandBlocPortfolio #blocPortfolio #siteCv {
+  height: 50%;
+  width: 300px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#grandBlocPortfolio #blocPortfolio #siteCv:hover {
+  background-color: var(--blanc);
+  color: var(--noir);
+}
+#grandBlocPortfolio #blocPortfolio #hackathon {
   height: 60%;
   width: 300px;
   padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+  transition: 0.3s;
+  cursor: pointer;
 }
-#grandBlocPortfolio #blocPortfolio .blocGithub {
+#grandBlocPortfolio #blocPortfolio #hackathon:hover {
+  background-color: var(--blanc);
+  color: var(--noir);
+}
+#grandBlocPortfolio #blocPortfolio #hackathon #imgHackathon {
+  margin: auto;
+  position: relative;
+  position: relative;
+  top: 3%;
+  left: 13%;
+}
+#grandBlocPortfolio #blocPortfolio #hackathon #imgHackathon img {
+  width: 50px;
+}
+#grandBlocPortfolio #blocPortfolio #exercicesGithub {
   height: 40%;
   width: 300px;
   padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+  transition: 0.3s;
+  cursor: pointer;
 }
-#grandBlocPortfolio #blocPortfolio .blocProjetFinal {
+#grandBlocPortfolio #blocPortfolio #exercicesGithub:hover {
+  background-color: var(--blanc);
+  color: var(--noir);
+}
+#grandBlocPortfolio #blocPortfolio #projetFinal {
   width: 250px;
   padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#grandBlocPortfolio #blocPortfolio #projetFinal:hover {
+  background-color: var(--blanc);
+  color: var(--noir);
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
