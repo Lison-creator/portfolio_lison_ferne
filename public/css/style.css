@@ -279,7 +279,7 @@ body a:visited {
   color: var(--noir);
 }
 #ligneTempsContainer img {
-  width: 135px;
+  width: 120px;
 }
 #ligneTempsContainer p {
   text-align: center;
@@ -1178,9 +1178,19 @@ body a:visited {
 /* BLOC Portfolio */
 #grandBlocPortfolio {
   margin: auto;
+  /* //TODO pour les liens: faire en sorte que le lien soit de couleur noir sur le hover de tout le bloc */
 }
 #grandBlocPortfolio h1 {
   text-align: left;
+}
+#grandBlocPortfolio a {
+  color: var(--blanc);
+}
+#grandBlocPortfolio a:link {
+  color: var(--blanc);
+}
+#grandBlocPortfolio a:hover {
+  color: var(--noir);
 }
 #grandBlocPortfolio #blocPortfolio {
   /* border: 1px solid var(--blanc); */

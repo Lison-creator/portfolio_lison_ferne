@@ -241,7 +241,7 @@ body {
     margin-top: 10%;
     color: var(--noir);
     img {
-        width: 135px;
+        width: 120px;
     }
     p {
         text-align: center;
@@ -1109,6 +1109,17 @@ body {
     h1 {
         text-align: left;
     }
+    a{
+        color:var(--blanc);
+
+      &:link{
+          color:var(--blanc);
+      }  
+      &:hover{
+          color:var(--noir);
+      }
+    }
+    /* //TODO pour les liens: faire en sorte que le lien soit de couleur noir sur le hover de tout le bloc */
     #blocPortfolio {
         /* border: 1px solid var(--blanc); */
         width: 100%;

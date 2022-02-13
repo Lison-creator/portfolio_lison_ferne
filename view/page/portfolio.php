@@ -86,15 +86,8 @@ Section 4: #Developpement Web
         <!-- ////////////// FIN Bloc noir de contact ////////////// -->
 
 
-        <!-- ////////////// Les projets artistiques (ligne du temps) CANVAS ////////////// -->
+        <!-- ////////////// Les projets artistiques (ligne du temps) ////////////// -->
 
-        <!-- <div id="canvasPosition">
-            <canvas id="canvasLigneTemps">
-                
-
-            </canvas>
-        </div> -->
-        <!-- //TODO Changer les tailles d'image dans le dossier htdocs -->
         <div id="ligneTempsContainer">
             <div class="flex">
                 <div class="flex blocVerticalGauche">
@@ -274,7 +267,6 @@ Section 4: #Developpement Web
 </section>
 <!-- --------------- FIN PAGE PORTFOLIO ARTISTIQUE --------------- -->
 
-<!-- Pour faire flotter les deux sections "à propos" et "formation" PEUT ETRE PAS NECESSAIRE GRACE A ABSOLUTE-->
 <div>
     <!-- --------------- PAGE A PROPOS (bloc principal)--------------- -->
 
@@ -389,7 +381,6 @@ Section 4: #Developpement Web
     <!-- --------------- PAGE FORMATION (float avec "A propos") --------------- -->
 
     <section id="formation">
-        <!-- Flèche "A Propos RETOUR" //TODO la placer au centre de la page -->
         <div id="flecheRetourFormation">
             <a href="#aPropos">
                 <img class="texte-fleche align-self-center" src="public/images/textes/texte-aProposBlanc.png" alt="À Propos">
