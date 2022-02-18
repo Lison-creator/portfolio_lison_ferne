@@ -363,8 +363,10 @@ Section 4: #Developpement Web
         <!-- SORT DU FLOAT -->
         <div class="signatureLison">
             <!-- LISON FERNE -->
-            <div>
-                <img src="public/images/textes/signatureLison.png" alt="Lison Ferné">
+            <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:640px; height:480px">
+                <canvas id="canvas" width="640" height="480" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+                <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:640px; height:480px; position: absolute; left: 0px; top: 0px; display: block;">
+                </div>
             </div>
         </div>
 

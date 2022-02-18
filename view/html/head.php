@@ -13,10 +13,10 @@
 
     <!-- Animation Animate de la signature -->
     <!--  //TODO Debugger -->
-    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+   
  	
 </head>
 
-<body>
+<body onload="init();" style="margin:0px;">
 	
     

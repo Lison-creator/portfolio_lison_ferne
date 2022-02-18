@@ -5,10 +5,12 @@
 
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/1baa33128b.js" crossorigin="anonymous"></script>
+
 <!-- Animate -->
+
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<!-- <script src="lisonferne_animate2.js?1637238592063"></script>
-<script>
+ <script src="../../public/images/animate_signature/lisonferne_animate2.js"></script>
+ <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
@@ -48,7 +50,7 @@ function handleComplete(evt,comp) {
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
-</script> 
+</script>
 
 </body>
 </html>
