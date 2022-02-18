@@ -338,7 +338,8 @@ Section 4: #Developpement Web
 
                                 <div class="cv-download">
                                     <i class="fas fa-paperclip"></i>
-                                    <a href="./public/images/formation/cv-Lison-Ferne.pdf" download><span class="souligne">Télécharger le CV</span> </a>
+                                    <a href="./public/images/formation/cv-Lison-Ferne.pdf" download><span class="">Télécharger le CV</span>
+                                    </a>
                                 </div>
 
                             </div>
@@ -387,12 +388,10 @@ Section 4: #Developpement Web
                 <div class="fleche blanc align-self-center">
                     &#11013;
                 </div>
-
-
             </a>
         </div>
         <!-- Bloc de Formation + Expérience : FLEX -->
-        <div class="flex flex-direction-column" id="gros-bloc-formation">
+        <div class="flex flex-direction-column" id="grosBlocFormation">
 
             <!-- Div FLEX : Titres + CV à télécharger -->
             <div class="flex relative">
@@ -404,7 +403,7 @@ Section 4: #Developpement Web
                 </div>
                 <!-- CV à télécharger -->
                 <div class="cv-download">
-                    <a href="./public/images/formation/cv-Lison-Ferne.pdf" download><span class="souligne">Télécharger le CV</span> <i class="fas fa-paperclip"></i></a>
+                    <a href="./public/images/formation/cv-Lison-Ferne.pdf" download><span class="">Télécharger le CV</span> <i class="fas fa-paperclip"></i></a>
                 </div>
             </div>
             <div class="flex">
@@ -602,14 +601,18 @@ Section 4: #Developpement Web
                         <p>
                             Née le 22 avril 1993
                         </p>
+
+                        <i class="fas fa-envelope"></i>
                         <a href="mailto:lison.ferne@wanadoo.fr">
-                            <i class="fas fa-envelope"></i>
                             <span>
                                 Mail
                             </span>
                         </a>
-
-
+                        <div class="cv-download">
+                            <i class="fas fa-paperclip"></i>
+                            <a href="./public/images/formation/cv-Lison-Ferne.pdf" download><span class="">Télécharger le CV</span>
+                            </a>
+                        </div>
                         </a>
                     </aside>
                 </div>
@@ -839,6 +842,7 @@ Section 4: #Developpement Web
                 <div id="blocPortfolio" class=flex>
                     <!-- Div Home Safe + Site CV -->
                     <div class="flex flex-direction-column">
+
                         <div id="homeSafe" class="elementPortfolio border blocHomeSafe html bootstrap php mysql javascript">
                             <a href="https://github.com/Lison-creator/home_safe" target="blank">
                                 <h3>
@@ -863,26 +867,30 @@ Section 4: #Developpement Web
                                         </svg>
                                     </div>
                                 </div>
-
                             </a>
                         </div>
+
                         <div id="siteCv" class="elementPortfolio border blocHomeSafe html sass javascript">
                             <a href="#aPropos">
                                 <h3>
                                     Site CV
                                 </h3>
-                                <p>Le site sur lequel vous êtes actuellement a été codé entièrement par mes soins.</p>
+                                <p>Le site sur lequel vous êtes a été entièrement codé par mes soins (from scratch ! ).</p>
                             </a>
                         </div>
                     </div>
                     <!-- Div Projet final Lison -->
                     <div id="projetFinal" class="elementPortfolio border blocProjetFinal html bootstrap php mysql javascript">
-                        <h3>
-                            Projet final Lison
-                        </h3>
-                        <p>
-                            Un site qui permet d'enregistrer ses films, séries et bande dessinées préférées et de les noter.
-                        </p>
+                        <a href="/" target="blank">
+                            <h3>
+                                Platforme de critiques culturelles
+                            </h3>
+                            <span id="span">(prochainement)</span>
+                            <h2>Projet de fin d'année entièrement en PHP</h2>
+                            <p>
+                                Un site qui permet d'enregistrer ses films, séries et bande dessinées préférées et de les noter.
+                            </p>
+                        </a>
                     </div>
                     <!-- Div Hackaton + Exo Github -->
                     <div class="flex flex-direction-column">
@@ -891,7 +899,6 @@ Section 4: #Developpement Web
                                 <h3>
                                     Hackathon
                                 </h3>
-                                <!-- //TODO mettre le h2 en italique -->
                                 <h2>Coffee Wars</h2>
                                 <p>Projet collectif codé en 3 jours</p>
                                 <div id="imgHackathon">
@@ -901,10 +908,12 @@ Section 4: #Developpement Web
                         </div>
 
                         <div id="exercicesGithub" class="elementPortfolio border blocGithub html bootstrap php mysql javascript sass">
-                            <h3>
-                                Exercices Github
-                            </h3>
-                            <p>Exercices réalisés lors des cours de php, javaScript, NodeJs, html/css et bien d'autres !</p>
+                            <a href="https://github.com/stars/Lison-creator/lists/exercices" target="blank">
+                                <h3>
+                                    Exercices Github
+                                </h3>
+                                <p>Exercices réalisés lors des cours de php, javaScript, NodeJs, html/css et bien d'autres !</p>
+                            </a>
                         </div>
                     </div>
 
