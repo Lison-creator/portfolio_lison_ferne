@@ -1,13 +1,29 @@
 /* RESPONSIVE */
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
+    body {
+        background-color: var(--noir);
+    }
+    #responsive {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        #imgProvisoire {
+            display: flex;
+            justify-content: center;
+            margin-top: 20vh;
+            img {
+                width: 70%;
+            }
+        }
+    }
     /* Le portrait disparaît */
     .portraitLisonHover {
         display: none;
     }
-    .texteFormationHover {
+    /* .texteFormationHover {
         display: block;
-    }
+    } */
     /* .rubriqueAProposDev,
     .rubriqueAProposContact,
     .rubriqueAProposArt {
@@ -16,9 +32,11 @@
     #formation,
     #competences,
     #portfolioWebDev,
-    #portfolioArtistique {
+    #portfolioArtistique,
+    #aPropos {
         display: none;
     }
+
     /* Les liens  */
     #lienArtResponsive {
         img {

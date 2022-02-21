@@ -28,7 +28,13 @@ Section 4: #Developpement Web
             href="#background"
     -->
 
-
+<!-- --------------- RESPONSIVE --------------- -->
+<div id="responsive">
+    <div id="imgProvisoire">
+         <img src="public/images/aPropos/responsive_msg_blanc.png" alt="Le responsive arrive bientôt !">
+    </div>
+   
+</div>
 
 <!-- --------------- PAGE PORTFOLIO ARTISTIQUE --------------- -->
 <section id="portfolioArtistique">
@@ -923,6 +929,5 @@ Section 4: #Developpement Web
 
     </div>
 </section>
-
 
 <!-- --------------- FIN PAGE WEBDEV --------------- -->
