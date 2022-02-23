@@ -7,7 +7,7 @@
 <script src="https://kit.fontawesome.com/1baa33128b.js" crossorigin="anonymous"></script>
 <!-- Animate -->
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<div>Bonjour ! </div>
+
 
 </body>
 
