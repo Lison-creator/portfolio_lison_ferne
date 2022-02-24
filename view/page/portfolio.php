@@ -31,9 +31,9 @@ Section 4: #Developpement Web
 <!-- --------------- RESPONSIVE --------------- -->
 <div id="responsive">
     <div id="imgProvisoire">
-         <img src="public/images/aPropos/responsive_msg_blanc.png" alt="Le responsive arrive bientôt !">
+        <img src="public/images/aPropos/responsive_msg_blanc.png" alt="Le responsive arrive bientôt !">
     </div>
-   
+
 </div>
 
 <!-- --------------- PAGE PORTFOLIO ARTISTIQUE --------------- -->
@@ -244,10 +244,10 @@ Section 4: #Developpement Web
                                         Octobre 2021
                                     </span>
                                     <br>
-                                    [titre]
+                                    Fanarts
                                     <br>
                                     <span class="italic">
-                                        Série de dessins en hommage aux titres de référence
+                                        Hommages à la pop-culture
                                     </span>
                                 </p>
                             </a>
