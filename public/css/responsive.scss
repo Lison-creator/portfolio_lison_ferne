@@ -1,4 +1,9 @@
 /* RESPONSIVE */
+@media (min-width: 993px){
+   #responsive{
+    display:none;
+} 
+}
 
 @media (max-width: 992px) {
     body {

@@ -169,10 +169,6 @@ body a:visited {
 }
 
 /* #################################### RESPONSIVE #################################### */
-#responsive {
-  display: none;
-}
-
 /* #################################### PORTFOLIO ARTISTIQUE #################################### */
 #portfolioArtistique {
   background-color: var(--beige);
