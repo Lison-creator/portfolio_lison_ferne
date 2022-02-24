@@ -32,6 +32,7 @@
   font-family: "robotoItalic";
   src: url("../fonts/roboto/Roboto-Italic.ttf");
 }
+/*# sourceMappingURL=fonts.css.map */
 /* ---------------------- */
 /* VARIABLES COULEURS 
 
@@ -168,10 +169,9 @@ body a:visited {
 }
 
 /* #################################### RESPONSIVE #################################### */
-#responsive {
-  display: none;
-}
-
+/* #responsive{
+    display:none;
+} */
 /* #################################### PORTFOLIO ARTISTIQUE #################################### */
 #portfolioArtistique {
   background-color: var(--beige);
@@ -1321,5 +1321,4 @@ body a:visited {
 #grandBlocPortfolio #blocPortfolio #projetFinal:hover h2,
 #grandBlocPortfolio #blocPortfolio #projetFinal:hover p {
   color: var(--noir);
-}
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,14 +1,9 @@
 // Arriver diretement sur section "aPropos" à l'ouverture de la page
-if (document.location.hash === '' ) {
+if (document.location.hash === '') {
     document.location.hash = '#aPropos';
 }
 
 /* ####################### PORTFOLIO ARTISTIQUE ####################### */
-
-
-/* Ceinture de sécurité //TODO Debugg: Lorsqu'on la met, les fonctions à l'intérieur ne fonctionnent plus
-$(document).ready(function() {}) */
-
 
 /* Carte contact toggle: pour le bouton contact & la petite croix */
 
