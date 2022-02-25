@@ -1,27 +1,89 @@
 /* RESPONSIVE */
-@media (min-width: 993px){
-   #responsive{
-    display:none;
-} 
+@media (min-width: 993px) {
+    #responsive {
+        display: none;
+    }
 }
 
 @media (max-width: 992px) {
     body {
         background-color: var(--noir);
+        color: var(--blanc);
     }
-    #responsive {
-        display: block;
-        height: 100vh;
-        width: 100vw;
-        #imgProvisoire {
+    /*  #imgProvisoire {
             display: flex;
             justify-content: center;
             margin-top: 20vh;
             img {
                 width: 70%;
             }
+        } */
+    #responsive {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+
+        #sectionMenu {
+            height: 100vh;
+
+            #iconesContact {
+                position: fixed;
+                right: 20px;
+                top: 20px;
+                a {
+                    color: var(--blanc);
+                    i {
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            #signatureResponsive {
+                width: 50%;
+                margin-left: 05vw;
+                margin-top: 2vh;
+                img {
+                    object-fit: contain;
+                    width: 45vw;
+                }
+            }
+            #sousTitreResponsive {
+                margin-left: 8vw;
+                p {
+                    width: 135px;
+                    font-size: 0.8rem;
+                }
+            }
+
+            #containerMenu {
+                .menuResponsive {
+                    width: 35%;
+                    margin: auto;
+                    margin-bottom: 15px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                #portraitLisonMenu {
+                    width: 40%;
+                    margin: auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        #webDevResponsive{
+            height: 100vh;
+        }
+        #artResponsive{
+            height: 100vh;
+        }
+        #formationResponsive{
+            height: 100vh;
         }
     }
+
     /* Le portrait disparaît */
     .portraitLisonHover {
         display: none;

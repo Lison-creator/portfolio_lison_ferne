@@ -8,20 +8,77 @@
 @media (max-width: 992px) {
   body {
     background-color: var(--noir);
+    color: var(--blanc);
   }
 
+  /*  #imgProvisoire {
+          display: flex;
+          justify-content: center;
+          margin-top: 20vh;
+          img {
+              width: 70%;
+          }
+      } */
   #responsive {
     display: block;
     height: 100vh;
     width: 100vw;
   }
-  #responsive #imgProvisoire {
-    display: flex;
-    justify-content: center;
-    margin-top: 20vh;
+  #responsive #sectionMenu {
+    height: 100vh;
   }
-  #responsive #imgProvisoire img {
-    width: 70%;
+  #responsive #sectionMenu #iconesContact {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  #responsive #sectionMenu #iconesContact a {
+    color: var(--blanc);
+  }
+  #responsive #sectionMenu #iconesContact a i {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #responsive #sectionMenu #signatureResponsive {
+    width: 50%;
+    margin-left: 5vw;
+    margin-top: 2vh;
+  }
+  #responsive #sectionMenu #signatureResponsive img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 45vw;
+  }
+  #responsive #sectionMenu #sousTitreResponsive {
+    margin-left: 8vw;
+  }
+  #responsive #sectionMenu #sousTitreResponsive p {
+    width: 135px;
+    font-size: 0.8rem;
+  }
+  #responsive #sectionMenu #containerMenu .menuResponsive {
+    width: 35%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  #responsive #sectionMenu #containerMenu .menuResponsive img {
+    width: 100%;
+  }
+  #responsive #sectionMenu #containerMenu #portraitLisonMenu {
+    width: 40%;
+    margin: auto;
+  }
+  #responsive #sectionMenu #containerMenu #portraitLisonMenu img {
+    width: 100%;
+  }
+  #responsive #webDevResponsive {
+    height: 100vh;
+  }
+  #responsive #artResponsive {
+    height: 100vh;
+  }
+  #responsive #formationResponsive {
+    height: 100vh;
   }
 
   /* Le portrait disparaît */

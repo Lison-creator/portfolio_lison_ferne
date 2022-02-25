@@ -30,8 +30,82 @@ Section 4: #Developpement Web
 
 <!-- --------------- RESPONSIVE --------------- -->
 <div id="responsive">
-    <div id="imgProvisoire">
+    <!-- <div id="imgProvisoire">
         <img src="public/images/aPropos/responsive_msg_blanc.png" alt="Le responsive arrive bientôt !">
+    </div> -->
+
+    <!-- id sectionMenu qui prend 100vh -->
+    <div id="sectionMenu">
+        <!-- Div iconesContact: position: fixed, right: 10px environ -->
+        <div id="iconesContact">
+
+            <div class="flex flex-direction-column">
+                <!-- flotter à gauche -->
+                <a href="https://www.linkedin.com/in/lison-fern%C3%A9-488914168/" target="blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/lison.ferne/" target="blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/LisonIllustratrice" target="blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://lisonferne.wixsite.com/lisonferne" target="blank">
+                    <i class="fab fa-wix"></i>
+                </a>
+                <a href="https://lasireneterrestre.tumblr.com/" target="blank">
+                    <i class="fab fa-tumblr"></i>
+                </a>
+                <a href="mailto:lison.ferne@wanadoo.fr">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Div Lison Ferné signature + "Web Developpeuse et Illustratrice" -->
+        <!-- div à width: 50% -->
+        <div class="flex flex-direction-column">
+            <div id="signatureResponsive">
+                <img src="public/images/textes/signatureLisonBlanc.png" alt="Lison Ferné">
+            </div>
+            <div id="sousTitreResponsive">
+                <p>Web Developpeuse & Illustratrice</p>
+            </div>
+        </div>
+        <!-- Div bloc des 3 liens -->
+        <div id="containerMenu">
+            <div class="menuResponsive">
+                <a href="#webDevResponsive">
+                   <img src="public/images/textes/texte-developpementWebBlanc.png" alt="Développement Web"> 
+                </a>
+            </div>
+            <div class="menuResponsive">
+                <a href="#artResponsive">
+                    <img src="public/images/textes/texte-artBlanc.png" alt="Art">
+                </a>  
+            </div>
+            <div class="menuResponsive">
+                <a href="#formationResponsive">
+                    <img src="public/images/textes/texte-formationBlanc.png" alt="Formation">
+                </a>
+            </div>
+            <div id="portraitLisonMenu">
+                <img src="public/images/aPropos/portraitLison.png" alt="Portrait de Lison Ferné">
+            </div>
+        </div>
+    </div>
+
+    <div id="webDevResponsive">
+        <div id="signatureResponsive">
+            <img src="public/images/textes/signatureLisonBlanc.png" alt="Lison Ferné">
+        </div>
+    </div>
+    <div id="artResponsive">
+
+    </div>
+    <div id="formationResponsive">
+
     </div>
 
 </div>
