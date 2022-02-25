@@ -77,13 +77,13 @@ Section 4: #Developpement Web
         <div id="containerMenu">
             <div class="menuResponsive">
                 <a href="#webDevResponsive">
-                   <img src="public/images/textes/texte-developpementWebBlanc.png" alt="Développement Web"> 
+                    <img src="public/images/textes/texte-developpementWebBlanc.png" alt="Développement Web">
                 </a>
             </div>
             <div class="menuResponsive">
                 <a href="#artResponsive">
                     <img src="public/images/textes/texte-artBlanc.png" alt="Art">
-                </a>  
+                </a>
             </div>
             <div class="menuResponsive">
                 <a href="#formationResponsive">
@@ -98,14 +98,45 @@ Section 4: #Developpement Web
 
     <div id="webDevResponsive">
         <div id="signatureResponsive">
-            <img src="public/images/textes/signatureLisonBlanc.png" alt="Lison Ferné">
+            <a href="#">
+                <img src="public/images/textes/signatureLisonBlanc.png" alt="Lison Ferné">
+            </a>
+        </div>
+        <div id="competencesResponsive">
+            <p>Compétences</p>
+            <div>
+                <div class="justify-center">
+                    <div>
+                        Back-End
+                    </div>
+                    <div>
+                        Front-End
+                    </div>
+                </div>
+                <div class="justify-center">
+                    <div>
+                        Design
+                    </div>
+                    <div>
+                        Outils
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="artResponsive">
-
+        <div id="signatureResponsive">
+            <a href="#">
+                <img src="public/images/textes/signatureLisonBlanc.png" alt="Lison Ferné">
+            </a>
+        </div>
     </div>
     <div id="formationResponsive">
-
+        <div id="signatureResponsive">
+            <a href="#">
+                <img src="public/images/textes/signatureLisonBlanc.png" alt="Lison Ferné">
+            </a>
+        </div>
     </div>
 
 </div>

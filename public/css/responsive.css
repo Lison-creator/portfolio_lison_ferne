@@ -9,6 +9,8 @@
   body {
     background-color: var(--noir);
     color: var(--blanc);
+    /*   overflow-x:visible;
+    overflow-y: visible; */
   }
 
   /*  #imgProvisoire {
@@ -74,11 +76,48 @@
   #responsive #webDevResponsive {
     height: 100vh;
   }
+  #responsive #webDevResponsive #signatureResponsive {
+    width: 30%;
+    margin-left: 5vw;
+    margin-top: 6vh;
+  }
+  #responsive #webDevResponsive #signatureResponsive img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 30vw;
+  }
+  #responsive #webDevResponsive #competencesResponsive p {
+    text-align: center;
+  }
+  #responsive #webDevResponsive #competencesResponsive .justify-center {
+    display: flex;
+    justify-content: center;
+  }
   #responsive #artResponsive {
     height: 100vh;
   }
+  #responsive #artResponsive #signatureResponsive {
+    width: 30%;
+    margin-left: 5vw;
+    margin-top: 6vh;
+  }
+  #responsive #artResponsive #signatureResponsive img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 30vw;
+  }
   #responsive #formationResponsive {
     height: 100vh;
+  }
+  #responsive #formationResponsive #signatureResponsive {
+    width: 30%;
+    margin-left: 5vw;
+    margin-top: 6vh;
+  }
+  #responsive #formationResponsive #signatureResponsive img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 30vw;
   }
 
   /* Le portrait disparaît */

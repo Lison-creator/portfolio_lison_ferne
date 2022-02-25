@@ -9,6 +9,8 @@
     body {
         background-color: var(--noir);
         color: var(--blanc);
+        /*   overflow-x:visible;
+        overflow-y: visible; */
     }
     /*  #imgProvisoire {
             display: flex;
@@ -60,7 +62,7 @@
                     width: 35%;
                     margin: auto;
                     margin-bottom: 15px;
-                    img{
+                    img {
                         width: 100%;
                     }
                 }
@@ -73,14 +75,51 @@
                 }
             }
         }
-        #webDevResponsive{
+        #webDevResponsive {
             height: 100vh;
+
+            #signatureResponsive {
+                width: 30%;
+                margin-left: 05vw;
+                margin-top: 6vh;
+                img {
+                    object-fit: contain;
+                    width: 30vw;
+                }
+            }
+            #competencesResponsive {
+                p{
+                    text-align: center;
+                }
+                .justify-center {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
         }
-        #artResponsive{
+        #artResponsive {
             height: 100vh;
+            #signatureResponsive {
+                width: 30%;
+                margin-left: 05vw;
+                margin-top: 6vh;
+                img {
+                    object-fit: contain;
+                    width: 30vw;
+                }
+            }
         }
-        #formationResponsive{
+        #formationResponsive {
             height: 100vh;
+            #signatureResponsive {
+                width: 30%;
+                margin-left: 05vw;
+                margin-top: 6vh;
+                img {
+                    object-fit: contain;
+                    width: 30vw;
+                }
+            }
         }
     }
 
