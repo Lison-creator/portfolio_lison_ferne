@@ -93,6 +93,12 @@
     display: flex;
     justify-content: center;
   }
+  #responsive #webDevResponsive #competencesResponsive .titreCompetencesResponsive {
+    font-weight: bold;
+  }
+  #responsive #webDevResponsive #competencesResponsive .blocCompetencesResponsive {
+    border: 1px var(--blanc) solid;
+  }
   #responsive #artResponsive {
     height: 100vh;
   }

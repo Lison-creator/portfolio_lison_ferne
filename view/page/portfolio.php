@@ -106,19 +106,39 @@ Section 4: #Developpement Web
             <p>Compétences</p>
             <div>
                 <div class="justify-center">
-                    <div>
-                        Back-End
+                    <div class="blocCompetencesResponsive">
+                        <p class="titreCompetencesResponsive">Back-End</p>
+                        <p>JavaScript</p>
+                        <p>JQuery</p>
+                        <p>PHP</p>
+                        <p>MySql</p>
                     </div>
-                    <div>
-                        Front-End
+                    <div class="blocCompetencesResponsive">
+                        <p class="titreCompetencesResponsive">Front-End</p>
+                        <p>Html5</p>
+                        <p>Css</p>
+                        <p>Sass</p>
+                        <p>Bootstrap</p>
                     </div>
                 </div>
                 <div class="justify-center">
                     <div>
-                        Design
+                        <p>Design</p>
+                        <p>Photoshop</p>
+                        <p>Illustrator</p>
+                        <p>InDesign</p>
+                        <p>XD</p>
+                        <p>Animate</p>
+                        
                     </div>
                     <div>
-                        Outils
+                        <p>Outils</p>
+                        <p>GitHub</p>
+                        <p>SublimeMerge</p>
+                        <p>Clip Studio Merge</p>
+                        <p>Wix</p>
+                        <p>WordPress</p>
+                        
                     </div>
                 </div>
             </div>
