@@ -104,44 +104,61 @@ Section 4: #Developpement Web
         </div>
         <div id="competencesResponsive">
             <p>Compétences</p>
-            <div>
-                <div class="justify-center">
-                    <div class="blocCompetencesResponsive">
-                        <p class="titreCompetencesResponsive">Back-End</p>
-                        <p>JavaScript</p>
-                        <p>JQuery</p>
-                        <p>PHP</p>
-                        <p>MySql</p>
-                    </div>
-                    <div class="blocCompetencesResponsive">
-                        <p class="titreCompetencesResponsive">Front-End</p>
-                        <p>Html5</p>
-                        <p>Css</p>
-                        <p>Sass</p>
-                        <p>Bootstrap</p>
-                    </div>
-                </div>
-                <div class="justify-center">
-                    <div>
-                        <p>Design</p>
-                        <p>Photoshop</p>
-                        <p>Illustrator</p>
-                        <p>InDesign</p>
-                        <p>XD</p>
-                        <p>Animate</p>
-                        
-                    </div>
-                    <div>
-                        <p>Outils</p>
-                        <p>GitHub</p>
-                        <p>SublimeMerge</p>
-                        <p>Clip Studio Merge</p>
-                        <p>Wix</p>
-                        <p>WordPress</p>
-                        
-                    </div>
-                </div>
-            </div>
+           
+
+            <!-- Table Back-End / Front-End -->
+            <table>
+                <tr>
+                    <th>Back End</th>
+                    <th>Front End</th>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Html5</td>
+                </tr>
+                <tr>
+                    <td>JQuery</td>
+                    <td>Css</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>Sass</td>
+                </tr>
+                <tr>
+                    <td>MySql</td>
+                    <td>Bootstrap</td>
+                </tr>
+               
+            </table>
+
+            <!-- Table Design / Outils -->
+            <table>
+                <tr>
+                    <th>Design</th>
+                    <th>Outils</th>
+                </tr>
+                <tr>
+                    <td>Photoshop</td>
+                    <td>GitHub</td>
+                </tr>
+                <tr>
+                    <td>Illustrator</td>
+                    <td>SublimeMerge</td>
+                </tr>
+                <tr>
+                    <td>InDesign</td>
+                    <td>Clip Studi Paint</td>
+                </tr>
+                <tr>
+                    <td>XD</td>
+                    <td>Wix</td>
+                </tr>
+                <tr>
+                    <td>Animate</td>
+                    <td>Wordpress</td>
+                </tr>
+               
+            </table>
         </div>
     </div>
     <div id="artResponsive">

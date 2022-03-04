@@ -88,9 +88,26 @@
                 }
             }
             #competencesResponsive {
+
+                table, th, td {
+                    border:1px solid var(--blanc);
+                    border-collapse: collapse;
+                  }
+                  table{
+                      margin:auto;
+                      margin-top: 25px;
+                      margin-bottom: 30px;
+                      th{
+                        color: var(--noir);
+                        background-color: var(--blanc);
+                      }
+                      td{
+                        padding: 10px;
+                      }
+                  }
                 p{
                     text-align: center;
-                }
+                }/* 
                 .justify-center {
                     display: flex;
                     justify-content: center;
@@ -100,7 +117,7 @@
                 }
                 .blocCompetencesResponsive{
                     border: 1px var(--blanc) solid;
-                }
+                } */
             }
         }
         #artResponsive {

@@ -86,18 +86,37 @@
        object-fit: contain;
     width: 30vw;
   }
+  #responsive #webDevResponsive #competencesResponsive {
+    /* 
+    .justify-center {
+        display: flex;
+        justify-content: center;
+    }
+    .titreCompetencesResponsive{
+        font-weight: bold;
+    }
+    .blocCompetencesResponsive{
+        border: 1px var(--blanc) solid;
+    } */
+  }
+  #responsive #webDevResponsive #competencesResponsive table, #responsive #webDevResponsive #competencesResponsive th, #responsive #webDevResponsive #competencesResponsive td {
+    border: 1px solid var(--blanc);
+    border-collapse: collapse;
+  }
+  #responsive #webDevResponsive #competencesResponsive table {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  #responsive #webDevResponsive #competencesResponsive table th {
+    color: var(--noir);
+    background-color: var(--blanc);
+  }
+  #responsive #webDevResponsive #competencesResponsive table td {
+    padding: 10px;
+  }
   #responsive #webDevResponsive #competencesResponsive p {
     text-align: center;
-  }
-  #responsive #webDevResponsive #competencesResponsive .justify-center {
-    display: flex;
-    justify-content: center;
-  }
-  #responsive #webDevResponsive #competencesResponsive .titreCompetencesResponsive {
-    font-weight: bold;
-  }
-  #responsive #webDevResponsive #competencesResponsive .blocCompetencesResponsive {
-    border: 1px var(--blanc) solid;
   }
   #responsive #artResponsive {
     height: 100vh;
